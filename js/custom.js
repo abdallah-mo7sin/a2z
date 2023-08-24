@@ -26,6 +26,29 @@ if ($(window).width() <= 991) {
         }
     });
 }
+
+
+// international phone number input
+const input = document.querySelector("#phone");
+if (input) {
+    window.intlTelInput(input, {
+        initialCountry: "auto",
+        geoIpLookup: callback => {
+            fetch("https://ipapi.co/json")
+                .then(res => res.json())
+                .then(data => callback(data.country_code))
+                .catch(() => callback("us"));
+        },
+        utilsScript: "/js/utils.js?1690975972744" // just for formatting/placeholders etc
+    });
+}
+// edit phone
+const editInput = document.querySelector("#edit_phone");
+if (editInput) {
+    window.intlTelInput(editInput, {
+        utilsScript: "/js/utils.js?1690975972744" // just for formatting/placeholders etc
+    });
+}
 (function ($) {
 
     // fix modal body overflow

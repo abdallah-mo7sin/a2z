@@ -226,9 +226,35 @@
   .product-thumbnails .swiper-slide {
     height: 135px;
   }
+  .cart-items-wrapper {
+    padding-inline-end: 0;
+  }
+  .actions {
+    padding-inline-end: 0 !important;
+  }
+  .thanks-for-your-order {
+    height: auto;
+
+
+    a.btn.btn-primary.w-100.py-3.mt-5 {
+      margin-top: 0 !important;
+    }
+    svg {
+      width: 40px;
+    }
+  }
 }
 
 @media all and (max-width: 600px) {
+  .single-address {
+    flex-wrap: wrap;
+
+  }
+  .single-cart-item .item-img {
+    width: 54px;
+    height: 56px;
+
+  }
   .specification-list {
     columns: 1;
   }
@@ -249,7 +275,7 @@
   .breadcrumbs {
     ul {
       flex-wrap: wrap;
-      gap:10px;
+      gap: 10px;
     }
   }
   .product-details-and-reviews .nav-link {
@@ -301,25 +327,27 @@
     margin-top: 2rem;
   }
   .promotions-wrapper.promotion-grid {
-     grid-template-columns: repeat(2, 1fr);
-   }
-  .promotions-wrapper.promotion-grid a:first-child img ,.promotions-wrapper.promotion-grid a:nth-child(2) img{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .promotions-wrapper.promotion-grid a:first-child img, .promotions-wrapper.promotion-grid a:nth-child(2) img {
     height: auto;
   }
   .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
     height: 129px;
   }
   .promotions-wrapper.d-flex {
-     flex-wrap: wrap;
+    flex-wrap: wrap;
+
     a {
-      flex:auto;
+      flex: auto;
+
       img {
         height: auto;
       }
     }
   }
   .filter-cats ul {
-     margin: 2rem 0 0;
+    margin: 2rem 0 0;
     gap: 14px;
   }
   .gap-2rem {
@@ -337,11 +365,13 @@
   }
   .subscribe-form {
     width: 90%;
-   }
-  .copyrights{
-    padding-block:1rem;
+  }
+  .copyrights {
+    padding-block: 1rem;
+
     ul {
       justify-content: center;
+
       + ul {
 
         margin-top: 1rem;
@@ -359,5 +389,11 @@
   }
   .sale-banners .banners-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(128px, 2fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+    --bs-modal-width: 745px;
   }
 }
