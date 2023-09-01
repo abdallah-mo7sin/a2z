@@ -27,11 +27,37 @@ if ($(window).width() <= 991) {
     });
 }
 
+// Reset password Code auto jump focus on typing and on pasting the full code
+const codeInputs = document.querySelectorAll('.reset-code-wrapper .form-control');
+if (codeInputs) {
+    codeInputs.forEach((input, index) => {
+        input.addEventListener('input', (event) => {
+            const value = event.target.value;
 
+            if (value.length >= 1 && index < codeInputs.length - 1) {
+                codeInputs[index + 1].focus();
+            }
+        });
+
+        input.addEventListener('paste', (event) => {
+            const pastedData = event.clipboardData.getData('text');
+            const pastedNumbers = pastedData.match(/\d/g);
+
+            if (pastedNumbers && pastedNumbers.length === 4) {
+                pastedNumbers.forEach((number, i) => {
+                    if (i < codeInputs.length) {
+                        codeInputs[i].value = number;
+                    }
+                });
+            }
+            event.preventDefault();
+        });
+    });
+}
 // international phone number input
-const input = document.querySelector("#phone");
-if (input) {
-    window.intlTelInput(input, {
+const phone_input = document.querySelector("#phone");
+if (phone_input) {
+    window.intlTelInput(phone_input, {
         initialCountry: "auto",
         geoIpLookup: callback => {
             fetch("https://ipapi.co/json")
@@ -42,13 +68,16 @@ if (input) {
         utilsScript: "/js/utils.js?1690975972744" // just for formatting/placeholders etc
     });
 }
+
 // edit phone
-const editInput = document.querySelector("#edit_phone");
-if (editInput) {
-    window.intlTelInput(editInput, {
+const editPhoneInput = document.querySelector("#edit_phone");
+if (editPhoneInput) {
+    window.intlTelInput(editPhoneInput, {
         utilsScript: "/js/utils.js?1690975972744" // just for formatting/placeholders etc
     });
 }
+
+
 (function ($) {
 
     // fix modal body overflow
@@ -68,7 +97,10 @@ if (editInput) {
 
 
     // Nice Select
-    $('select.nice-select').niceSelect();
+    if ($('select.nice-select')) {
+        $('select.nice-select').niceSelect();
+
+    }
 
     // Copy current link
     const copyIcon = document.getElementById('copyURL');
@@ -76,7 +108,7 @@ if (editInput) {
         copyIcon.addEventListener('click', (e) => {
             e.preventDefault()
             navigator.clipboard.writeText(window.location.href);
-            copyIcon.insertAdjacentHTML('afterend', '<div class="copy-notice">Link copied</div>');
+            copyIcon.insertAdjacentHTML('beforeend', '<div class="copy-notice">Link copied</div>');
             setTimeout(() => {
                 document.querySelectorAll('.copy-notice').forEach(el => el.remove());
             }, 3000);
@@ -244,18 +276,6 @@ if (editInput) {
             swiper: productThumbs,
         },
     });
-    // Toggle Password
-
-    $('body').on('click', '.togglePassword', function (e) {
-        e.preventDefault();
-        if ($(this).prev('.password-input').attr('type') == 'password') {
-            $(this).prev('.password-input').attr("type", "text");
-            $(this).find('i').addClass('fa-eye-slash').removeClass('fa-eye')
-        } else {
-            $(this).prev('.password-input').attr("type", "password");
-            $(this).find('i').addClass('fa-eye').removeClass('fa-eye-slash')
-        }
-    })
 
 
     // search box
@@ -329,4 +349,45 @@ if (editInput) {
                 '</svg>');
         }
     });
+
+    // Collapsing in search filters
+
+    $('.filter-title').click(function () {
+        $(this).next('.filter-content').slideToggle();
+        $(this).toggleClass('closed')
+    });
+
+    $('.parent-cat').click(function (event) {
+        event.stopPropagation();
+        $(this).children('.child-cats').first().slideToggle();
+        $(this).toggleClass('expand')
+    });
+
+    $('.child-cats').click(function (event) {
+        event.stopPropagation();
+    });
+
+    // Trigger filters on mobile
+    let trigger = $('.trigger-filters')
+    let html = trigger.html()
+    trigger.click(function (e) {
+        e.preventDefault()
+        $(this).toggleClass('close')
+        $('.overlay').toggleClass('show')
+        $('.search-filters-wrapper').fadeToggle()
+        $('body').toggleClass('overflow-hidden')
+
+        if ( trigger.hasClass('close')) {
+            $(this).html('&times;')
+        } else {
+            $(this).html(html)
+        }
+    })
+    $('.overlay').click(function () {
+        $('.overlay').removeClass('show')
+        $('.search-filters-wrapper').fadeOut()
+        $('body').removeClass('overflow-hidden')
+        trigger.removeClass('close')
+        trigger.html(html)
+    })
 })(jQuery);

@@ -351,19 +351,132 @@
 
 
 
-<section class="thanks-for-your-order pattern-bg mt--2rem">
-    <div class="container">
-        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-12 text-center">
-            <div class="thanks-wrapper">
+<div class="breadcrumbs">
+    <div class="container container-inner">
+        <ul class="list-unstyled d-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Shipping address</a></li>
 
-                <img src="images/animated-box.gif" alt="">
-                <div class="fz24 fw-600 text-black mb24 mt-4">Thanks for your order!</div>
-                <div class="fz14 text-secondary mb-4">The order details send to ramy@gmail.com</div>
-                <a href="" class="btn btn-primary w-100 py-3 mt-5">Continue shopping</a>
+        </ul>
+    </div>
+</div>
+
+<div class="cart-page-container">
+    <div class="container container-inner">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="text-secondary fz14 mb24 fw-600">Add your shipping address</div>
+
+                <div  class="text-black gap-end">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Full name</label>
+                                <input type="text" class="form-control mb24" placeholder="Ex : Mohammed Mohsen">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Street name and house number</label>
+                                <input type="text" class="form-control mb24"
+                                       placeholder="Enter your house or street number">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Country</label>
+                                <select class="nice-select custom-nice-select form-control mb24">
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option value="">Egypt</option>
+                                    <option value="">Qatar</option>
+                                    <option value="">Oman</option>
+                                    <option value="">USA</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-wrapper ">
+                                <label class="fz16 fw-500  d-block mb-2">City</label>
+                                <input type="text" class="form-control mb24"
+                                       placeholder="Enter your city">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Postal code</label>
+                                <input type="text" class="form-control mb24"
+                                       placeholder="Enter your postal code">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Phone number</label>
+
+                                <input id="phone" type="tel" class="form-control mb24 w-100">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="order-summary">
+                    <div class="section-title fw-600">Order Summary</div>
+                    <div class="info-line">
+                        <strong>Price</strong>
+                        <span>$319.98</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Discount</strong>
+                        <span>$31.9</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Shipping</strong>
+                        <span class="text-blue">$122</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Coupon Applied</strong>
+                        <span>$0.00</span>
+                    </div>
+                    <hr class="hr">
+                    <div class="info-line">
+                        <strong class="fw-normal fz14">TOTAL</strong>
+                        <span class="fw-500 fz16">$288.08</span>
+                    </div>
+
+                    <div class="info-line">
+                        <strong class="fw-normal fz14">Estimated Delivery</strong>
+                        <span class="fw-500 fz16">01 Feb, 2023</span>
+                    </div>
+
+                    <div class="coupon-field">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.59 13.41L13.42 20.58C13.2343 20.766 13.0137 20.9135 12.7709 21.0141C12.5281 21.1148 12.2678 21.1666 12.005 21.1666C11.7422 21.1666 11.4819 21.1148 11.2391 21.0141C10.9963 20.9135 10.7757 20.766 10.59 20.58L2 12V2H12L20.59 10.59C20.9625 10.9647 21.1716 11.4716 21.1716 12C21.1716 12.5284 20.9625 13.0353 20.59 13.41V13.41Z"
+                                  stroke="#17183B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 7H7.01" stroke="#17183B" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" class="form-control" placeholder="Coupon Code">
+                        <input type="submit" value="Apply" class="submit-coupon">
+                    </div>
+                    <a href="" class="btn btn-primary fz16 fw-500 w-100 ">Continue to payment</a>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+
+
+
 <footer>
     <div class="container">
         <div class="footer-wrapper  ">

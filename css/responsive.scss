@@ -44,9 +44,20 @@
   //.brands-wrapper {
   //  grid-template-columns: repeat(auto-fit, minmax(135px, 2fr));
   //}
+  .gradiant-side {
+    .fz28 {
+      font-size: 21px !important;
+    }
+  }
+  .asides-gap {
+    padding-inline: 80px;
+  }
 }
 
 @media all and (max-width: 1024px) {
+  .asides-gap {
+    padding-inline: 40px;
+  }
   .navbar-light .navbar-nav .nav-item .nav-link {
     padding: 8px 13px;
   }
@@ -56,9 +67,18 @@
   .subscribe {
     width: 266px;
   }
+  .gap-end {
+    padding-inline-end: 0;
+  }
+
 }
 
 @media all and (max-width: 768px) {
+  .w-25,
+  .w-50,
+  .w-75 {
+    width: auto !important;
+  }
   .container-inner {
     padding-inline: calc(var(--bs-gutter-x) * .5);
     max-width: 720px;
@@ -239,13 +259,87 @@
     a.btn.btn-primary.w-100.py-3.mt-5 {
       margin-top: 0 !important;
     }
+
     svg {
       width: 40px;
     }
   }
+  .search-filters-wrapper {
+    border: 0 !important;
+    position: fixed;
+    /* bottom: 1.5em; */
+    inset-inline-start: 50%;
+    /* margin: 0 auto; */
+    z-index: 99;
+    background: #fff;
+    padding-inline:1rem;
+    translate: -50%  ;
+    top: 0;
+    overflow: scroll;
+    display: none;
+    height: 100%;
+  }
+  .trigger-filters {
+    display: block !important;
+    background: #5BC0EB;
+
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 1rem;
+    inset-inline-start: 1rem;
+    z-index: 99;
+    border: none;
+
+    .iconsax {
+      --Iconsax-Color: white;
+    }
+  }
+  .main-blogs {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  .main-blogs .single-blog-post:first-child img {
+     height: 40vw !important;
+  }
 }
 
 @media all and (max-width: 600px) {
+  .selected-filters .filters {
+    margin-bottom: 1rem;
+  }
+  .trigger-filters {
+
+    z-index: 1000;
+  }
+  .search-filters-wrapper {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .gradiant-side {
+    min-height: auto;
+    height: auto;
+    padding: 1em;
+    //display: block !important;
+    align-items: center;
+    gap: 10px;
+  }
+  .asides-gap {
+    padding-block: 2rem;
+    display: block !important;
+    min-height: auto;
+  }
+  a.top-logo span {
+    display: none;
+  }
+  .login-slogan.fz28 {
+    font-size: 16px !important;
+    //margin-block: 1em;
+    text-align: center;
+    display: block !important;
+  }
   .single-address {
     flex-wrap: wrap;
 
@@ -308,11 +402,7 @@
     flex-wrap: wrap;
     justify-content: center !important;
   }
-  .w-25,
-  .w-50,
-  .w-75 {
-    width: auto !important;
-  }
+
   .fz40 {
     font-size: 30px !important;
   }

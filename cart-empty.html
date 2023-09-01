@@ -10,7 +10,6 @@
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/nice-select.css" rel="stylesheet">
     <link href="//glenthemes.github.io/iconsax/style.css" rel="stylesheet">
-    <link href="css/intlTelInput.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>A2Z MegaStore</title>
 </head>
@@ -18,7 +17,6 @@
 <body>
 
 <div class="overlay"></div>
-
 
 <header>
     <div class="top-nav">
@@ -350,20 +348,319 @@
 </header>
 
 
+<div class="breadcrumbs">
+    <div class="container container-inner">
+        <ul class="list-unstyled d-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Cart</a></li>
 
-<section class="thanks-for-your-order pattern-bg mt--2rem">
-    <div class="container">
-        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-12 text-center">
-            <div class="thanks-wrapper">
-
-                <img src="images/animated-box.gif" alt="">
-                <div class="fz24 fw-600 text-black mb24 mt-4">Thanks for your order!</div>
-                <div class="fz14 text-secondary mb-4">The order details send to ramy@gmail.com</div>
-                <a href="" class="btn btn-primary w-100 py-3 mt-5">Continue shopping</a>
-            </div>
-        </div>
+        </ul>
     </div>
-</section>
+</div>
+
+<div class="cart-page-container">
+    <div class="container container-inner">
+      <div class="text-center">
+          <svg class="mb24" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M36.38 35.5H15.08C13.1 35.5 11.2 34.66 9.85999 33.2C8.51999 31.74 7.84 29.78 8 27.8L9.66 7.88C9.72 7.26 9.49999 6.66001 9.07999 6.20001C8.65999 5.74001 8.07999 5.5 7.45999 5.5H4C3.18 5.5 2.5 4.82 2.5 4C2.5 3.18 3.18 2.5 4 2.5H7.48001C8.94001 2.5 10.32 3.11999 11.3 4.17999C11.84 4.77999 12.24 5.48001 12.46 6.26001H37.44C39.46 6.26001 41.32 7.06 42.68 8.5C44.02 9.96 44.7 11.86 44.54 13.88L43.46 28.88C43.24 32.54 40.04 35.5 36.38 35.5ZM12.56 9.23999L11 28.04C10.9 29.2 11.28 30.3 12.06 31.16C12.84 32.02 13.92 32.48 15.08 32.48H36.38C38.46 32.48 40.34 30.72 40.5 28.64L41.58 13.64C41.66 12.46 41.28 11.34 40.5 10.52C39.72 9.68002 38.64 9.21997 37.46 9.21997H12.56V9.23999Z" fill="#161616"/>
+              <path d="M32.5 45.5C30.3 45.5 28.5 43.7 28.5 41.5C28.5 39.3 30.3 37.5 32.5 37.5C34.7 37.5 36.5 39.3 36.5 41.5C36.5 43.7 34.7 45.5 32.5 45.5ZM32.5 40.5C31.94 40.5 31.5 40.94 31.5 41.5C31.5 42.06 31.94 42.5 32.5 42.5C33.06 42.5 33.5 42.06 33.5 41.5C33.5 40.94 33.06 40.5 32.5 40.5Z" fill="#161616"/>
+              <path d="M16.5 45.5C14.3 45.5 12.5 43.7 12.5 41.5C12.5 39.3 14.3 37.5 16.5 37.5C18.7 37.5 20.5 39.3 20.5 41.5C20.5 43.7 18.7 45.5 16.5 45.5ZM16.5 40.5C15.94 40.5 15.5 40.94 15.5 41.5C15.5 42.06 15.94 42.5 16.5 42.5C17.06 42.5 17.5 42.06 17.5 41.5C17.5 40.94 17.06 40.5 16.5 40.5Z" fill="#161616"/>
+              <path d="M42 17.5H18C17.18 17.5 16.5 16.82 16.5 16C16.5 15.18 17.18 14.5 18 14.5H42C42.82 14.5 43.5 15.18 43.5 16C43.5 16.82 42.82 17.5 42 17.5Z" fill="#161616"/>
+          </svg>
+          <p class="fz24 text-black mb24">Your shopping card is empty</p>
+          <a href="" class="btn btn-primary fz14 py-3">Explore our todays deals</a>
+      </div>
+
+        <section class="featured-products products-slider mt100">
+            <div class="container container-inner">
+                <div class="d-flex justify-content-between align-items-center mb-2rem">
+                    <div class="section-title mb-0">Best sellers for you</div>
+                 </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev-outside">
+                    <i class="iconsax" icon-name="arrow-left"></i>
+                </div>
+                <div class="swiper-button-next-outside">
+                    <i class="iconsax" icon-name="arrow-right"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="featured-products products-slider  mt100">
+            <div class="container container-inner">
+                <div class="d-flex justify-content-between align-items-center mb-2rem">
+                    <div class="section-title mb-0">You recently viewed</div>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-product-wrapper">
+                                <div class="top-icons d-flex justify-content-end">
+                                    <a class="add-to-fav" href="">
+                                        <i class="iconsax hover" icon-name="heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-img">
+                                    <a href=""><img alt="" class="img-fluid"
+                                                    loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                                </div>
+                                <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
+                                    Chip,</a></div>
+
+                                <div class="product-rate">
+                                    <span class="rate-ratio">4.5★</span>(45)
+                                </div>
+
+                                <div class="item-price">38,095EGP</div>
+
+                                <a class="btn add-to-cart" href="">Add to card</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev-outside">
+                    <i class="iconsax" icon-name="arrow-left"></i>
+                </div>
+                <div class="swiper-button-next-outside">
+                    <i class="iconsax" icon-name="arrow-right"></i>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
+
 <footer>
     <div class="container">
         <div class="footer-wrapper  ">
@@ -478,7 +775,6 @@
 <script src="//glenthemes.github.io/iconsax/geticons.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
-<script src="js/intlTelInput.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 
