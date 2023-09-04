@@ -10,15 +10,14 @@
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/nice-select.css" rel="stylesheet">
     <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
-    <link href="css/intlTelInput.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <title>A2Z MegaStore</title>
+
 </head>
 
 <body>
-
 <div class="overlay"></div>
-
 
 <header>
     <div class="top-nav">
@@ -349,405 +348,108 @@
 
 </header>
 
-<!--Alert after adding/editing address -->
-<div class="alert alert-success mt--2rem rounded-0 alert-dismissible fade show" role="alert">
-    <div class="container container-inner">
-        <div class="text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22" fill="none">
-                <path d="M2.5 10.87L11.37 19.74L29.1 2" stroke="white" stroke-width="3.2" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-            </svg>
-            <span class="ms-md-4">Your address changes were saved successfully</span>
-        </div>
-        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M17.9996 6.92319L6.9227 18.0001C6.67039 18.2524 6.25193 18.2524 5.99962 18.0001C5.74732 17.7478 5.74732 17.3293 5.99962 17.077L17.0765 6.00011C17.3289 5.7478 17.7473 5.7478 17.9996 6.00011C18.2519 6.25242 18.2519 6.67088 17.9996 6.92319Z"
-                      fill="white"/>
-                <path d="M6.9227 5.99989L17.9996 17.0768C18.2519 17.3291 18.2519 17.7476 17.9996 17.9999C17.7473 18.2522 17.3289 18.2522 17.0765 17.9999L5.99962 6.92296C5.74732 6.67066 5.74732 6.25219 5.99962 5.99989C6.25193 5.74758 6.67039 5.74758 6.9227 5.99989Z"
-                      fill="white"/>
-            </svg>
-        </button>
-    </div>
-</div>
-<!-- End Alert after adding/editing address -->
 
-
-<div class="breadcrumbs">
-    <div class="container container-inner">
-        <ul class="list-unstyled d-flex">
-            <li><a href="">Home</a></li>
-            <li><a href="">Cart</a></li>
-            <li><a href="">Shipping address</a></li>
-
-        </ul>
-    </div>
-</div>
-
-<div class="cart-page-container">
+<section class="account-page-wrapper mb100 mt--2rem ">
     <div class="container container-inner">
         <div class="row">
-            <div class="col-lg-8">
-                <div class="text-secondary fz14 mb-5 fw-600">Select shipping address</div>
-                <div class="shipping-addresses">
-
-                    <div class="single-address custom-radio">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="addresses" id="address_1">
-                            <label class="form-check-label" for="address_1">
-                                <span class="fz24 fw-normal mb-3 ">Ahmed Nasser <small
-                                        class="badge ms-3 text-blue border fz12 fw-500">Home</small></span>
-                                <span class="fz16 fw-normal mb-3">1131 Masr Elgdedia , Cairo , Postal Code 40322</span>
-                                <span class="fz16 fw-nor">Contact  +20 101 453 9522</span>
-                            </label>
-                        </div>
+            <div class="col-lg-3">
 
 
-                        <div class="actions flex-shrink-0 d-flex pe-5 align-items-center">
-                            <button data-bs-toggle="modal" data-bs-target="#edit-address-modal"
-                                    class="btn edit text-blue fz14 fw-500 d-flex align-items-center  gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H11C11.41 1.25 11.75 1.59 11.75 2C11.75 2.41 11.41 2.75 11 2.75H9C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V13C21.25 12.59 21.59 12.25 22 12.25C22.41 12.25 22.75 12.59 22.75 13V15C22.75 20.43 20.43 22.75 15 22.75Z"
-                                          fill="#264AEC"/>
-                                    <path d="M8.49935 17.6896C7.88935 17.6896 7.32935 17.4696 6.91935 17.0696C6.42935 16.5796 6.21935 15.8696 6.32935 15.1196L6.75935 12.1096C6.83935 11.5296 7.21935 10.7796 7.62935 10.3696L15.5093 2.48957C17.4993 0.49957 19.5193 0.49957 21.5093 2.48957C22.5993 3.57957 23.0893 4.68957 22.9893 5.79957C22.8993 6.69957 22.4193 7.57957 21.5093 8.47957L13.6293 16.3596C13.2193 16.7696 12.4693 17.1496 11.8893 17.2296L8.87935 17.6596C8.74935 17.6896 8.61935 17.6896 8.49935 17.6896ZM16.5693 3.54957L8.68935 11.4296C8.49935 11.6196 8.27935 12.0596 8.23935 12.3196L7.80935 15.3296C7.76935 15.6196 7.82935 15.8596 7.97935 16.0096C8.12935 16.1596 8.36935 16.2196 8.65935 16.1796L11.6693 15.7496C11.9293 15.7096 12.3793 15.4896 12.5593 15.2996L20.4393 7.41957C21.0893 6.76957 21.4293 6.18957 21.4793 5.64957C21.5393 4.99957 21.1993 4.30957 20.4393 3.53957C18.8393 1.93957 17.7393 2.38957 16.5693 3.54957Z"
-                                          fill="#264AEC"/>
-                                    <path d="M19.8496 9.83027C19.7796 9.83027 19.7096 9.82027 19.6496 9.80027C17.0196 9.06027 14.9296 6.97027 14.1896 4.34027C14.0796 3.94027 14.3096 3.53027 14.7096 3.41027C15.1096 3.30027 15.5196 3.53027 15.6296 3.93027C16.2296 6.06027 17.9196 7.75027 20.0496 8.35027C20.4496 8.46027 20.6796 8.88027 20.5696 9.28027C20.4796 9.62027 20.1796 9.83027 19.8496 9.83027Z"
-                                          fill="#264AEC"/>
-                                </svg>
-                                Edit
-                            </button>
-                            <button data-bs-toggle="modal" data-bs-target="#remove-address-modal" class="remove-item btn text-error fz14 d-flex align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24"
-                                     fill="none">
-                                    <path d="M18.937 2.88102L18.2213 21.8467C18.2008 22.3904 17.7361 22.8384 17.1946 22.8384H4.80754C4.26488 22.8384 3.80141 22.3912 3.78087 21.8467L3.06518 2.88102C3.05309 2.56057 2.78351 2.31059 2.46305 2.32269C2.1426 2.33478 1.89263 2.60436 1.90472 2.92481L2.6204 21.8905C2.66447 23.0583 3.64003 23.9997 4.80754 23.9997H17.1946C18.3607 23.9997 19.3377 23.0578 19.3818 21.8905L20.0974 2.92481C20.1095 2.60436 19.8596 2.33478 19.5391 2.32269C19.2186 2.31059 18.9491 2.56057 18.937 2.88102Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M10.6133 7.16072V20.322C10.6133 20.6427 10.8732 20.9027 11.1939 20.9027C11.5146 20.9027 11.7746 20.6427 11.7746 20.322V7.16072C11.7746 6.84004 11.5146 6.58008 11.1939 6.58008C10.8732 6.58008 10.6133 6.84004 10.6133 7.16072Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M6.16237 7.1778L6.54946 20.3391C6.55889 20.6596 6.82638 20.9118 7.14693 20.9024C7.46747 20.893 7.71968 20.6255 7.71025 20.3049L7.32315 7.14366C7.31373 6.82312 7.04623 6.57091 6.72569 6.58033C6.40515 6.58976 6.15294 6.85726 6.16237 7.1778Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M14.6784 7.14366L14.2913 20.3049C14.2818 20.6255 14.5341 20.893 14.8546 20.9024C15.1751 20.9118 15.4426 20.6596 15.4521 20.3391L15.8392 7.1778C15.8486 6.85726 15.5964 6.58976 15.2758 6.58033C14.9553 6.57091 14.6878 6.82312 14.6784 7.14366Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M1.32283 3.2902H20.6777C20.9983 3.2902 21.2583 3.03023 21.2583 2.70955C21.2583 2.38887 20.9983 2.12891 20.6777 2.12891H1.32283C1.00215 2.12891 0.742188 2.38887 0.742188 2.70955C0.742188 3.03023 1.00215 3.2902 1.32283 3.2902Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M7.66807 2.73177L8.08237 1.69604C8.19266 1.42031 8.5753 1.16129 8.87089 1.16129H13.129C13.4267 1.16129 13.8064 1.41839 13.9175 1.69604L14.3318 2.73177L15.41 2.30048L14.9957 1.26475C14.7083 0.546205 13.9015 0 13.129 0H8.87089C8.10049 0 7.2908 0.548085 7.00414 1.26475L6.58984 2.30048L7.66807 2.73177Z"
-                                          fill="#DA1E28"/>
-                                </svg>
-                                Remove
-                            </button>
-
-                        </div>
-                    </div>
-
-                    <div class="single-address custom-radio">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="addresses" id="address_2">
-                            <label class="form-check-label" for="address_2">
-                                <span class="fz24 fw-normal mb-3 ">Ahmed Nasser <small
-                                        class="badge ms-3 text-blue border fz12 fw-500">Home</small></span>
-                                <span class="fz16 fw-normal mb-3">1131 Masr Elgdedia , Cairo , Postal Code 40322</span>
-                                <span class="fz16 fw-nor">Contact  +20 101 453 9522</span>
-                            </label>
-                        </div>
-
-
-                        <div  class="actions flex-shrink-0 d-flex pe-5 align-items-center">
-                            <button data-bs-toggle="modal" data-bs-target="#edit-address-modal" class="btn edit text-blue fz14 fw-500 d-flex align-items-center  gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H11C11.41 1.25 11.75 1.59 11.75 2C11.75 2.41 11.41 2.75 11 2.75H9C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V13C21.25 12.59 21.59 12.25 22 12.25C22.41 12.25 22.75 12.59 22.75 13V15C22.75 20.43 20.43 22.75 15 22.75Z"
-                                          fill="#264AEC"/>
-                                    <path d="M8.49935 17.6896C7.88935 17.6896 7.32935 17.4696 6.91935 17.0696C6.42935 16.5796 6.21935 15.8696 6.32935 15.1196L6.75935 12.1096C6.83935 11.5296 7.21935 10.7796 7.62935 10.3696L15.5093 2.48957C17.4993 0.49957 19.5193 0.49957 21.5093 2.48957C22.5993 3.57957 23.0893 4.68957 22.9893 5.79957C22.8993 6.69957 22.4193 7.57957 21.5093 8.47957L13.6293 16.3596C13.2193 16.7696 12.4693 17.1496 11.8893 17.2296L8.87935 17.6596C8.74935 17.6896 8.61935 17.6896 8.49935 17.6896ZM16.5693 3.54957L8.68935 11.4296C8.49935 11.6196 8.27935 12.0596 8.23935 12.3196L7.80935 15.3296C7.76935 15.6196 7.82935 15.8596 7.97935 16.0096C8.12935 16.1596 8.36935 16.2196 8.65935 16.1796L11.6693 15.7496C11.9293 15.7096 12.3793 15.4896 12.5593 15.2996L20.4393 7.41957C21.0893 6.76957 21.4293 6.18957 21.4793 5.64957C21.5393 4.99957 21.1993 4.30957 20.4393 3.53957C18.8393 1.93957 17.7393 2.38957 16.5693 3.54957Z"
-                                          fill="#264AEC"/>
-                                    <path d="M19.8496 9.83027C19.7796 9.83027 19.7096 9.82027 19.6496 9.80027C17.0196 9.06027 14.9296 6.97027 14.1896 4.34027C14.0796 3.94027 14.3096 3.53027 14.7096 3.41027C15.1096 3.30027 15.5196 3.53027 15.6296 3.93027C16.2296 6.06027 17.9196 7.75027 20.0496 8.35027C20.4496 8.46027 20.6796 8.88027 20.5696 9.28027C20.4796 9.62027 20.1796 9.83027 19.8496 9.83027Z"
-                                          fill="#264AEC"/>
-                                </svg>
-                                Edit
-                            </button>
-                            <button data-bs-toggle="modal" data-bs-target="#remove-address-modal" class="remove-item btn text-error fz14 d-flex align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24"
-                                     fill="none">
-                                    <path d="M18.937 2.88102L18.2213 21.8467C18.2008 22.3904 17.7361 22.8384 17.1946 22.8384H4.80754C4.26488 22.8384 3.80141 22.3912 3.78087 21.8467L3.06518 2.88102C3.05309 2.56057 2.78351 2.31059 2.46305 2.32269C2.1426 2.33478 1.89263 2.60436 1.90472 2.92481L2.6204 21.8905C2.66447 23.0583 3.64003 23.9997 4.80754 23.9997H17.1946C18.3607 23.9997 19.3377 23.0578 19.3818 21.8905L20.0974 2.92481C20.1095 2.60436 19.8596 2.33478 19.5391 2.32269C19.2186 2.31059 18.9491 2.56057 18.937 2.88102Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M10.6133 7.16072V20.322C10.6133 20.6427 10.8732 20.9027 11.1939 20.9027C11.5146 20.9027 11.7746 20.6427 11.7746 20.322V7.16072C11.7746 6.84004 11.5146 6.58008 11.1939 6.58008C10.8732 6.58008 10.6133 6.84004 10.6133 7.16072Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M6.16237 7.1778L6.54946 20.3391C6.55889 20.6596 6.82638 20.9118 7.14693 20.9024C7.46747 20.893 7.71968 20.6255 7.71025 20.3049L7.32315 7.14366C7.31373 6.82312 7.04623 6.57091 6.72569 6.58033C6.40515 6.58976 6.15294 6.85726 6.16237 7.1778Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M14.6784 7.14366L14.2913 20.3049C14.2818 20.6255 14.5341 20.893 14.8546 20.9024C15.1751 20.9118 15.4426 20.6596 15.4521 20.3391L15.8392 7.1778C15.8486 6.85726 15.5964 6.58976 15.2758 6.58033C14.9553 6.57091 14.6878 6.82312 14.6784 7.14366Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M1.32283 3.2902H20.6777C20.9983 3.2902 21.2583 3.03023 21.2583 2.70955C21.2583 2.38887 20.9983 2.12891 20.6777 2.12891H1.32283C1.00215 2.12891 0.742188 2.38887 0.742188 2.70955C0.742188 3.03023 1.00215 3.2902 1.32283 3.2902Z"
-                                          fill="#DA1E28"/>
-                                    <path d="M7.66807 2.73177L8.08237 1.69604C8.19266 1.42031 8.5753 1.16129 8.87089 1.16129H13.129C13.4267 1.16129 13.8064 1.41839 13.9175 1.69604L14.3318 2.73177L15.41 2.30048L14.9957 1.26475C14.7083 0.546205 13.9015 0 13.129 0H8.87089C8.10049 0 7.2908 0.548085 7.00414 1.26475L6.58984 2.30048L7.66807 2.73177Z"
-                                          fill="#DA1E28"/>
-                                </svg>
-                                Remove
-                            </button>
-
-                        </div>
-                    </div>
-
-                    <a class="add-new-address fz16 d-flex gap-3 hover-link fw-500 mb24" href="#add-address-modal"
-                       data-bs-toggle="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 5V19" stroke="#264AEC" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                            <path d="M5 12H19" stroke="#264AEC" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                        </svg>
-                        Add New Address
-                    </a>
+                <div class="profile-sidebar border-end pt-4 pe-3 h-100">
+                    <div class="fz24 text-primary mb-2rem toggle-mobile-trigger">My account</div>
+                    <ul class="account-nav list-unstyled toggle-mobile-content">
+                        <li><a href="" class="active">My Profile</a></li>
+                        <li><a href="">My Wallet</a></li>
+                        <li><a href="">Order history</a></li>
+                        <li><a href="">Complaints and suggestions</a></li>
+                        <li><a href="">Favorites</a></li>
+                    </ul>
                 </div>
             </div>
-
-
-            <div class="col-lg-4">
-                <div class="order-summary">
-                    <div class="section-title fw-600">Order Summary</div>
-                    <div class="info-line">
-                        <strong>Price</strong>
-                        <span>$319.98</span>
-                    </div>
-                    <div class="info-line">
-                        <strong>Discount</strong>
-                        <span>$31.9</span>
-                    </div>
-                    <div class="info-line">
-                        <strong>Shipping</strong>
-                        <span class="text-blue">$122</span>
-                    </div>
-                    <div class="info-line">
-                        <strong>Coupon Applied</strong>
-                        <span>$0.00</span>
-                    </div>
-                    <hr class="hr">
-                    <div class="info-line">
-                        <strong class="fw-normal fz14">TOTAL</strong>
-                        <span class="fw-500 fz16">$288.08</span>
+            <div class="col-lg-9">
+                <div class="profile-wrapper pt-4">
+                    <div class="fz20 fw-600 text-black mb-3">Welcome Mohamed</div>
+                    <div class="fz14 text-secondary mb-3">Manage your details, view your tier status and change your
+                        password
                     </div>
 
-                    <div class="info-line">
-                        <strong class="fw-normal fz14">Estimated Delivery</strong>
-                        <span class="fw-500 fz16">01 Feb, 2023</span>
+                    <div class="border rounded10 p-3 mb-3">
+                        <div class="d-flex justify-content-between align-items-center gap-3 mb-2rem">
+                            <div class="fz16 text-black fw-600">Personal information</div>
+                            <button class="btn px-3 py-2 border rounded50 bg-transparent fz14 text-black fw-normal d-inline-flex align-items-center hover-bg-secondary ">
+                                Edit
+                                <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H11C11.41 1.25 11.75 1.59 11.75 2C11.75 2.41 11.41 2.75 11 2.75H9C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V13C21.25 12.59 21.59 12.25 22 12.25C22.41 12.25 22.75 12.59 22.75 13V15C22.75 20.43 20.43 22.75 15 22.75Z"
+                                          fill="#292D32"/>
+                                    <path d="M8.49935 17.6896C7.88935 17.6896 7.32935 17.4696 6.91935 17.0696C6.42935 16.5796 6.21935 15.8696 6.32935 15.1196L6.75935 12.1096C6.83935 11.5296 7.21935 10.7796 7.62935 10.3696L15.5093 2.48957C17.4993 0.49957 19.5193 0.49957 21.5093 2.48957C22.5993 3.57957 23.0893 4.68957 22.9893 5.79957C22.8993 6.69957 22.4193 7.57957 21.5093 8.47957L13.6293 16.3596C13.2193 16.7696 12.4693 17.1496 11.8893 17.2296L8.87935 17.6596C8.74935 17.6896 8.61935 17.6896 8.49935 17.6896ZM16.5693 3.54957L8.68935 11.4296C8.49935 11.6196 8.27935 12.0596 8.23935 12.3196L7.80935 15.3296C7.76935 15.6196 7.82935 15.8596 7.97935 16.0096C8.12935 16.1596 8.36935 16.2196 8.65935 16.1796L11.6693 15.7496C11.9293 15.7096 12.3793 15.4896 12.5593 15.2996L20.4393 7.41957C21.0893 6.76957 21.4293 6.18957 21.4793 5.64957C21.5393 4.99957 21.1993 4.30957 20.4393 3.53957C18.8393 1.93957 17.7393 2.38957 16.5693 3.54957Z"
+                                          fill="#292D32"/>
+                                    <path d="M19.8515 9.83027C19.7815 9.83027 19.7115 9.82027 19.6515 9.80027C17.0215 9.06027 14.9315 6.97027 14.1915 4.34027C14.0815 3.94027 14.3115 3.53027 14.7115 3.41027C15.1115 3.30027 15.5215 3.53027 15.6315 3.93027C16.2315 6.06027 17.9215 7.75027 20.0515 8.35027C20.4515 8.46027 20.6815 8.88027 20.5715 9.28027C20.4815 9.62027 20.1815 9.83027 19.8515 9.83027Z"
+                                          fill="#292D32"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">First name</div>
+                                <div class="text-helper">Mohamed</div>
+                            </div>
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">Last name</div>
+                                <div class="text-helper">Shabana</div>
+                            </div>
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">Email address</div>
+                                <div class="text-helper">rafi.jan@gmail.com</div>
+                            </div>
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">Password</div>
+                                <div class="text-helper">**********</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="coupon-field">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M20.59 13.41L13.42 20.58C13.2343 20.766 13.0137 20.9135 12.7709 21.0141C12.5281 21.1148 12.2678 21.1666 12.005 21.1666C11.7422 21.1666 11.4819 21.1148 11.2391 21.0141C10.9963 20.9135 10.7757 20.766 10.59 20.58L2 12V2H12L20.59 10.59C20.9625 10.9647 21.1716 11.4716 21.1716 12C21.1716 12.5284 20.9625 13.0353 20.59 13.41V13.41Z"
-                                  stroke="#17183B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7 7H7.01" stroke="#17183B" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-                        </svg>
-                        <input type="text" class="form-control" placeholder="Coupon Code">
-                        <input type="submit" value="Apply" class="submit-coupon">
+                    <div class="border rounded10 p-3">
+                        <div class="d-flex justify-content-between align-items-center gap-3 mb-2rem">
+                            <div class="fz16 text-black fw-600">Address</div>
+                            <button class="btn px-3 py-2 border rounded50 bg-transparent fz14 text-black fw-normal d-inline-flex align-items-center hover-bg-secondary ">
+                                Edit
+                                <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H11C11.41 1.25 11.75 1.59 11.75 2C11.75 2.41 11.41 2.75 11 2.75H9C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V13C21.25 12.59 21.59 12.25 22 12.25C22.41 12.25 22.75 12.59 22.75 13V15C22.75 20.43 20.43 22.75 15 22.75Z"
+                                          fill="#292D32"/>
+                                    <path d="M8.49935 17.6896C7.88935 17.6896 7.32935 17.4696 6.91935 17.0696C6.42935 16.5796 6.21935 15.8696 6.32935 15.1196L6.75935 12.1096C6.83935 11.5296 7.21935 10.7796 7.62935 10.3696L15.5093 2.48957C17.4993 0.49957 19.5193 0.49957 21.5093 2.48957C22.5993 3.57957 23.0893 4.68957 22.9893 5.79957C22.8993 6.69957 22.4193 7.57957 21.5093 8.47957L13.6293 16.3596C13.2193 16.7696 12.4693 17.1496 11.8893 17.2296L8.87935 17.6596C8.74935 17.6896 8.61935 17.6896 8.49935 17.6896ZM16.5693 3.54957L8.68935 11.4296C8.49935 11.6196 8.27935 12.0596 8.23935 12.3196L7.80935 15.3296C7.76935 15.6196 7.82935 15.8596 7.97935 16.0096C8.12935 16.1596 8.36935 16.2196 8.65935 16.1796L11.6693 15.7496C11.9293 15.7096 12.3793 15.4896 12.5593 15.2996L20.4393 7.41957C21.0893 6.76957 21.4293 6.18957 21.4793 5.64957C21.5393 4.99957 21.1993 4.30957 20.4393 3.53957C18.8393 1.93957 17.7393 2.38957 16.5693 3.54957Z"
+                                          fill="#292D32"/>
+                                    <path d="M19.8515 9.83027C19.7815 9.83027 19.7115 9.82027 19.6515 9.80027C17.0215 9.06027 14.9315 6.97027 14.1915 4.34027C14.0815 3.94027 14.3115 3.53027 14.7115 3.41027C15.1115 3.30027 15.5215 3.53027 15.6315 3.93027C16.2315 6.06027 17.9215 7.75027 20.0515 8.35027C20.4515 8.46027 20.6815 8.88027 20.5715 9.28027C20.4815 9.62027 20.1815 9.83027 19.8515 9.83027Z"
+                                          fill="#292D32"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">Region</div>
+                                <div class="text-helper">Cairo</div>
+                            </div>
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">City</div>
+                                <div class="text-helper">Benha</div>
+                            </div>
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">Street name</div>
+                                <div class="text-helper">ST fared nada 87</div>
+                            </div>
+                            <div class="col-md-6 mb-2rem">
+                                <div class="text-black fw-600 mb-2">Postal code</div>
+                                <div class="text-helper">85565</div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="" class="btn btn-primary fz16 fw-500 w-100 ">Continue to payment</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-
-<!--Add new address Modal-->
-<div class="modal fade" id="add-address-modal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-
-            <div class="modal-header p-0 mb24">
-                <h1 class="modal-title fz20 fw-600">Add new addreess</h1>
-                <button type="button" class="close btn p-0 shadow-none border-0" data-bs-dismiss="modal"
-                        aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M18.0006 6.92319L6.92368 18.0001C6.67137 18.2524 6.25291 18.2524 6.0006 18.0001C5.74829 17.7478 5.74829 17.3293 6.0006 17.077L17.0775 6.00011C17.3298 5.7478 17.7483 5.7478 18.0006 6.00011C18.2529 6.25242 18.2529 6.67088 18.0006 6.92319Z"
-                              fill="#161616"/>
-                        <path d="M6.92368 5.99989L18.0006 17.0768C18.2529 17.3291 18.2529 17.7476 18.0006 17.9999C17.7483 18.2522 17.3298 18.2522 17.0775 17.9999L6.0006 6.92296C5.74829 6.67066 5.74829 6.25219 6.0006 5.99989C6.25291 5.74758 6.67137 5.74758 6.92368 5.99989Z"
-                              fill="#161616"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="modal-body p-0">
-                <form action="" class="text-black">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Full name</label>
-                                <input type="text" class="form-control mb24" placeholder="Ex : Mohammed Mohsen">
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Street name and house number</label>
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Enter your house or street number">
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Country</label>
-                                <select class="nice-select custom-nice-select form-control mb24">
-                                    <option value="" selected disabled>Choose...</option>
-                                    <option value="">Egypt</option>
-                                    <option value="">Qatar</option>
-                                    <option value="">Oman</option>
-                                    <option value="">USA</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="input-wrapper ">
-                                <label class="fz16 fw-500  d-block mb-2">City</label>
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Enter your city">
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Postal code</label>
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Enter your postal code">
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Phone number</label>
-
-                                <input id="phone" type="tel" class="form-control mb24 w-100">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="" class="btn btn-primary rounded10 w-100 fz14 ">Save</a>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!--Edit address Modal-->
-<div class="modal fade" id="edit-address-modal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-
-            <div class="modal-header p-0 mb24">
-                <h1 class="modal-title fz20 fw-600">Edit your address</h1>
-                <button type="button" class="close btn p-0 shadow-none border-0" data-bs-dismiss="modal"
-                        aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M18.0006 6.92319L6.92368 18.0001C6.67137 18.2524 6.25291 18.2524 6.0006 18.0001C5.74829 17.7478 5.74829 17.3293 6.0006 17.077L17.0775 6.00011C17.3298 5.7478 17.7483 5.7478 18.0006 6.00011C18.2529 6.25242 18.2529 6.67088 18.0006 6.92319Z"
-                              fill="#161616"/>
-                        <path d="M6.92368 5.99989L18.0006 17.0768C18.2529 17.3291 18.2529 17.7476 18.0006 17.9999C17.7483 18.2522 17.3298 18.2522 17.0775 17.9999L6.0006 6.92296C5.74829 6.67066 5.74829 6.25219 6.0006 5.99989C6.25291 5.74758 6.67137 5.74758 6.92368 5.99989Z"
-                              fill="#161616"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="modal-body p-0">
-                <form action="" class="text-black">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Full name</label>
-                                <input type="text" class="form-control mb24" placeholder="Ex : Mohammed Mohsen"
-                                       value="Mohamed Hady">
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Street name and house number</label>
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Enter your house or street number" value="Mohamed Hady">
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Country</label>
-                                <select class="nice-select custom-nice-select form-control mb24">
-                                    <option value="">Choose...</option>
-                                    <option value="" selected>Egypt</option>
-                                    <option value="">Qatar</option>
-                                    <option value="">Oman</option>
-                                    <option value="">USA</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="input-wrapper ">
-                                <label class="fz16 fw-500  d-block mb-2">City</label>
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Enter your city" value="Benha">
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Postal code</label>
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Enter your postal code" value="65552">
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-500  d-block mb-2">Phone number</label>
-                                <!--// Make sure you add country code in the value to detect the correct Flag-->
-                                <input id="edit_phone" type="tel" class="form-control mb24 w-100" value="+201014539581">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="" class="btn btn-primary rounded10 w-100 fz14 ">Save</a>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!--Remove address Modal-->
-<div class="modal fade" id="remove-address-modal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-
-            <div class="modal-header p-0 mb24">
-                <h1 class="modal-title fz20 fw-600">Do yon want to delete your address?</h1>
-                <button type="button" class="close btn p-0 shadow-none border-0" data-bs-dismiss="modal"
-                        aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M18.0006 6.92319L6.92368 18.0001C6.67137 18.2524 6.25291 18.2524 6.0006 18.0001C5.74829 17.7478 5.74829 17.3293 6.0006 17.077L17.0775 6.00011C17.3298 5.7478 17.7483 5.7478 18.0006 6.00011C18.2529 6.25242 18.2529 6.67088 18.0006 6.92319Z"
-                              fill="#161616"/>
-                        <path d="M6.92368 5.99989L18.0006 17.0768C18.2529 17.3291 18.2529 17.7476 18.0006 17.9999C17.7483 18.2522 17.3298 18.2522 17.0775 17.9999L6.0006 6.92296C5.74829 6.67066 5.74829 6.25219 6.0006 5.99989C6.25291 5.74758 6.67137 5.74758 6.92368 5.99989Z"
-                              fill="#161616"/>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="modal-body p-0">
-                <form action="" class="text-black">
-                    <div class="d-flex justify-content-center gap-4 mt-5">
-                        <a href="" class="btn btn-green rounded10 flex-grow-1 py-3 fz16 ">Yes</a>
-                        <a href="" class="btn btn-red rounded10 flex-grow-1 py-3 fz16 ">No</a>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <footer>
     <div class="container">
@@ -863,7 +565,6 @@
 <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
-<script src="js/intlTelInput.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 

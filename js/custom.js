@@ -7,25 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     })
 });
-// make main nav submenus works as accordions on mobile
-if ($(window).width() <= 991) {
-    $(".has-sub").click(function (e) {
-        e.preventDefault();
-        var $this = $(this);
 
-
-        if ($this.next(".submenu").hasClass('active')) {
-            $this.next(".submenu").removeClass('active');
-            $this.next(".submenu").slideUp(350);
-
-        } else {
-            $this.parent().parent().find('li .submenu').removeClass('active');
-            $this.parent().parent().find('li .submenu').slideUp(350);
-            $this.next(".submenu").toggleClass('active');
-            $this.next(".submenu").slideToggle(350);
-        }
-    });
-}
 
 // Reset password Code auto jump focus on typing and on pasting the full code
 const codeInputs = document.querySelectorAll('.reset-code-wrapper .form-control');
@@ -79,7 +61,31 @@ if (editPhoneInput) {
 
 
 (function ($) {
+    // make main nav submenus works as accordions on mobile
+    if ($(window).width() <= 991) {
+        $(".has-sub").click(function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            if ($this.next(".submenu").hasClass('active')) {
+                $this.next(".submenu").removeClass('active');
+                $this.next(".submenu").slideUp(350);
 
+            } else {
+                $this.parent().parent().find('li .submenu').removeClass('active');
+                $this.parent().parent().find('li .submenu').slideUp(350);
+                $this.next(".submenu").toggleClass('active');
+                $this.next(".submenu").slideToggle(350);
+            }
+        });
+    }
+// Accordion on mobile
+    if ($(window).width() <= 991) {
+        $('.toggle-mobile-trigger').click(function (e) {
+            e.preventDefault()
+            $(this).next('.toggle-mobile-content').slideToggle();
+            $(this).toggleClass('open')
+        })
+    }
     // fix modal body overflow
     let modals = document.querySelectorAll('.modal')
     modals.forEach((modal) => {
@@ -304,7 +310,7 @@ if (editPhoneInput) {
         document.querySelectorAll(".iconsax").forEach(iconsax => {
             var TuT = iconsax.getAttribute("icon-name").toLowerCase().trim();
 
-            fetch("//glenthemes.github.io/iconsax/icons/" + TuT + ".svg")
+            fetch("https://glenthemes.github.io/iconsax/icons/" + TuT + ".svg")
                 .then(n_n => {
                     return n_n.text();
                 })
@@ -390,4 +396,6 @@ if (editPhoneInput) {
         trigger.removeClass('close')
         trigger.html(html)
     })
+
+
 })(jQuery);

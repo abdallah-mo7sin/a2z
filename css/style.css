@@ -12,6 +12,21 @@
   color: #6B6C7E !important;
 }
 
+.hover-bg-blue:hover {
+  background: #264AEC !important;
+}
+
+.hover-bg-secondary:hover {
+  background: #F1F2F6 !important;
+}
+
+.hover-white:hover {
+  color: #fff !important;
+}
+.hover-white:hover svg, .hover-white:hover path {
+  fill: white;
+}
+
 .text-helper {
   color: #6F6F6F;
 }
@@ -2064,6 +2079,18 @@ footer .cp a {
   width: 100%;
 }
 
+.account-nav li {
+  margin-bottom: 2rem;
+}
+.account-nav li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #161616;
+}
+.account-nav li a:hover, .account-nav li a.active {
+  color: #264AEC;
+}
+
 @media (min-width: 1440px) {
   .container,
 .container-lg,
@@ -2352,6 +2379,45 @@ footer .cp a {
 
   .main-blogs .single-blog-post:first-child img {
     height: 40vw !important;
+  }
+
+  .profile-sidebar {
+    padding-inline-end: 0 !important;
+    border: none !important;
+  }
+
+  .toggle-mobile-trigger {
+    border: 1px solid #E0E0E0;
+    position: relative;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 18px !important;
+  }
+  .toggle-mobile-trigger:after {
+    content: "";
+    background: url("../images/icons/arrow-down.svg") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    inset-inline-end: 16px;
+    margin-inline-start: 10px;
+    z-index: 4;
+    pointer-events: none;
+    transition: 0.3s;
+    top: 50%;
+    translate: 0 -50%;
+  }
+  .toggle-mobile-trigger.open:after {
+    rotate: 180deg;
+  }
+
+  .toggle-mobile-content {
+    display: none;
+  }
+
+  .account-nav li {
+    margin-bottom: 16px;
   }
 }
 @media all and (max-width: 600px) {

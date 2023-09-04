@@ -304,6 +304,46 @@
   .main-blogs .single-blog-post:first-child img {
      height: 40vw !important;
   }
+  .profile-sidebar {
+    padding-inline-end: 0 !important;
+    border: none !important;
+  }
+  .toggle-mobile-trigger {
+    border: 1px solid #E0E0E0;
+    position: relative;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 18px !important;
+
+    &:after {
+      content: '';
+      background: url("../images/icons/arrow-down.svg") 0 0 no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: absolute;
+      inset-inline-end: 16px;
+      margin-inline-start: 10px;
+      z-index: 4;
+      pointer-events: none;
+      transition: 0.3s;
+      top: 50%;
+      translate: 0 -50%;
+    }
+    &.open {
+      &:after {
+        rotate: 180deg;
+      }
+    }
+  }
+  .toggle-mobile-content {
+    display: none;
+  }
+  .account-nav {
+    li {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 @media all and (max-width: 600px) {

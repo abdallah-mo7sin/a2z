@@ -15,7 +15,24 @@
     color: $link-hover !important;
   }
 }
-
+.hover-bg-blue {
+  &:hover {
+    background: $main_blue !important;
+  }
+}
+.hover-bg-secondary {
+  &:hover {
+    background: $bg-secondary !important;
+  }
+}
+.hover-white {
+  &:hover {
+    color: #fff !important;
+    svg,path {
+      fill:white;
+    }
+  }
+}
 .text-helper {
   color: #6F6F6F;
 }
@@ -2491,5 +2508,18 @@ footer {
     //}
   }
 }
-
+// user account page
+.account-nav {
+   li {
+     margin-bottom: 2rem;
+    a {
+      font-size: 16px;
+      font-weight: 600;
+      color: $text-primary;
+      &:hover,&.active {
+        color: $main_blue;
+      }
+    }
+  }
+}
 @import "responsive";
