@@ -397,5 +397,17 @@ if (editPhoneInput) {
         trigger.html(html)
     })
 
+    // Toggle Password
 
+    $('body').on('click', '.togglePassword', function (e) {
+        e.preventDefault();
+        if ($(this).prev('.password-input').attr('type') === 'password') {
+
+            $(this).prev('.password-input').attr("type", "text");
+            $(this).addClass('hide')
+        } else {
+            $(this).prev('.password-input').attr("type", "password");
+            $(this).removeClass('hide')
+        }
+    })
 })(jQuery);

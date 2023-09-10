@@ -30,10 +30,12 @@
   }
 
   .products-slider .container-inner:hover .swiper-button-prev-outside {
-    left: -20px;
+
+    inset-inline-start: -20px;
   }
   .products-slider .container-inner:hover .swiper-button-next-outside {
-    right: -20px;
+
+    inset-inline-end: -20px;
   }
   .sale-banners .banners-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
@@ -272,8 +274,8 @@
     /* margin: 0 auto; */
     z-index: 99;
     background: #fff;
-    padding-inline:1rem;
-    translate: -50%  ;
+    padding-inline: 1rem;
+    translate: -50%;
     top: 0;
     overflow: scroll;
     display: none;
@@ -302,7 +304,7 @@
 
   }
   .main-blogs .single-blog-post:first-child img {
-     height: 40vw !important;
+    height: 40vw !important;
   }
   .profile-sidebar {
     padding-inline-end: 0 !important;
@@ -313,7 +315,9 @@
     position: relative;
     border-radius: 10px;
     padding: 8px;
-    font-size: 18px !important;
+    margin-bottom: 1rem !important;
+    font-size: 16px !important;
+    cursor: pointer;
 
     &:after {
       content: '';
@@ -330,6 +334,7 @@
       top: 50%;
       translate: 0 -50%;
     }
+
     &.open {
       &:after {
         rotate: 180deg;
@@ -342,11 +347,19 @@
   .account-nav {
     li {
       margin-bottom: 16px;
+
+      a {
+        font-size: 14px;
+      }
     }
   }
 }
 
 @media all and (max-width: 600px) {
+  .notifications {
+    min-width: 350px;
+    margin-inline-end: -16vw !important;
+  }
   .selected-filters .filters {
     margin-bottom: 1rem;
   }
@@ -434,8 +447,8 @@
       overflow: hidden;
     }
   }
-  .user-nav:not(.dropdown-menu) > li + li {
-    margin-inline-start: 1rem;
+  .user-nav:not(.dropdown-menu) > li {
+    margin-inline-end: 1rem;
   }
   .header-main-content {
     gap: 1rem !important;
@@ -508,9 +521,57 @@
       }
     }
   }
+  .balance-activity-table, .orders-table {
+    border: 0;
+    border-radius: 0;
+
+    table {
+
+      thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      tr {
+        border-bottom: 5px solid #eee;
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8rem;
+        text-align: right;
+      }
+
+      td::before {
+
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $text-primary;
+      }
+
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 380px) {
+  .notifications {
+    min-width: 350px;
+    margin-inline-end: -25vw !important;
+  }
   .header-slider .swiper-slide {
     height: 193px;
   }
