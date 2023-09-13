@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font: 'Inter', sans-serif; /* Default font family */
+}
+
+html[dir="rtl"] {
+  --font: 'Noto Kufi Arabic','Inter'; /* Change the font-family for RTL */
+}
+
 @import "variables";
 
 // Reusable classes
@@ -362,7 +372,7 @@ a.show {
 }
 
 body {
-  font-family: $font;
+  font-family: var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
@@ -374,7 +384,7 @@ body {
 a {
   transition: all 0.3s;
   text-decoration: none !important;
-  font-family: $font;
+  font-family: var(--font);
 }
 
 h1,
@@ -383,7 +393,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font;
+  font-family: var(--font);
 }
 
 
@@ -1708,6 +1718,8 @@ footer {
       z-index: 4;
       pointer-events: none;
       transition: 0.3s;
+      top: 50%;
+      translate: 0 -50%
     }
 
     &:has(.nice-select.open) {
@@ -1739,7 +1751,7 @@ footer {
         height: 22px;
         background: #E0E0E0;
         position: absolute;
-        right: 61%;
+        inset-inline-end: 61%;
       }
     }
 
@@ -2162,7 +2174,7 @@ footer {
 
   svg {
     position: absolute;
-    left: 16px;
+    inset-inline-start: 16px;
     top: 50%;
     bottom: auto;
     translate: 0 -50%;
@@ -2568,7 +2580,7 @@ footer {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 20px;
+  inset-inline-end: 20px;
   background: none;
   border: none;
 
@@ -2817,18 +2829,28 @@ footer {
     border-radius: 6px;
   }
 }
+
 // RTL custom CSS
 html[dir=rtl] {
-  div[class^="swiper-button"]  {
-   transform:scaleX(-1)
+  div[class^="swiper-button"] {
+    transform: scaleX(-1)
+  }
+   .pagination .page-link svg {
+    transform: scale(-1);
   }
   [type=email], [type=number], [type=tel], [type=url] {
     direction: rtl;
   }
+
   .subscribe-form .btn-submit i {
+    transform: scaleX(-1);
+  }
+  .breadcrumbs li a:after {
     transform:scaleX(-1);
   }
+}
+[dir=rtl] .iti--allow-dropdown input, [dir=rtl] .iti--allow-dropdown input[type=tel], [dir=rtl] .iti--allow-dropdown input[type=text], [dir=rtl] .iti--separate-dial-code input, [dir=rtl] .iti--separate-dial-code input[type=tel], [dir=rtl] .iti--separate-dial-code input[type=text] {
+  padding-right: 73px;
 
 }
-
 @import "responsive";
