@@ -7,7 +7,7 @@
 }
 
 html[dir=rtl] {
-  --font: "Noto Kufi Arabic","Inter";
+  --font: "Noto Kufi Arabic", "Inter";
   /* Change the font-family for RTL */
 }
 
@@ -804,7 +804,7 @@ h6 {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 21px;
   color: #161616;
   margin-bottom: 2rem;
 }
@@ -812,7 +812,7 @@ h6 {
 .see-all {
   font-size: 16px;
   font-weight: 500;
-  color: #161616;
+  color: #264AEC;
 }
 .see-all:hover {
   color: #6B6C7E;
@@ -1116,8 +1116,8 @@ h6 {
   height: 171px;
 }
 .single-blog-post .post-title {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 17px;
   margin-top: 15px;
   line-height: 140%;
   color: #161616;
@@ -1135,6 +1135,8 @@ h6 {
 }
 .subscribe .section-title {
   margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 500 !important;
 }
 
 .footer-logo {
@@ -1524,29 +1526,67 @@ footer .cp a {
   color: #DA1E28;
 }
 
-.colors-options {
+.models-with-img-options {
   display: flex;
   gap: 16px;
   margin-top: 12px;
 }
+.models-with-img-options .model-name {
+  padding-top: 10px;
+}
+.models-with-img-options .option {
+  text-align: center;
+}
+.models-with-img-options .option input[type=radio] {
+  display: none;
+}
+.models-with-img-options .option label {
+  overflow: hidden;
+  max-width: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+  box-shadow: 0 0 0 0.5px lightgray;
+}
+.models-with-img-options .option label img {
+  width: auto;
+  height: 70px;
+  object-fit: contain;
+}
+.models-with-img-options input[type=radio]:checked + label {
+  box-shadow: 0 0 0 1px #264AEC;
+}
+
 .colors-options .option input[type=radio] {
   display: none;
 }
 .colors-options .option label {
-  display: inline-flex;
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
+  background: var(--color);
+  box-shadow: 0 0 0 0.5px lightgray;
+  width: 25px;
+  height: 25px;
+  transition: 0.3s;
   cursor: pointer;
-  margin-bottom: 0;
 }
-.colors-options .option label img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.colors-options .option input[type=radio]:checked + label {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+  transform: scale(1.2);
 }
-.colors-options input[type=radio]:checked + label {
-  box-shadow: 0 0 0 1px #264AEC;
+
+.sizes-options .option input[type=radio] {
+  display: none;
+}
+.sizes-options .option label {
+  background: white;
+  box-shadow: 0 0 0 0.5px lightgray;
+  padding: 5px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sizes-options .option input[type=radio]:checked + label {
+  background: #264AEC;
+  color: #fff;
 }
 
 .product-details-and-reviews .tabs-wrapper {
@@ -2119,11 +2159,17 @@ footer .cp a {
 }
 
 .account-nav li {
-  margin-bottom: 2rem;
+  padding-block: 1rem;
+  border-top: 1px solid #e0e0e0;
+  padding-inline-start: 1em;
+}
+.account-nav li::marker {
+  content: "★";
+  color: #264AEC;
 }
 .account-nav li a {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #161616;
 }
 .account-nav li a:hover, .account-nav li a.active {
@@ -2857,6 +2903,27 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 }
 @media all and (max-width: 600px) {
+  .section-title {
+    font-size: 16px;
+  }
+
+  .see-all {
+    font-size: 13px;
+  }
+
+  .filter-cats ul button {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .single-blog-post .post-title {
+    font-size: 15px;
+  }
+
+  .subscribe .section-title {
+    font-size: 17px;
+  }
+
   .partners-grid {
     grid-template-columns: repeat(3, 1fr);
   }

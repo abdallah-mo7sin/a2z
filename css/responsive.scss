@@ -361,6 +361,25 @@
 }
 
 @media all and (max-width: 600px) {
+  .section-title {
+    font-size: 16px;
+  }
+  .see-all {
+    font-size: 13px;
+
+  }
+  .filter-cats ul button {
+
+    font-size: 14px;
+    font-weight: 400;
+
+  }
+  .single-blog-post .post-title {
+    font-size: 15px;
+  }
+  .subscribe .section-title {
+     font-size: 17px;
+   }
   .partners-grid {
 
     grid-template-columns: repeat(3, 1fr);

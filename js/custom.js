@@ -410,4 +410,31 @@ if (editPhoneInput) {
             $(this).removeClass('hide')
         }
     })
+
+    // bootstrap dropdown on hover
+    if ($(window).width() > 768) {
+        $(document).ready(function() {
+            $('.dropdown').hover(function() {
+                $(this).addClass('show');
+                $(this).find('.dropdown-menu').addClass('show');
+            }, function() {
+                $(this).removeClass('show');
+                $(this).find('.dropdown-menu').removeClass('show');
+            });
+            // rotate category arrow on hover
+            $('.nav-link.has-sub').hover(function() {
+                $(this).addClass('show');
+            }, function() {
+                $(this).removeClass('show');
+            });
+            // making sure the arrow stays rotated when hover over children
+            $('.submenu.dropdown-menu').hover(function() {
+                $(this).prev('.nav-link.has-sub').addClass('show');
+            }, function() {
+                $(this).prev('.nav-link.has-sub').removeClass('show');
+            });
+        });
+
+    }
+
 })(jQuery);

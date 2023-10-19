@@ -350,20 +350,23 @@
 
 <!--Alert after submitting a review-->
 <div class="alert alert-success mt--2rem rounded-0 alert-dismissible fade show" role="alert">
-   <div class="container container-inner">
-       <div class="text-center">
-           <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22" fill="none">
-               <path d="M2.5 10.87L11.37 19.74L29.1 2" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-           </svg>
-           <span class="ms-md-4">Your review added successfully</span>
-       </div>
-       <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
-           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-               <path d="M17.9996 6.92319L6.9227 18.0001C6.67039 18.2524 6.25193 18.2524 5.99962 18.0001C5.74732 17.7478 5.74732 17.3293 5.99962 17.077L17.0765 6.00011C17.3289 5.7478 17.7473 5.7478 17.9996 6.00011C18.2519 6.25242 18.2519 6.67088 17.9996 6.92319Z" fill="white"/>
-               <path d="M6.9227 5.99989L17.9996 17.0768C18.2519 17.3291 18.2519 17.7476 17.9996 17.9999C17.7473 18.2522 17.3289 18.2522 17.0765 17.9999L5.99962 6.92296C5.74732 6.67066 5.74732 6.25219 5.99962 5.99989C6.25193 5.74758 6.67039 5.74758 6.9227 5.99989Z" fill="white"/>
-           </svg>
-       </button>
-   </div>
+    <div class="container container-inner">
+        <div class="text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22" fill="none">
+                <path d="M2.5 10.87L11.37 19.74L29.1 2" stroke="white" stroke-width="3.2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+            <span class="ms-md-4">Your review added successfully</span>
+        </div>
+        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M17.9996 6.92319L6.9227 18.0001C6.67039 18.2524 6.25193 18.2524 5.99962 18.0001C5.74732 17.7478 5.74732 17.3293 5.99962 17.077L17.0765 6.00011C17.3289 5.7478 17.7473 5.7478 17.9996 6.00011C18.2519 6.25242 18.2519 6.67088 17.9996 6.92319Z"
+                      fill="white"/>
+                <path d="M6.9227 5.99989L17.9996 17.0768C18.2519 17.3291 18.2519 17.7476 17.9996 17.9999C17.7473 18.2522 17.3289 18.2522 17.0765 17.9999L5.99962 6.92296C5.74732 6.67066 5.74732 6.25219 5.99962 5.99989C6.25193 5.74758 6.67039 5.74758 6.9227 5.99989Z"
+                      fill="white"/>
+            </svg>
+        </button>
+    </div>
 </div>
 <!-- End Alert after submitting a review-->
 
@@ -459,25 +462,80 @@
 
                     <div class="product-price fw-600 fz20 text-primary mb24">EGP 9800.00</div>
 
-                    <div class="colors fz14">
-                        <span class="pe-1">Color name :</span><strong class="color fw-600" id="color_name">Midnight
-                        Black</strong>
-                        <div class="colors-options">
+                    <div class="models-with-img fz14">
+                        <span class="pe-2 fw-600">Model name :</span><strong class="color fw-500"
+                                                                      id="color_name">Chromium</strong>
+                        <div class="models-with-img-options">
                             <div class="option">
-                                <input type="radio" id="color1" name="colors" checked>
-                                <label for="color1">
+                                <input type="radio" id="option1" name="models" checked>
+                                <label for="option1" class="d-block">
                                     <img src="images/products/p-thum-1.jpg" alt="">
+                                    <span class="model-name d-block fw-500">Chromium</span>
                                 </label>
                             </div>
                             <div class="option">
-                                <input type="radio" id="color2" name="colors">
-                                <label for="color2">
+                                <input type="radio" id="option2" name="models">
+                                <label for="option2" class="d-block">
                                     <img src="images/products/p-thum-2.jpg" alt="">
-
+                                    <span class="model-name d-block fw-500">Glass</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="option3" name="models">
+                                <label for="option3" class="d-block">
+                                    <img src="images/products/p-thum-2.jpg" alt="">
+                                    <span class="model-name d-block fw-500">Plastic</span>
                                 </label>
                             </div>
                         </div>
                     </div>
+
+                    <div class="colors fz14 d-flex align-items-center mt-5">
+                        <span class="pe-2 fw-600">Colors :</span>
+                        <div class="colors-options d-flex gap-2">
+                            <div class="option">
+                                <input type="radio" id="color1" name="colors" checked>
+                                <label for="color1" class="d-inline-block" style="--color:#FFA800"></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="color2" name="colors" checked>
+                                <label for="color2" class="d-inline-block" style="--color:red"></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="color3" name="colors" checked>
+                                <label for="color3" class="d-inline-block" style="--color:green"></label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="color4" name="colors" checked>
+                                <label for="color4" class="d-inline-block" style="--color:purple"></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="sizes fz14 d-flex align-items-center mt-4">
+                        <span class="pe-2 fw-600">Sizes :</span>
+                        <div class="sizes-options d-flex gap-2">
+                            <div class="option">
+                                <input type="radio" id="size1" name="sizes" checked>
+                                <label for="size1" class="d-inline-block">M</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="size2" name="sizes" checked>
+                                <label for="size2" class="d-inline-block">L</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="size3" name="sizes" checked>
+                                <label for="size3" class="d-inline-block">XXL</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="size4" name="sizes" checked>
+                                <label for="size4" class="d-inline-block">XXXL</label>
+                            </div>
+                        </div>
+
+                    </div>
+
 
                     <div class="quantity-wrapper">
                         <strong class="fz14 fw-600 mb-3  d-block">Quantity</strong>
@@ -678,7 +736,9 @@
                             </span>
                         </div>
 
-                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#review-modal">Write your review</button>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#review-modal">
+                            Write your review
+                        </button>
                     </div>
 
                     <div class="reviews">
@@ -714,7 +774,12 @@
                             </div>
                             <div class="review-title fz16 fw-600 mb-2">Fast charging</div>
                             <div class="review-description">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum."
 
                             </div>
                         </div>
@@ -749,7 +814,12 @@
                             </div>
                             <div class="review-title fz16 fw-600 mb-2">Fast charging</div>
                             <div class="review-description">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum."
 
                             </div>
                         </div>
@@ -784,7 +854,12 @@
                             </div>
                             <div class="review-title fz16 fw-600 mb-2">Fast charging</div>
                             <div class="review-description">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum."
 
                             </div>
                         </div>
@@ -1116,30 +1191,38 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header p-0 mb24">
-                <h1 class="modal-title fz20 fw-600" >Write your review</h1>
-                <button type="button" class="close btn p-0 shadow-none border-0" data-bs-dismiss="modal" aria-label="Close">
+                <h1 class="modal-title fz20 fw-600">Write your review</h1>
+                <button type="button" class="close btn p-0 shadow-none border-0" data-bs-dismiss="modal"
+                        aria-label="Close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M18.0006 6.92319L6.92368 18.0001C6.67137 18.2524 6.25291 18.2524 6.0006 18.0001C5.74829 17.7478 5.74829 17.3293 6.0006 17.077L17.0775 6.00011C17.3298 5.7478 17.7483 5.7478 18.0006 6.00011C18.2529 6.25242 18.2529 6.67088 18.0006 6.92319Z" fill="#161616"/>
-                        <path d="M6.92368 5.99989L18.0006 17.0768C18.2529 17.3291 18.2529 17.7476 18.0006 17.9999C17.7483 18.2522 17.3298 18.2522 17.0775 17.9999L6.0006 6.92296C5.74829 6.67066 5.74829 6.25219 6.0006 5.99989C6.25291 5.74758 6.67137 5.74758 6.92368 5.99989Z" fill="#161616"/>
+                        <path d="M18.0006 6.92319L6.92368 18.0001C6.67137 18.2524 6.25291 18.2524 6.0006 18.0001C5.74829 17.7478 5.74829 17.3293 6.0006 17.077L17.0775 6.00011C17.3298 5.7478 17.7483 5.7478 18.0006 6.00011C18.2529 6.25242 18.2529 6.67088 18.0006 6.92319Z"
+                              fill="#161616"/>
+                        <path d="M6.92368 5.99989L18.0006 17.0768C18.2529 17.3291 18.2529 17.7476 18.0006 17.9999C17.7483 18.2522 17.3298 18.2522 17.0775 17.9999L6.0006 6.92296C5.74829 6.67066 5.74829 6.25219 6.0006 5.99989C6.25291 5.74758 6.67137 5.74758 6.92368 5.99989Z"
+                              fill="#161616"/>
                     </svg>
                 </button>
             </div>
             <div class="modal-body p-0">
                 <form action="" class="review-form text-black">
 
-                    <div class="add-rating mb24" >
-                        <input type="radio" class="rating-input" id="5_star" name="rating-input" value="5 Stars"><label for="5_star" class="rating-star"></label>
-                        <input type="radio" class="rating-input" id="4_star" name="rating-input" value="4 Stars"><label for="4_star" class="rating-star"></label>
-                        <input type="radio" class="rating-input" id="3_star" name="rating-input" value="3 Stars"><label for="3_star" class="rating-star"></label>
-                        <input type="radio" class="rating-input" id="2_star" name="rating-input" value="2 Stars"><label for="2_star" class="rating-star"></label>
-                        <input type="radio" class="rating-input" id="1_star" name="rating-input" value="1 Star"><label for="1_star" class="rating-star"></label>
+                    <div class="add-rating mb24">
+                        <input type="radio" class="rating-input" id="5_star" name="rating-input" value="5 Stars"><label
+                            for="5_star" class="rating-star"></label>
+                        <input type="radio" class="rating-input" id="4_star" name="rating-input" value="4 Stars"><label
+                            for="4_star" class="rating-star"></label>
+                        <input type="radio" class="rating-input" id="3_star" name="rating-input" value="3 Stars"><label
+                            for="3_star" class="rating-star"></label>
+                        <input type="radio" class="rating-input" id="2_star" name="rating-input" value="2 Stars"><label
+                            for="2_star" class="rating-star"></label>
+                        <input type="radio" class="rating-input" id="1_star" name="rating-input" value="1 Star"><label
+                            for="1_star" class="rating-star"></label>
                     </div>
 
                     <label class="fz16 fw-500  d-block mb-2">Your review title</label>
                     <input type="text" class="form-control mb24" placeholder="Give your review title">
 
                     <label class="fz16 fw-500  d-block mb-2">Your review </label>
-                    <textarea  class="form-control mb24" placeholder="Give your review title"></textarea>
+                    <textarea class="form-control mb24" placeholder="Give your review title"></textarea>
 
                     <a href="" class="btn btn-primary rounded10 w-100 fz14 ">Submit</a>
                 </form>
