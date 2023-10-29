@@ -1103,6 +1103,9 @@ h6 {
   height: 60px;
 }
 
+.single-blog-post {
+  overflow: hidden;
+}
 .single-blog-post .post-thumbnail {
   overflow: hidden;
 }
@@ -1116,9 +1119,10 @@ h6 {
   height: 171px;
 }
 .single-blog-post .post-title {
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 16px;
   margin-top: 15px;
+  margin-bottom: 10px;
   line-height: 140%;
   color: #161616;
 }
@@ -1126,7 +1130,18 @@ h6 {
   color: #161616;
 }
 .single-blog-post:hover a {
+  color: #525252;
+}
+
+.read-more {
   color: #264AEC;
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+}
+.read-more:after {
+  content: "➡";
+  margin-inline-start: 5px;
 }
 
 .subscribe {
@@ -1595,13 +1610,15 @@ footer .cp a {
 .product-details-and-reviews .nav-link {
   border: 0;
   margin: 0;
-  font-size: 24px;
-  color: #000;
-  border-radius: 0;
-  padding: 7px 1.5em;
+  font-size: 20px;
+  color: #161616;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 1.5em;
+  background: #F1F2F6;
 }
 .product-details-and-reviews .nav-link.active {
-  box-shadow: inset 0 -2px 0 0 #000;
+  color: white;
+  background: #264AEC;
 }
 .product-details-and-reviews .tab-content {
   padding-block: 2rem;
@@ -2361,6 +2378,9 @@ footer .cp a {
 
 html[dir=rtl] div[class^=swiper-button] {
   transform: scaleX(-1);
+}
+html[dir=rtl] .read-more:after {
+  content: "⬅";
 }
 html[dir=rtl] .pagination .page-link svg {
   transform: scale(-1);
