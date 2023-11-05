@@ -77,6 +77,14 @@
 }
 
 @media all and (max-width: 768px) {
+  .single-product-wrapper .item-img {
+    max-height: 164px;
+    height: auto;
+  }
+  .single-product-wrapper .item-price {
+    margin-top :0;
+    margin-bottom: 5px;
+  }
   .partners-grid {
 
     grid-template-columns: repeat(4, 1fr);
@@ -111,7 +119,7 @@
 
   .navbar-light .navbar-nav .nav-item .nav-link {
     //font-weight: 600;
-    padding: 8px 0;
+    padding:   0;
   }
   .main-menu {
 
@@ -361,6 +369,9 @@
 }
 
 @media all and (max-width: 600px) {
+  .features-wrapper .single-feature {
+    width: 40%;
+  }
   .section-title {
     font-size: 16px;
   }
@@ -494,8 +505,9 @@
     height: 220px;
   }
   .features-wrapper {
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2rem;
+
   }
   .promotions-wrapper.promotion-grid {
     grid-template-columns: repeat(2, 1fr);

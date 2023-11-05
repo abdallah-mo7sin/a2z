@@ -1075,6 +1075,7 @@ h6 {
 }
 
 .add-to-cart {
+  margin-top: auto;
   padding: 11px;
   border-radius: 10px;
   background: #264AEC;
@@ -2665,7 +2666,7 @@ html[dir=rtl] .breadcrumbs li a:after {
   object-fit: cover;
 }
 
-.featured-categories, .header-slider, .white-bg {
+.header-slider, .white-bg {
   background: white;
   padding-block: 3em;
 }
@@ -2749,6 +2750,16 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 }
 @media all and (max-width: 768px) {
+  .single-product-wrapper .item-img {
+    max-height: 164px;
+    height: auto;
+  }
+
+  .single-product-wrapper .item-price {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
   .partners-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -2785,7 +2796,7 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 
   .navbar-light .navbar-nav .nav-item .nav-link {
-    padding: 8px 0;
+    padding: 0;
   }
 
   .main-menu .dropdown-menu.show, .main-menu .dropdown-menu > li:hover > .submenu {
@@ -3013,6 +3024,10 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 }
 @media all and (max-width: 600px) {
+  .features-wrapper .single-feature {
+    width: 40%;
+  }
+
   .section-title {
     font-size: 16px;
   }
@@ -3159,7 +3174,7 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 
   .features-wrapper {
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2rem;
   }
 

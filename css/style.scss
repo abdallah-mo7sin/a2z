@@ -1302,7 +1302,7 @@ align-items: center;
 }
 
 .add-to-cart {
-  //margin-top: auto;
+  margin-top: auto;
   padding: 11px;
   border-radius: 10px;
   background: $main_blue;
@@ -3247,7 +3247,7 @@ html[dir=rtl] {
     }
   }
 }
-.featured-categories,.header-slider,.white-bg {
+ .header-slider,.white-bg {
   background: white;
   padding-block: 3em;
 }
