@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/nice-select.css" rel="stylesheet">
+    <link href="css/nouislider.min.css" rel="stylesheet">
     <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -270,10 +271,12 @@
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown all-categories-li">
                                 <a class="nav-link has-sub " href="#" data-bs-toggle="dropdown">
-                                    All categories <i class="iconsax" icon-name="chevron-up"></i> </a>
+                                    <i class="iconsax" icon-name="menu-hamburger"></i> All categories </a>
                                 <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                    <li><a class="dropdown-item" href="#"> <img
+                                            src="images/icons/menu/floor-polisher.png" alt=""> Housewares </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> <img src="images/icons/menu/bbq.png"
+                                                                                        alt=""> Grocery </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
                                             <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
@@ -289,12 +292,20 @@
                                             <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/mobile-phone.png"
+                                                                                alt=""> Phones </a></li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/bbq.png" alt="">
+                                        Food </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Shoes </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Large Electronic Machines </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Small Electronics </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="#">Electronics</a></li>
+                            <li class="nav-item  "><a class="nav-link" href="#">Electronics</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
                             <li class="nav-item dropdown">
@@ -363,204 +374,212 @@
                 </button>
                 <!-- End Trigger filters on mobile-->
 
-                <div class="search-filters-wrapper border-end pt-4 pe-3">
-                    <div class="single-filter">
-                        <div class="filter-title ">Category</div>
-                        <div class="filter-content">
-                            <div class="parent-cat">
+               <div class="bg-white rounded20">
 
-                                Electronics
-                                <div class="child-cats">
-                                    <label> <input type="checkbox"> All electronics </label>
-                                    <div class="parent-cat">
-                                        Video games
-                                        <div class="child-cats">
-                                            <label> <input type="checkbox"> All Video games </label>
-                                            <label> <input type="checkbox"> TV </label>
-                                            <label> <input type="checkbox"> Laptop </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="parent-cat">
 
-                                Electronics
-                                <div class="child-cats">
-                                    <label> <input type="checkbox"> All electronics </label>
-                                    <div class="parent-cat">
+                   <div class="search-filters-wrapper border-end mt-4 p-3 rounded20">
+                       <div class="single-filter">
+                           <div class="filter-title ">Category</div>
+                           <div class="filter-content">
+                               <div class="parent-cat">
 
-                                        Video games
-                                        <div class="child-cats">
-                                            <label> <input type="checkbox"> All Video games </label>
-                                            <label> <input type="checkbox"> TV </label>
-                                            <label> <input type="checkbox"> Laptop </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="parent-cat">
+                                   Electronics
+                                   <div class="child-cats">
+                                       <label> <input type="checkbox"> All electronics </label>
+                                       <div class="parent-cat">
+                                           Video games
+                                           <div class="child-cats">
+                                               <label> <input type="checkbox"> All Video games </label>
+                                               <label> <input type="checkbox"> TV </label>
+                                               <label> <input type="checkbox"> Laptop </label>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="parent-cat">
 
-                                Electronics
-                                <div class="child-cats">
-                                    <label> <input type="checkbox"> All electronics </label>
-                                    <div class="parent-cat">
+                                   Electronics
+                                   <div class="child-cats">
+                                       <label> <input type="checkbox"> All electronics </label>
+                                       <div class="parent-cat">
 
-                                        Video games
-                                        <div class="child-cats">
-                                            <label> <input type="checkbox"> All Video games </label>
-                                            <label> <input type="checkbox"> TV </label>
-                                            <label> <input type="checkbox"> Laptop </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-filter">
-                        <div class="filter-title ">Brand</div>
-                        <div class="filter-content">
+                                           Video games
+                                           <div class="child-cats">
+                                               <label> <input type="checkbox"> All Video games </label>
+                                               <label> <input type="checkbox"> TV </label>
+                                               <label> <input type="checkbox"> Laptop </label>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="parent-cat">
 
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Samasung
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Apple
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Xiamoi
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                HUAWEI
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Lenovo
-                            </label>
-                            <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
-                        </div>
-                    </div>
-                    <div class="single-filter">
-                        <div class="filter-title ">Price (EGP)</div>
-                        <div class="filter-content">
-                            <div class="price-filter">
-                                <input type="number" class="number-input"> to <input type="number" class="number-input">
-                                <input type="submit" class="apply hover-link" value="Apply">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-filter">
-                        <div class="filter-title ">Internal Memory</div>
-                        <div class="filter-content">
+                                   Electronics
+                                   <div class="child-cats">
+                                       <label> <input type="checkbox"> All electronics </label>
+                                       <div class="parent-cat">
 
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Samasung
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Apple
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Xiamoi
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                HUAWEI
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Lenovo
-                            </label>
-                            <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
-                        </div>
-                    </div>
-                    <div class="single-filter">
-                        <div class="filter-title ">Mobile Screen Size</div>
-                        <div class="filter-content">
+                                           Video games
+                                           <div class="child-cats">
+                                               <label> <input type="checkbox"> All Video games </label>
+                                               <label> <input type="checkbox"> TV </label>
+                                               <label> <input type="checkbox"> Laptop </label>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="single-filter">
+                           <div class="filter-title ">Brand</div>
+                           <div class="filter-content">
 
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Samasung
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Apple
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Xiamoi
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                HUAWEI
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Lenovo
-                            </label>
-                            <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
-                        </div>
-                    </div>
-                    <div class="single-filter">
-                        <div class="filter-title ">Secondary Camera</div>
-                        <div class="filter-content">
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Samasung
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Apple
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Xiamoi
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   HUAWEI
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Lenovo
+                               </label>
+                               <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
+                           </div>
+                       </div>
+                       <div class="single-filter">
+                           <div class="filter-title ">Price (EGP)</div>
+                           <div class="filter-content">
+                               <div id="price-slider"></div>
+                               <div class="price-filter">
+                                    <input type="number" name=""  class="number-input" id="input-number1">
+                                   to
+                                   <input type="number" name=""  class="number-input "  id="input-number2">
 
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Samasung
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Apple
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Xiamoi
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                HUAWEI
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Lenovo
-                            </label>
-                            <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
-                        </div>
-                    </div>
-                    <div class="single-filter">
-                        <div class="filter-title ">Secondary Camera</div>
-                        <div class="filter-content">
+                                   <input type="submit" class="apply hover-link" value="Apply">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="single-filter">
+                           <div class="filter-title ">Internal Memory</div>
+                           <div class="filter-content">
 
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Samasung
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Apple
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Xiamoi
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                HUAWEI
-                            </label>
-                            <label class="form-check-label custom-check ">
-                                <input class="form-check-input" type="checkbox">
-                                Lenovo
-                            </label>
-                            <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
-                        </div>
-                    </div>
-                </div>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Samasung
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Apple
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Xiamoi
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   HUAWEI
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Lenovo
+                               </label>
+                               <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
+                           </div>
+                       </div>
+                       <div class="single-filter">
+                           <div class="filter-title ">Mobile Screen Size</div>
+                           <div class="filter-content">
+
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Samasung
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Apple
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Xiamoi
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   HUAWEI
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Lenovo
+                               </label>
+                               <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
+                           </div>
+                       </div>
+                       <div class="single-filter">
+                           <div class="filter-title ">Secondary Camera</div>
+                           <div class="filter-content">
+
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Samasung
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Apple
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Xiamoi
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   HUAWEI
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Lenovo
+                               </label>
+                               <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
+                           </div>
+                       </div>
+                       <div class="single-filter">
+                           <div class="filter-title ">Secondary Camera</div>
+                           <div class="filter-content">
+
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Samasung
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Apple
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Xiamoi
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   HUAWEI
+                               </label>
+                               <label class="form-check-label custom-check ">
+                                   <input class="form-check-input" type="checkbox">
+                                   Lenovo
+                               </label>
+                               <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
             </div>
             <div class="col-lg-9">
                 <div class="search-results-wrapper pt-4">
@@ -621,7 +640,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -647,7 +666,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -673,7 +692,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -699,7 +718,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -725,7 +744,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -751,7 +770,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -777,7 +796,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -803,7 +822,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -829,7 +848,7 @@
 
                                     <div class="item-price">38,095EGP</div>
 
-                                    <a class="btn add-to-cart" href="">Add to card</a>
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
 
                                 </div>
                             </div>
@@ -927,9 +946,8 @@
                     <div class="footer-list-wrapper">
                         <h6>Get the app </h6>
                         <div class="d-flex gap-1rem flex-column">
-
-                            <a href="" class="d-block"><img src="images/app-store.svg" class="img-fluid" alt=""></a>
-                            <a href="" class="d-block"><img src="images/google-play.svg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/app-store.jpg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/google-play.jpg" class="img-fluid" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -940,8 +958,8 @@
         </div>
     </div>
 
-    <div class="copyrights">
-        <div class="container">
+    <div class="container">
+        <div class="copyrights">
 
             <div class="d-md-flex justify-content-between">
                 <ul class="list-unstyled d-flex flex-wrap gap-2rem">
@@ -991,6 +1009,46 @@
 <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script>
+    // Script for Price range
+
+    // Initializing the slider
+    const priceRange = document.getElementById('price-slider');
+
+    noUiSlider.create(priceRange, {
+        start: [0, 100],
+        connect: true,
+        //direction: 'rtl', //Enable this for RTL version
+        range: {
+            'min': 0,
+            'max': 400
+        }
+    });
+
+    //Updating the  <input> values
+    let inputNumber1 = document.getElementById('input-number1');
+    let inputNumber2 = document.getElementById('input-number2');
+
+    priceRange.noUiSlider.on('update', function (values, handle) {
+
+        let value = values[handle];
+
+        if (handle) {
+            inputNumber2.value = value;
+        } else {
+            inputNumber1.value = value;
+        }
+    });
+
+    inputNumber1.addEventListener('change', function () {
+        priceRange.noUiSlider.set([this.value, null]);
+    });
+    inputNumber2.addEventListener('change', function () {
+        priceRange.noUiSlider.set([null, this.value]);
+    });
+</script>
+
 <script src="js/custom.js"></script>
 </body>
 

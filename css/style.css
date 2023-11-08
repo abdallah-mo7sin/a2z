@@ -134,6 +134,10 @@ html[dir=rtl] {
   border-radius: 10px !important;
 }
 
+.rounded20 {
+  border-radius: 20px !important;
+}
+
 .rounded50 {
   border-radius: 50px !important;
 }
@@ -402,6 +406,7 @@ h6 {
 .header-mini-nav a {
   color: #161616;
   display: block;
+  text-transform: capitalize;
 }
 .header-mini-nav a:hover {
   color: #6B6C7E;
@@ -604,6 +609,7 @@ h6 {
   position: relative;
   line-height: 48px;
   transition: 0.3s;
+  text-transform: capitalize;
 }
 
 .navbar-light .navbar-nav .nav-item:hover .nav-link {
@@ -1074,6 +1080,10 @@ h6 {
   border-color: #A8A8A8;
 }
 
+.add-to-fav i {
+  --Iconsax-Size: 20px;
+}
+
 .add-to-cart {
   margin-top: auto;
   padding: 11px;
@@ -1238,7 +1248,7 @@ h6 {
   box-shadow: none;
   border: 0;
   border-bottom: 1px solid #E0E0E0;
-  border-radius: 0;
+  border-radius: 10px;
   padding-inline: 0;
   height: 40px;
   background: #f8f8f8;
@@ -1260,6 +1270,33 @@ h6 {
 }
 .subscribe-form .btn-submit .iconsax {
   --Iconsax-Size: 17px;
+}
+
+#price-slider {
+  margin-bottom: 20px;
+}
+
+.noUi-horizontal {
+  height: 8px;
+  background: #dfdfdf;
+  border: 0;
+  box-shadow: none;
+}
+
+.noUi-connect {
+  background: #264AEC;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #264AEC;
+  border: 0;
+}
+
+.noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
+  display: none;
 }
 
 footer {
@@ -1389,7 +1426,7 @@ footer .cp a {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .breadcrumbs li a {
   color: #C6C6C6;
@@ -1686,13 +1723,28 @@ footer .cp a {
   color: #fff;
 }
 
-.product-details-and-reviews .tabs-wrapper {
-  border-bottom: 1px solid #E0E0E0;
+.specification-table {
+  font-size: 13px;
+  --bs-table-striped-bg: #264aec0a;
 }
+.specification-table tr td {
+  padding: 10px 15px;
+  border: 0;
+  color: #6c757d;
+}
+.specification-table tr td:first-child {
+  font-weight: bold;
+  color: #161616;
+  border-radius: 20px 0 0 20px;
+}
+.specification-table tr td:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
 .product-details-and-reviews .nav-link {
   border: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   color: #161616;
   border-radius: 10px 10px 0 0;
   padding: 10px 1.5em;
@@ -1703,7 +1755,9 @@ footer .cp a {
   background: #264AEC;
 }
 .product-details-and-reviews .tab-content {
-  padding-block: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0 20px 20px;
 }
 
 .single-review {
@@ -2097,6 +2151,18 @@ footer .cp a {
   padding: 5px;
 }
 
+.single-filter {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #DEE2E6;
+}
+.single-filter:last-child {
+  border-bottom: 0;
+}
+
+.sort-by {
+  gap: 10px;
+}
+
 .filter-title {
   font-size: 16px;
   color: #181823;
@@ -2127,6 +2193,9 @@ footer .cp a {
   flex-wrap: wrap;
   cursor: pointer;
   padding-bottom: 16px;
+}
+.parent-cat:last-child {
+  padding-bottom: 0;
 }
 .parent-cat .parent-cat {
   padding-bottom: 0;
@@ -2945,6 +3014,7 @@ html[dir=rtl] .breadcrumbs li a:after {
     /* bottom: 1.5em; */
     inset-inline-start: 50%;
     /* margin: 0 auto; */
+    margin-top: 0 !important;
     z-index: 99;
     background: #fff;
     padding-inline: 1rem;
@@ -3127,8 +3197,8 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 
   .product-details-and-reviews .nav-link {
-    font-size: 20px;
-    padding: 7px 0.5em;
+    font-size: 14px;
+    padding: 7px 0.8em;
   }
 
   .single-blog-post .post-thumbnail img {

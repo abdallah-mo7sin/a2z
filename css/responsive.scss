@@ -285,6 +285,7 @@
     /* bottom: 1.5em; */
     inset-inline-start: 50%;
     /* margin: 0 auto; */
+    margin-top: 0 !important;
     z-index: 99;
     background: #fff;
     padding-inline: 1rem;
@@ -465,8 +466,8 @@
     }
   }
   .product-details-and-reviews .nav-link {
-    font-size: 20px;
-    padding: 7px 0.5em;
+    font-size: 14px;
+    padding: 7px 0.8em;
   }
   .single-blog-post .post-thumbnail img {
     height: auto;
