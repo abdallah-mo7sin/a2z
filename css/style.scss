@@ -249,6 +249,7 @@ html[dir="rtl"] {
 .btn-primary {
   background: $main_blue;
   color: #ffffff;
+  font-weight: bold;
 
   &:hover {
     background: #1B41E9;
@@ -280,7 +281,7 @@ html[dir="rtl"] {
 .btn-secondary {
   background: #393939;
   color: #ffffff;
-
+  font-weight: bold;
   &:hover {
     background: #4C4C4C;
     color: white;
@@ -902,6 +903,7 @@ h6 {
   border: 0;
   box-shadow: none !important;
   outline: none;
+  margin-inline-end: auto;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
@@ -2274,12 +2276,33 @@ footer {
   height: 32px;
   background: url(../images/icons/stars.png) 0 -34px;
 }
-
+.social-login {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  img {
+    width: 40px;
+    transition: all 0.3s linear;
+  }
+  a {
+    &:hover {
+      img {
+        transform:scale(1.02);
+      }
+    }
+  }
+}
+.form-wrapper {
+  .text-primary.fz24.mb-3 {
+    font-weight: bold;
+  }
+}
 .review-form, .modal, .input-wrapper {
   .form-control {
-    min-height: 60px;
-    padding-inline: 32px;
-    border-radius: 5px;
+    min-height: 50px;
+    padding-inline: 17px;
+    border-radius: 12px;
     border: 1px solid #E0E0E0;
 
     &::placeholder {
@@ -2863,25 +2886,57 @@ footer {
 }
 
 // user account page
-.account-nav {
-  li {
-    padding-block: 1rem;
-    border-top: 1px solid #e0e0e0;
-    padding-inline-start: 1em;
-
-    &::marker {
-      content: '\2605';
-      color: $main_blue;
+.profile-wrapper {
+  button.hover-bg-secondary:hover {
+    background: $main_blue !important;
+    color: white !important;
+    svg path{
+      fill:white
     }
+  }
+}
+.profile-sidebar {
+  background: #264aec;
+  margin-top: 2rem;
+  border-radius: 16px;
+  height: auto !important;
+  padding: 0 !important;
+  border: 0.8px solid rgb(222, 226, 230);
+  overflow: hidden;
+  .toggle-mobile-trigger {
+    padding: 1em;
+    color: #fff !important;
+    margin: 0 !important;
+    font-weight: bold;
+    background: #1b3cd4;
+  }
+}
+.account-nav {
+  margin-bottom: 0;
+  li {
+
+    border-top: 1px solid #ffffff2e;
+
 
     a {
       font-size: 16px;
-      font-weight: 500;
-      color: $text-primary;
-
+      font-weight: bold;
+      color: white;
+      padding-inline: 1rem;
+      padding-block: 1rem;
+      display: block;
       &:hover, &.active {
         color: $main_blue;
+        background: #fff;
+        img {
+          filter:none;
+        }
       }
+    }
+    img {
+      width: 20px;
+      margin-inline-end:10px;
+      filter:brightness(0) invert(1);
     }
   }
 }

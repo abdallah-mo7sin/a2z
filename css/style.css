@@ -232,6 +232,7 @@ html[dir=rtl] {
 .btn-primary {
   background: #264AEC;
   color: #ffffff;
+  font-weight: bold;
 }
 .btn-primary:hover {
   background: #1B41E9;
@@ -260,6 +261,7 @@ html[dir=rtl] {
 .btn-secondary {
   background: #393939;
   color: #ffffff;
+  font-weight: bold;
 }
 .btn-secondary:hover {
   background: #4C4C4C;
@@ -764,6 +766,7 @@ h6 {
   border: 0;
   box-shadow: none !important;
   outline: none;
+  margin-inline-end: auto;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
@@ -1846,10 +1849,28 @@ footer .cp a {
   background: url(../images/icons/stars.png) 0 -34px;
 }
 
+.social-login {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.social-login img {
+  width: 40px;
+  transition: all 0.3s linear;
+}
+.social-login a:hover img {
+  transform: scale(1.02);
+}
+
+.form-wrapper .text-primary.fz24.mb-3 {
+  font-weight: bold;
+}
+
 .review-form .form-control, .modal .form-control, .input-wrapper .form-control {
-  min-height: 60px;
-  padding-inline: 32px;
-  border-radius: 5px;
+  min-height: 50px;
+  padding-inline: 17px;
+  border-radius: 12px;
   border: 1px solid #E0E0E0;
 }
 .review-form .form-control::placeholder, .modal .form-control::placeholder, .input-wrapper .form-control::placeholder {
@@ -2344,22 +2365,56 @@ footer .cp a {
   width: 100%;
 }
 
-.account-nav li {
-  padding-block: 1rem;
-  border-top: 1px solid #e0e0e0;
-  padding-inline-start: 1em;
+.profile-wrapper button.hover-bg-secondary:hover {
+  background: #264AEC !important;
+  color: white !important;
 }
-.account-nav li::marker {
-  content: "★";
-  color: #264AEC;
+.profile-wrapper button.hover-bg-secondary:hover svg path {
+  fill: white;
+}
+
+.profile-sidebar {
+  background: #264aec;
+  margin-top: 2rem;
+  border-radius: 16px;
+  height: auto !important;
+  padding: 0 !important;
+  border: 0.8px solid #dee2e6;
+  overflow: hidden;
+}
+.profile-sidebar .toggle-mobile-trigger {
+  padding: 1em;
+  color: #fff !important;
+  margin: 0 !important;
+  font-weight: bold;
+  background: #1b3cd4;
+}
+
+.account-nav {
+  margin-bottom: 0;
+}
+.account-nav li {
+  border-top: 1px solid #ffffff2e;
 }
 .account-nav li a {
   font-size: 16px;
-  font-weight: 500;
-  color: #161616;
+  font-weight: bold;
+  color: white;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  display: block;
 }
 .account-nav li a:hover, .account-nav li a.active {
   color: #264AEC;
+  background: #fff;
+}
+.account-nav li a:hover img, .account-nav li a.active img {
+  filter: none;
+}
+.account-nav li img {
+  width: 20px;
+  margin-inline-end: 10px;
+  filter: brightness(0) invert(1);
 }
 
 .togglePassword {
@@ -2987,7 +3042,7 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 
   .top-slider-arrows .swiper-button-next-outside, .top-slider-arrows .swiper-button-prev-outside {
-    display: block;
+    display: grid;
   }
 
   .sale-banners .banners-wrapper {
@@ -3103,7 +3158,6 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 
   .toggle-mobile-trigger {
-    border: 1px solid #E0E0E0;
     position: relative;
     border-radius: 10px;
     padding: 8px;
@@ -3125,6 +3179,7 @@ html[dir=rtl] .breadcrumbs li a:after {
     transition: 0.3s;
     top: 50%;
     translate: 0 -50%;
+    filter: brightness(0) invert(1);
   }
   .toggle-mobile-trigger.open:after {
     rotate: 180deg;
@@ -3134,9 +3189,6 @@ html[dir=rtl] .breadcrumbs li a:after {
     display: none;
   }
 
-  .account-nav li {
-    margin-bottom: 16px;
-  }
   .account-nav li a {
     font-size: 14px;
   }
@@ -3278,12 +3330,14 @@ html[dir=rtl] .breadcrumbs li a:after {
     gap: 1rem;
     flex-direction: row-reverse;
     color: #fff;
+    justify-content: space-between;
+    width: 100%;
   }
-  .mobile-user-nav .user-nav:not(.dropdown-menu) > li a {
-    color: #fff;
-  }
-  .mobile-user-nav i {
+  .mobile-user-nav a:not(.dropdown-item) > i {
     --Iconsax-Color: white;
+  }
+  .mobile-user-nav .user-nav:not(.dropdown-menu) > li > a {
+    color: #fff;
   }
 
   .user-nav .dropdown-menu.show {
