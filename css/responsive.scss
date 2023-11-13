@@ -77,12 +77,32 @@
 }
 
 @media all and (max-width: 768px) {
+  .navbar-light .navbar-nav .all-categories-li > .nav-link {
+    color: #ffffff !important;
+    background: none !important;
+
+    i {
+      --Iconsax-Color: white;
+    }
+  }
+  .navbar-light .navbar-nav .all-categories-li:hover > a {
+    i {
+      --Iconsax-Color: #264AEC;
+    }
+  }
+  .navbar-toggler {
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
   .single-product-wrapper .item-img {
     max-height: 164px;
     height: auto;
   }
   .single-product-wrapper .item-price {
-    margin-top :0;
+    margin-top: 0;
     margin-bottom: 5px;
   }
   .partners-grid {
@@ -119,7 +139,7 @@
 
   .navbar-light .navbar-nav .nav-item .nav-link {
     //font-weight: 600;
-    padding:   0;
+    padding: 0;
   }
   .main-menu {
 
@@ -138,7 +158,7 @@
       transition: none;
       transform: none;
       box-shadow: none;
-      border-radius: 0 !important;
+      border-radius: 12px;
       left: 0;
       right: 0;
       margin: 0;
@@ -171,15 +191,27 @@
     .dropdown-menu li:last-child a, .dropdown-menu li:first-child a {
       border-radius: 0 !important;
     }
-
+    .navbar-light .navbar-nav .all-categories-li li:hover img {
+      filter: none;
+    }
     .navbar-light .dropdown > ul a:hover {
       background: none !important;
       color: currentColor !important;
     }
-
+    .navbar-light .navbar-nav .all-categories-li:hover > a {
+      color: #fff !important;
+      background: none !important;
+      i {
+        --Iconsax-Color: #fff;
+      }
+    }
     .submenu .has-sub:has(+ .submenu.active) {
       color: white !important;
       background: $main_blue !important;
+
+      img {
+        filter: brightness(0) invert(1) !important;
+      }
 
       &:after {
         rotate: 90deg;
@@ -370,6 +402,20 @@
 }
 
 @media all and (max-width: 600px) {
+  .header-search-form form .search-input .form-control {
+    background: #e1e1e1;
+  }
+  .user-nav:not(.dropdown-menu) > li span {
+
+    background: #ffffff;
+
+    color: $main_blue;
+
+    top: -1px;
+  }
+  .header-mini-nav,a.navbar-brand.d-block.d-lg-none {
+    display: none !important;
+  }
   .features-wrapper .single-feature {
     width: 40%;
   }
@@ -390,8 +436,8 @@
     font-size: 15px;
   }
   .subscribe .section-title {
-     font-size: 17px;
-   }
+    font-size: 17px;
+  }
   .partners-grid {
 
     grid-template-columns: repeat(3, 1fr);
@@ -478,7 +524,16 @@
     color: #fff !important;
   }
   .mobile-user-nav {
+    padding-block: 10px;
     gap: 1rem;
+    flex-direction: row-reverse;
+    color: #fff;
+    .user-nav:not(.dropdown-menu) > li a {
+      color: #fff;
+    }
+    i {
+      --Iconsax-Color: white;
+    }
   }
   .user-nav {
     .dropdown-menu.show {
