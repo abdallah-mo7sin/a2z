@@ -1413,16 +1413,21 @@ h6 {
     position: static;
     transform: none;
     //padding: 5px;
-    width: auto;
-    height: auto;
+
     border: 0;
     box-shadow: none;
-
+    background: $main_blue;
+    width: 25px;
+    height: 25px;
+    i {
+      --Iconsax-Color: #fff;
+      --Iconsax-Size: 16px;
+    }
     &:hover {
-      background: none;
+      background: $bg-secondary;
 
-      .iconsax {
-        --Iconsax-Color: #525252FF;
+      i {
+        --Iconsax-Color: #264AECFF;
       }
     }
   }

@@ -1161,16 +1161,21 @@ h6 {
   opacity: 1;
   position: static;
   transform: none;
-  width: auto;
-  height: auto;
   border: 0;
   box-shadow: none;
+  background: #264AEC;
+  width: 25px;
+  height: 25px;
+}
+.top-slider-arrows .swiper-button-next-outside i, .top-slider-arrows .swiper-button-prev-outside i {
+  --Iconsax-Color: #fff;
+  --Iconsax-Size: 16px;
 }
 .top-slider-arrows .swiper-button-next-outside:hover, .top-slider-arrows .swiper-button-prev-outside:hover {
-  background: none;
+  background: #efefef;
 }
-.top-slider-arrows .swiper-button-next-outside:hover .iconsax, .top-slider-arrows .swiper-button-prev-outside:hover .iconsax {
-  --Iconsax-Color: #525252FF;
+.top-slider-arrows .swiper-button-next-outside:hover i, .top-slider-arrows .swiper-button-prev-outside:hover i {
+  --Iconsax-Color: #264AECFF;
 }
 
 .sale-banners .banners-wrapper {
