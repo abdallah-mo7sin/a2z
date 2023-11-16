@@ -1626,7 +1626,12 @@ footer {
   .footer-lists {
     gap: 62px;
   }
-
+.payments {
+  img {
+    width: 40px;
+    border-radius: 4px;
+  }
+}
   h6 {
     font-size: 16px;
     font-weight: 600;

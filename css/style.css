@@ -1326,6 +1326,10 @@ footer {
 footer .footer-lists {
   gap: 62px;
 }
+footer .payments img {
+  width: 40px;
+  border-radius: 4px;
+}
 footer h6 {
   font-size: 16px;
   font-weight: 600;
