@@ -791,16 +791,15 @@ h6 {
   background: #fff !important;
 }
 .navbar-light .navbar-nav .all-categories-li > .nav-link {
-  color: #161616 !important;
-  background: #fff !important;
-  text-transform: capitalize;
+  font-weight: bold;
 }
 .navbar-light .navbar-nav .all-categories-li i {
   transition: 0.3s;
-  --Iconsax-Color: #264AECFF;
+  --Iconsax-Color: #fff;
 }
 .navbar-light .navbar-nav .all-categories-li .show i {
   transition: 0.3s;
+  --Iconsax-Color: #264AEC;
 }
 
 .header-slider .swiper-wrapper, .header-slider .swiper {

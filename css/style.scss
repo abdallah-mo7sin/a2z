@@ -947,19 +947,21 @@ h6 {
   //}
 
   > .nav-link {
-    color: $text-primary !important;
-    background: #fff !important;
-    text-transform: capitalize;
+    font-weight: bold;
+    //color: $text-primary !important;
+    //background: #fff !important;
+    //text-transform: capitalize;
   }
 
   i {
     transition: 0.3s;
-    --Iconsax-Color: #264AECFF;
+    --Iconsax-Color: #fff;
   }
 
   .show {
     i {
       transition: 0.3s;
+      --Iconsax-Color: #264AEC;
       //transform: rotate(180deg)
     }
   }
