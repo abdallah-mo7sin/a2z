@@ -1617,7 +1617,11 @@ h6 {
 .noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
   display: none;
 }
-
+.buy-now-btn {
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 16px;
+}
 footer {
   margin-top: 4em;
 
@@ -1715,22 +1719,23 @@ footer {
 .go-top {
   position: fixed;
   bottom: 2em;
-  left: 2em;
+  right: 2em;
+  width: 2rem;
+  height: 2rem;
   text-decoration: none;
   background: $main_blue;
-  color: white;
-  font-size: 12px;
-  padding: 1em 1.3em;
-  display: none;
-  border: 1px solid rgba(0, 0, 0, 0.32);
-  border-radius: 5px;
-  z-index: 999999999;
-  -webkit-transition: all 0.3s;
+  font-size: 16px;
+   display: none;
+  border: white;
+  border-radius: 55%;
+  z-index: 9999;
   transition: all 0.3s;
+  padding: 4px 0 0 5.5px;
 }
 
 .go-top i {
-  color: #fff;
+  --Iconsax-Size: 20px;
+  --Iconsax-Color: white;
 }
 
 .go-top:hover {

@@ -77,6 +77,19 @@
 }
 
 @media all and (max-width: 768px) {
+  .buy-now-btn {
+    width: 100%;
+  }
+  .quantity-wrapper {
+    .d-flex.justify-content-between.gap-4 {
+      flex-wrap: wrap;
+
+      .add-to-cart {
+        width: auto;
+        flex-grow: 1;
+      }
+    }
+  }
   .navbar-light .navbar-nav .all-categories-li > .nav-link {
     color: #ffffff !important;
     background: none !important;
@@ -191,20 +204,25 @@
     .dropdown-menu li:last-child a, .dropdown-menu li:first-child a {
       border-radius: 0 !important;
     }
+
     .navbar-light .navbar-nav .all-categories-li li:hover img {
       filter: none;
     }
+
     .navbar-light .dropdown > ul a:hover {
       background: none !important;
       color: currentColor !important;
     }
+
     .navbar-light .navbar-nav .all-categories-li:hover > a {
       color: #fff !important;
       background: none !important;
+
       i {
         --Iconsax-Color: #fff;
       }
     }
+
     .submenu .has-sub:has(+ .submenu.active) {
       color: white !important;
       background: $main_blue !important;
@@ -379,7 +397,7 @@
       transition: 0.3s;
       top: 50%;
       translate: 0 -50%;
-      filter:brightness(0) invert(1);
+      filter: brightness(0) invert(1);
     }
 
     &.open {
@@ -402,6 +420,16 @@
   }
 }
 
+@media all and (min-width: 992px) {
+  .bg-white:has(.search-filters-wrapper) {
+    height: 100%;
+  }
+  .search-filters-wrapper {
+    position: sticky;
+    top: 0;
+  }
+}
+
 @media all and (max-width: 600px) {
   .header-search-form form .search-input .form-control {
     background: #e1e1e1;
@@ -414,7 +442,7 @@
 
     top: -1px;
   }
-  .header-mini-nav,a.navbar-brand.d-block.d-lg-none {
+  .header-mini-nav, a.navbar-brand.d-block.d-lg-none {
     display: none !important;
   }
   .features-wrapper .single-feature {
@@ -531,11 +559,13 @@
     color: #fff;
     justify-content: space-between;
     width: 100%;
-    a:not(.dropdown-item){
+
+    a:not(.dropdown-item) {
       > i {
         --Iconsax-Color: white;
       }
     }
+
     .user-nav:not(.dropdown-menu) {
 
       > li > a {
