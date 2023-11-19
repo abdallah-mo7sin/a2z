@@ -3223,6 +3223,15 @@ html[dir=rtl] .breadcrumbs li a:after {
   .search-filters-wrapper {
     position: sticky;
     top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  .search-filters-wrapper::-webkit-scrollbar {
+    width: 5px;
+  }
+  .search-filters-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.49);
+    border-radius: 10px;
   }
 }
 @media all and (max-width: 600px) {
