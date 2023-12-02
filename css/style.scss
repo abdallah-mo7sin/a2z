@@ -2321,6 +2321,9 @@ footer {
       color: $text-placeholder;
       font-size: 14px;
       font-weight: 400;
+
+        text-transform: capitalize;
+
     }
 
     &:focus {
@@ -2329,8 +2332,10 @@ footer {
   }
 
   textarea.form-control {
-    padding: 32px;
-    min-height: 300px;
+    padding: 15px;
+    min-height: 100px;
+
+
   }
 
   .btn-primary, .btn-secondary {
@@ -3447,4 +3452,30 @@ html[dir=rtl] {
   margin-top: -2rem;
 }
 
+.map-location {
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+.contact-info {
+
+  border-radius: 10px;
+  padding: 2em 1em;
+  margin-block:3em;
+  i {
+    //background: #fff;
+    //border-radius: 50%;
+    //width: 40px;
+    //aspect-ratio: 1/1;
+    // display: inline-flex;
+    //align-items: center;
+    //justify-content: center;
+    --Iconsax-Color: #264AEC;
+  }
+}
 @import "responsive";

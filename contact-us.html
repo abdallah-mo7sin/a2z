@@ -10,7 +10,6 @@
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/nice-select.css" rel="stylesheet">
     <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
-    <link href="css/intlTelInput.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>A2Z MegaStore</title>
 </head>
@@ -19,27 +18,17 @@
 
 <div class="overlay"></div>
 
-
 <header>
     <div class="top-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 offset-xl-4 col-lg-5 offset-lg-4 col-md-8">
-                    <div class="shop-welcome-message text-lg-center">
-                        Hurry up! Free shipping on your first order🔥
-                    </div>
-                </div>
 
-                <div class="col-xl-4 col-lg-3 col-md-4 d-none d-md-block">
-                    <div class="languages">
-                        <ul class="list-unstyled d-flex justify-content-end gap-3">
-                            <li class="active"><a href="">English</a></li>
-                            <li><a href="">Arabic</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        <div class="shop-welcome-message  marquee d-flex gap-4 ">
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
         </div>
     </div>
     <!-- end top nav -->
@@ -63,7 +52,11 @@
                         <li><a href="">About</a></li>
                         <li><a href="">Contact us</a></li>
                     </ul>
-
+                    <div class="mobile-logo d-md-none">
+                        <a class="d-block" href="#">
+                            <img src="images/logo.png" class="img-fluid" alt="Site logo">
+                        </a>
+                    </div>
                     <div class="header-search-form flex-grow-1">
 
                         <form>
@@ -166,6 +159,7 @@
                         </div>
 
                     </div>
+
                     <ul class="user-nav list-inline mb-0 flex-shrink-0 d-none d-md-flex">
 
                         <li class="list-inline-item ">
@@ -189,6 +183,7 @@
                         <li class="list-inline-item"><a href="">
                             <i class="iconsax hover" icon-name="shopping-cart"></i>
                             <span>1</span></a></li>
+                        <li><a href="" class="fz16">العربية</a></li>
 
                     </ul>
 
@@ -271,10 +266,12 @@
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown all-categories-li">
                                 <a class="nav-link has-sub " href="#" data-bs-toggle="dropdown">
-                                    All categories <i class="iconsax" icon-name="chevron-up"></i> </a>
+                                    <i class="iconsax" icon-name="menu-hamburger"></i> All categories </a>
                                 <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                    <li><a class="dropdown-item" href="#"> <img
+                                            src="images/icons/menu/floor-polisher.png" alt=""> Housewares </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
                                             <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
@@ -290,12 +287,88 @@
                                             <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/mobile-phone.png"
+                                                                                alt=""> Phones </a></li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/bbq.png" alt="">
+                                        Food </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Shoes </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Large Electronic Machines </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Small Electronics </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="#">Electronics</a></li>
+                            <li class="nav-item  "><a class="nav-link" href="#">Electronics</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
                             <li class="nav-item dropdown">
@@ -333,12 +406,17 @@
                             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Beauty & health</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Baby & Toys</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Super market</a></li>
 
 
                         </ul>
 
-
+                        <ul class="mobile-mini-nav list-unstyled mb-0 d-lg-none">
+                            <li><a href="">Deals</a></li>
+                            <li><a href="">What's new</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
                     </div> <!-- navbar-collapse.// -->
                 </div> <!-- container-fluid.// -->
             </nav>
@@ -350,21 +428,50 @@
 </header>
 
 
-<section class="contact-us-page pattern-bg py-5 mt--2rem">
+<section class="contact-us-page   py-5 mt--2rem">
     <div class="container container-inner">
+      <div class="text-center">
+          <div class="fz21 fw-600 text-black  ">Contact us</div>
+          <div class="fz16 fw-600 text-blue mb-4 text-capitalize">We would love to hear from you</div>
+      </div>
+        <div class="contact-info d-flex justify-content-md-center flex-wrap gap-md-5 gap-4">
+            <div class="fz18   text-black ">
+                <i class="iconsax" icon-name="mail"></i>
+                M.gucciosteria.mb@gucci.com
+            </div>
+            <div class="fz18  text-black ">
+                <i class="iconsax" icon-name="phone"></i>
+                39 05575927038
+            </div>
+            <div class="fz18  text-black ">
+                <i class="iconsax" icon-name="phone"></i>
+                39 05575927038
+            </div>
+            <div class="fz18  text-black ">
+                <i class="iconsax" icon-name="phone"></i>
+                39 05575927038
+            </div>
+            <div class="fz18  text-black ">
+                <i class="iconsax" icon-name="phone"></i>
+                39 05575927038
+            </div>
+            <div class="fz18  text-black ">
+                <i class="iconsax" icon-name="location"></i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+        </div>
         <div class="row">
-            <div class="col-lg-5">
-                <div class="fz20 fw-600 text-black mb-4">Contact us</div>
-                <div class="fz24 fw-600 text-blue mb-4 text-capitalize">We would <br> love to  hear <br>from you</div>
-                <div class="fz14 text-black mb-4">Send us a message</div>
-                <div class="fz20 fw-600 text-black mb-4">M.gucciosteria.mb@gucci.com</div>
-                <div class="fz14 text-black mb-4">Or call us on</div>
-                <div class="fz20 fw-600 text-black mb-4">39 05575927038</div>
+            <div class="col-lg-6">
 
+                <div class="map-location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79625.67344932328!2d46.733771435880385!3d24.791853362076974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1701532679788!5m2!1sen!2seg"
+                             style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
             </div>
-            <div class="col-lg-7">
-                <form class="contact-us-form text-black ">
+            <div class="col-lg-6">
+                <form class="contact-us-form text-black mt-md-0 mt-4">
                     <div class="row">
                         <div class="col-12">
                             <div class="input-wrapper">
@@ -390,7 +497,8 @@
                             <div class="input-wrapper">
                                 <label class="fz16 fw-500  d-block mb-2">Your message</label>
 
-                                <textarea class="form-control mb24 w-100"  placeholder="What do you want to say?"></textarea>
+                                <textarea class="form-control mb24 w-100"
+                                          placeholder="What do you want to say?"></textarea>
 
                             </div>
                         </div>
@@ -451,12 +559,18 @@
                             <li><a href="">Contact us</a></li>
                         </ul>
                     </div>
-                    <div class="footer-list-wrapper">
+                    <div class="footer-list-wrapper d-flex flex-column">
                         <h6>Get the app </h6>
                         <div class="d-flex gap-1rem flex-column">
-
-                            <a href="" class="d-block"><img src="images/app-store.svg" class="img-fluid" alt=""></a>
-                            <a href="" class="d-block"><img src="images/google-play.svg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/app-store.jpg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/google-play.jpg" class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="payments d-flex gap-2 mt-auto">
+                            <a href="" class="d-block"><img src="images/payments/knet.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/visa.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/master.png" class="img-fluid"
+                                                            alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/cod.png" class="img-fluid" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -467,8 +581,8 @@
         </div>
     </div>
 
-    <div class="copyrights">
-        <div class="container">
+    <div class="container">
+        <div class="copyrights">
 
             <div class="d-md-flex justify-content-between">
                 <ul class="list-unstyled d-flex flex-wrap gap-2rem">
@@ -503,6 +617,13 @@
                                   fill="#161616"/>
                         </svg>
                     </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill-rule="evenodd"
+                             clip-rule="evenodd" viewBox="0 0 449.45 515.38">
+                            <path fill-rule="nonzero"
+                                  d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"/>
+                        </svg>
+                    </a></li>
 
                 </ul>
             </div>
@@ -512,13 +633,13 @@
 
 </footer>
 
-
+<a href="#" class="go-top"><i class="iconsax" icon-name="chevron-up"></i></a>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
-<script src="js/intlTelInput.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 
