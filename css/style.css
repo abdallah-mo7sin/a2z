@@ -1579,7 +1579,7 @@ footer .cp a {
 .quantity-wrapper .nice-select {
   border: none;
   padding: 0;
-  line-height: normal;
+  line-height: 2;
   height: auto;
   font-size: 14px;
   font-weight: 600;
@@ -1684,7 +1684,11 @@ footer .cp a {
 }
 
 .in-stock {
-  color: #24A148;
+  color: #fff;
+  background: #24A148;
+  padding: 3.675px 6.825px;
+  border-radius: 50rem;
+  font-size: 0.85em;
 }
 
 .out-of-stock {
@@ -2847,6 +2851,31 @@ html[dir=rtl] .breadcrumbs li a:after {
 }
 .contact-info i {
   --Iconsax-Color: #264AEC;
+}
+
+.share-btn {
+  color: #181823;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+.share-btn:hover {
+  background: #264AEC;
+  color: #fff;
+}
+.share-btn:hover path {
+  fill: #fff;
+}
+
+#share-modal .share {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.sku-wrapper {
+  display: inline-flex;
+  align-items: center;
 }
 
 @media (min-width: 1440px) {

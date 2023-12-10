@@ -1945,7 +1945,7 @@ footer {
   .nice-select {
     border: none;
     padding: 0;
-    line-height: normal;
+    line-height: 2;
     height: auto;
     font-size: 14px;
     font-weight: 600;
@@ -2069,7 +2069,12 @@ footer {
 }
 
 .in-stock {
-  color: #24A148;
+  color: #fff;
+  background: #24A148;
+  padding: 3.675px 6.825px;
+  border-radius: 50rem;
+  font-size: 0.85em;
+
 }
 
 .out-of-stock {
@@ -3477,5 +3482,29 @@ html[dir=rtl] {
     //justify-content: center;
     --Iconsax-Color: #264AEC;
   }
+}
+.share-btn {
+  color: $dark_color;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  &:hover {
+    background: $main_blue;
+    color: #fff;
+path {
+  fill: #fff;
+}
+  }
+}
+#share-modal {
+  .share {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+  }
+}
+.sku-wrapper {
+  display: inline-flex;
+  align-items: center;
 }
 @import "responsive";
