@@ -1477,8 +1477,10 @@ h6 {
 
 .single-blog-post {
   overflow: hidden;
-
-
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+transition: 0.3s;
   .post-thumbnail {
     overflow: hidden;
 
@@ -1492,7 +1494,7 @@ h6 {
 
     &.small {
       img {
-        height: 171px;
+        height: 225px;
       }
     }
   }
@@ -1511,8 +1513,8 @@ h6 {
   }
 
   &:hover {
-
-
+    box-shadow: rgb(145 145 145 / 21%) -1px 5px 16px 0px;
+    transform: translateY(-5px);
     a {
       color: $text-secondary;
     }
@@ -2864,9 +2866,14 @@ footer {
 }
 
 .blog-title {
-  border-bottom: 1px solid #000;
+  //border-bottom: 1px solid #000;
 }
+.post-content {
+  background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
 
+}
 .main-blogs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

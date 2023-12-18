@@ -11,34 +11,24 @@
     <link href="css/nice-select.css" rel="stylesheet">
     <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <title>A2Z MegaStore</title>
-
 </head>
 
 <body>
+
 <div class="overlay"></div>
 
 <header>
     <div class="top-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 offset-xl-4 col-lg-5 offset-lg-4 col-md-8">
-                    <div class="shop-welcome-message text-lg-center">
-                        Hurry up! Free shipping on your first order🔥
-                    </div>
-                </div>
 
-                <div class="col-xl-4 col-lg-3 col-md-4 d-none d-md-block">
-                    <div class="languages">
-                        <ul class="list-unstyled d-flex justify-content-end gap-3">
-                            <li class="active"><a href="">English</a></li>
-                            <li><a href="">Arabic</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        <div class="shop-welcome-message  marquee d-flex gap-4 ">
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
         </div>
     </div>
     <!-- end top nav -->
@@ -62,7 +52,11 @@
                         <li><a href="">About</a></li>
                         <li><a href="">Contact us</a></li>
                     </ul>
-
+                    <div class="mobile-logo d-md-none">
+                        <a class="d-block" href="#">
+                            <img src="images/logo.png" class="img-fluid" alt="Site logo">
+                        </a>
+                    </div>
                     <div class="header-search-form flex-grow-1">
 
                         <form>
@@ -165,6 +159,7 @@
                         </div>
 
                     </div>
+
                     <ul class="user-nav list-inline mb-0 flex-shrink-0 d-none d-md-flex">
 
                         <li class="list-inline-item ">
@@ -188,6 +183,7 @@
                         <li class="list-inline-item"><a href="">
                             <i class="iconsax hover" icon-name="shopping-cart"></i>
                             <span>1</span></a></li>
+                        <li><a href="" class="fz16">العربية</a></li>
 
                     </ul>
 
@@ -270,10 +266,12 @@
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown all-categories-li">
                                 <a class="nav-link has-sub " href="#" data-bs-toggle="dropdown">
-                                    All categories <i class="iconsax" icon-name="chevron-up"></i> </a>
+                                    <i class="iconsax" icon-name="menu-hamburger"></i> All categories </a>
                                 <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                    <li><a class="dropdown-item" href="#"> <img
+                                            src="images/icons/menu/floor-polisher.png" alt=""> Housewares </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
                                             <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
@@ -289,12 +287,88 @@
                                             <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/mobile-phone.png"
+                                                                                alt=""> Phones </a></li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/bbq.png" alt="">
+                                        Food </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Shoes </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Large Electronic Machines </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Small Electronics </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="#">Electronics</a></li>
+                            <li class="nav-item  "><a class="nav-link" href="#">Electronics</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
                             <li class="nav-item dropdown">
@@ -332,12 +406,17 @@
                             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Beauty & health</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Baby & Toys</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Super market</a></li>
 
 
                         </ul>
 
-
+                        <ul class="mobile-mini-nav list-unstyled mb-0 d-lg-none">
+                            <li><a href="">Deals</a></li>
+                            <li><a href="">What's new</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
                     </div> <!-- navbar-collapse.// -->
                 </div> <!-- container-fluid.// -->
             </nav>
@@ -362,15 +441,11 @@
         <h1 class="blog-title mb-4 pb-4">11 Best Practices to Provide Excellent
             Customer Service on Social Media Read </h1>
 
-        <div class="w-75 mx-auto fz16 fw-500 text-black mb-4">User-generated content (UGC) has become the most trusted,
-            memorable, and influential content marketers can get their hands on. So, how can brands compete with this
-            volume of engaging, visual content that naturally captures so many people’s attention? Start leveraging it!
-        </div>
 
         <img src="images/blog-post.png" class="post-img img-fluid rounded10 w-100" alt="">
 
         <div class="post-meta my-4 d-flex justify-content-between gap-3 align-items-center">
-            <div class="fz16 fw-500 text-blue">25 June 2023 By admin</div>
+            <div class="fz14  text-muted">25 June 2023 By admin</div>
             <div class="share">
                 <a id="copyURL">
                     Copy link
@@ -398,49 +473,53 @@
             </div>
         </div>
 
-        <div class="post-content fz18 text-black lh-lg mb100">
-            ITS LEGALLY ASSUMED THAT TRADE MARK REGISTRATION IS ACCEPTED IMMEDIATELY EXCEPT IN THE FOLLOWING CONDITIONS
-            :- <br>
-            1- Marks devoid of any distinctive feature or consisting of signs or data which do not fall beyond the
-            designation that is traditionally given to the products, drawing, or the ordinary images thereof. <br>
-            2- Trademarks that are identical and similar to trademarks previously registered for the same products or
-            services. <br>
-            3- Marks that violate public order or morals. <br>
-            4- Public emblems, media, and other symbols of the State or the other states or the regional or
-            international organizations, as well as any imitation thereof. <br>
-            5- Marks that are identical or similar to symbols of a religious character or particularity. <br>
-            6- The symbols of the Red Cross or the Red Crescent or other similar symbols, as well as the signs which
-            represent imitations thereof. <br>
-            7- Images of others or their logo unless they authorize the use thereof. <br>
-            8- Data on honors degrees unless the applicant has proved to have obtained them <br>
-            9- Marks and geographical indications that may mislead or confuse the public, or contain false data on the
-            origin of products or services or other characteristics, as well as marks containing a false, imitated, of a
-            forged trade name. <br>
-        </div>
+        <div class="post-content fz18 text-black lh-lg mb100">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</div>
 
         <div class="related-posts mb100">
             <div class="fz24 fw-600 text-black mb-4">Read also</div>
             <div class="row">
-                <div class="col-md-6 mb-4">
+                <div class="col-lg-4  col-sm-6 mb-4">
                     <div class="single-blog-post">
-                        <div class="post-thumbnail">
+                        <div class="post-thumbnail small">
                             <a href=""><img src="images/blog-img-demo.png" class="img-fluid" alt=""></a>
                         </div>
-                        <div class="fz14 text-blue my-2 fw-normal">25 June 2023 By admin</div>
-                        <h4 class="post-title mt-0 "><a href="">11 Best Practices to Provide
+                        <h4 class="post-title  "><a href="">11 Best Practices to Provide
                             Excellent Customer Service on
                             Social Media Read </a></h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="read-more">Read more</a>
+                            <div class="fz13 text-black-50  fw-normal">25 June 2023</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+                <div class="col-lg-4  col-sm-6 mb-4">
                     <div class="single-blog-post">
-                        <div class="post-thumbnail">
+                        <div class="post-thumbnail small">
                             <a href=""><img src="images/blog-img-demo.png" class="img-fluid" alt=""></a>
                         </div>
-                        <div class="fz14 text-blue my-2 fw-normal">25 June 2023 By admin</div>
-                        <h4 class="post-title mt-0 "><a href="">11 Best Practices to Provide
+                        <h4 class="post-title  "><a href="">11 Best Practices to Provide
                             Excellent Customer Service on
                             Social Media Read </a></h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="read-more">Read more</a>
+                            <div class="fz13 text-black-50  fw-normal">25 June 2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 mb-4">
+                    <div class="single-blog-post">
+                        <div class="post-thumbnail small">
+                            <a href=""><img src="images/blog-img-demo.png" class="img-fluid" alt=""></a>
+                        </div>
+                        <h4 class="post-title  "><a href="">11 Best Practices to Provide
+                            Excellent Customer Service on
+                            Social Media Read </a></h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="read-more">Read more</a>
+                            <div class="fz13 text-black-50  fw-normal">25 June 2023</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -494,12 +573,17 @@
                             <li><a href="">Contact us</a></li>
                         </ul>
                     </div>
-                    <div class="footer-list-wrapper">
+                    <div class="footer-list-wrapper d-flex flex-column">
                         <h6>Get the app </h6>
                         <div class="d-flex gap-1rem flex-column">
-
-                            <a href="" class="d-block"><img src="images/app-store.svg" class="img-fluid" alt=""></a>
-                            <a href="" class="d-block"><img src="images/google-play.svg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/app-store.jpg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/google-play.jpg" class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="payments d-flex gap-2 mt-auto">
+                            <a href="" class="d-block"><img src="images/payments/knet.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/visa.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/master.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/cod.png" class="img-fluid" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -510,8 +594,8 @@
         </div>
     </div>
 
-    <div class="copyrights">
-        <div class="container">
+    <div class="container">
+        <div class="copyrights">
 
             <div class="d-md-flex justify-content-between">
                 <ul class="list-unstyled d-flex flex-wrap gap-2rem">
@@ -546,6 +630,9 @@
                                   fill="#161616"/>
                         </svg>
                     </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 449.45 515.38"><path fill-rule="nonzero" d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"/></svg>
+                    </a></li>
 
                 </ul>
             </div>
@@ -555,12 +642,13 @@
 
 </footer>
 
-
+<a href="#" class="go-top"><i class="iconsax" icon-name="chevron-up"></i></a>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 

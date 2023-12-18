@@ -1204,6 +1204,10 @@ h6 {
 
 .single-blog-post {
   overflow: hidden;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.3s;
 }
 .single-blog-post .post-thumbnail {
   overflow: hidden;
@@ -1215,7 +1219,7 @@ h6 {
   border-radius: 10px;
 }
 .single-blog-post .post-thumbnail.small img {
-  height: 171px;
+  height: 225px;
 }
 .single-blog-post .post-title {
   font-weight: 500;
@@ -1227,6 +1231,10 @@ h6 {
 }
 .single-blog-post .post-title a {
   color: #161616;
+}
+.single-blog-post:hover {
+  box-shadow: rgba(145, 145, 145, 0.21) -1px 5px 16px 0px;
+  transform: translateY(-5px);
 }
 .single-blog-post:hover a {
   color: #525252;
@@ -2356,8 +2364,10 @@ footer .cp a {
   bottom: 100%;
 }
 
-.blog-title {
-  border-bottom: 1px solid #000;
+.post-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .main-blogs {
