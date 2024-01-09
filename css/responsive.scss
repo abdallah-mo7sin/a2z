@@ -446,6 +446,13 @@
 }
 
 @media all and (max-width: 600px) {
+  .form-tabs {
+    gap:6px;
+    .nav-link {
+      font-size: 13px;
+      padding-inline: 10px;
+    }
+  }
   .header-search-form form .search-input .form-control {
     background: #e1e1e1;
   }

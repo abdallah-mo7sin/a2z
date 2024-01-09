@@ -2200,7 +2200,7 @@ footer {
   }
 }
 
-.product-details-and-reviews {
+.product-details-and-reviews,.form-tabs {
   .tabs-wrapper {
     //border-bottom: 1px solid #E0E0E0;
   }
@@ -3533,5 +3533,14 @@ path {
 .sku-wrapper {
   display: inline-flex;
   align-items: center;
+}
+.form-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap:20px;
+  .nav-link {
+    font-size: 16px;
+  }
 }
 @import "responsive";

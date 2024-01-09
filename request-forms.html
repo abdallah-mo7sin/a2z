@@ -428,215 +428,400 @@
 </header>
 
 
-<section class="contact-us-page   py-5 mt--2rem">
+<section class="contact-us-page py-5 mt--2rem">
     <div class="container container-inner">
+        <ul class="nav nav-tabs form-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#maintenance-tab-pane"
+                        type="button" role="tab">Maintenance Request
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#recovery-tab-pane"
+                        type="button" role="tab">Data Recovery Request
+                </button>
+            </li>
 
-        <div class="row ">
-            <div class="col-lg-5 position-sticky top-0 h-100">
-                <div class="text-center">
-                    <div class="fz21 fw-600 text-black  text-capitalize">Maintenance request</div>
-                    <div class="fz16 fw-600 text-blue mb-4 text-capitalize">We would love to hear from you</div>
-                </div>
-                <img src="images/Computer%20troubleshooting-amico.svg" alt="" class="img-fluid d-none d-lg-block">
-
-            </div>
-            <div class="col-lg-7">
-                <form class="contact-us-form text-black mt-md-0 mt-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <input type="text" class="form-control mb24" placeholder="First name">
-                            </div>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="maintenance-tab-pane" role="tabpanel" tabindex="0">
+                <div class="row ">
+                    <div class="col-lg-5 position-sticky top-0 h-100">
+                        <div class="text-center">
+                            <div class="fz21 fw-600 text-black  text-capitalize">Maintenance request</div>
+                            <div class="fz16 fw-600 text-blue mb-4 text-capitalize">We would love to hear from you</div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <input type="text" class="form-control mb24" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="input-wrapper">
-                                <input type="text" class="form-control mb24"
-                                       placeholder="Company name [if you are company]">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <input type="email" class="form-control mb24" placeholder="Email address">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <input type="text" class="form-control mb24" placeholder="phone number">
-                            </div>
-                        </div>
+                        <img src="images/Computer%20troubleshooting-amico.svg" alt=""
+                             class="img-fluid d-none d-lg-block">
 
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <input type="text" class="form-control mb24" placeholder="Device model number">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-wrapper">
-                                <input type="text" class="form-control mb24" placeholder="Device serial number">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-bold  d-block mb-2">Type of malfunction :</label>
-
-                               <div class="options-checks mb24">
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Touchpad" value="option1">
-                                       <label class="form-check-label" for="Touchpad">Touchpad</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Keyboard" value="option2">
-                                       <label class="form-check-label" for="Keyboard">Keyboard</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Lcd" value="option2">
-                                       <label class="form-check-label" for="Lcd">Lcd</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Fan_issue" value="option2">
-                                       <label class="form-check-label" for="Fan_issue">Fan issue</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Hard_drive" value="option2">
-                                       <label class="form-check-label" for="Hard_drive">Hard drive</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Over_heated" value="option2">
-                                       <label class="form-check-label" for="Over_heated">Over heated</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Ac_adapter" value="option2">
-                                       <label class="form-check-label" for="Ac_adapter">Ac adapter</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="CPU" value="option2">
-                                       <label class="form-check-label" for="CPU">CPU</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Hing" value="option2">
-                                       <label class="form-check-label" for="Hing">Hing</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="RAM" value="option2">
-                                       <label class="form-check-label" for="RAM">RAM</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Printer" value="option2">
-                                       <label class="form-check-label" for="Printer">Printer</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Network_card" value="option2">
-                                       <label class="form-check-label" for="Network_card">Network card</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Application_problem" value="option2">
-                                       <label class="form-check-label" for="Application_problem">Application problem</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Virus" value="option2">
-                                       <label class="form-check-label" for="Virus">Virus</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="No_power" value="option2">
-                                       <label class="form-check-label" for="No_power">No power</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="boot" value="option2">
-                                       <label class="form-check-label" for="boot">Won’t boot</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="Upgrade" value="option2">
-                                       <label class="form-check-label" for="Upgrade">Upgrade [SSD, RAM, Storage]
-                                       </label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="other" value="option2">
-                                       <label class="form-check-label" for="other">Other</label>
-                                   </div>
-
-                               </div>
-
-                             </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label class="fz16 fw-bold  d-block mb-2">Type of services : </label>
-
-                                <div class="options-checks mb24">
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="place" value="place">
-                                        <label class="form-check-label" for="place">At your place [companies only]</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="contact-us-form text-black mt-md-0 mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="First name">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="shop" value="shop">
-                                        <label class="form-check-label" for="shop">Take order to our shop</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="Last name">
                                     </div>
-
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24"
+                                               placeholder="Company name [if you are company]">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="email" class="form-control mb24" placeholder="Email address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="phone number">
+                                    </div>
                                 </div>
 
-                            </div>
-                        </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="Device model number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="Device serial number">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2">Type of malfunction :</label>
 
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <textarea class="form-control mb24 w-100"  placeholder="Brief description"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label for="formFileMultiple" class="fz16 fw-bold  d-block mb-2">Upload images :</label>
-                                <input class="form-control mb24" type="file" id="formFileMultiple" multiple>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label  class="fz16 fw-bold  d-block mb-2"> Client location : </label>
-                               <div class="row">
-                                   <div class="col-md-6">
-                                        <div class="input-wrapper">
-                                           Select Country
-                                            <select class="form-select form-control mb24">
-                                                <option value="">Kuwait</option>
-                                                <option value="">Kuwait</option>
-                                                <option value="">Kuwait</option>
-                                                <option value="">Kuwait</option>
-                                            </select>
+                                        <div class="options-checks mb24">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Touchpad"
+                                                       value="option1">
+                                                <label class="form-check-label" for="Touchpad">Touchpad</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Keyboard"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Keyboard">Keyboard</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Lcd"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Lcd">Lcd</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Fan_issue"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Fan_issue">Fan issue</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Hard_drive"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Hard_drive">Hard drive</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Over_heated"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Over_heated">Over heated</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Ac_adapter"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Ac_adapter">Ac adapter</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="CPU"
+                                                       value="option2">
+                                                <label class="form-check-label" for="CPU">CPU</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Hing"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Hing">Hing</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="RAM"
+                                                       value="option2">
+                                                <label class="form-check-label" for="RAM">RAM</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Printer"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Printer">Printer</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Network_card"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Network_card">Network card</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Application_problem"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Application_problem">Application
+                                                    problem</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Virus"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Virus">Virus</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="No_power"
+                                                       value="option2">
+                                                <label class="form-check-label" for="No_power">No power</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="boot"
+                                                       value="option2">
+                                                <label class="form-check-label" for="boot">Won’t boot</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="Upgrade"
+                                                       value="option2">
+                                                <label class="form-check-label" for="Upgrade">Upgrade [SSD, RAM,
+                                                    Storage]
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="other"
+                                                       value="option2">
+                                                <label class="form-check-label" for="other">Other</label>
+                                            </div>
+
                                         </div>
-                                   </div>
-                                   <div class="col-md-6">
-                                       <div class="input-wrapper">
-                                           Select City
-                                           <select class="form-select form-control mb24">
-                                               <option value="">Kuwait</option>
-                                               <option value="">Kuwait</option>
-                                               <option value="">Kuwait</option>
-                                               <option value="">Kuwait</option>
-                                           </select>
-                                       </div>
-                                   </div>
-                               </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2">Type of services : </label>
+
+                                        <div class="options-checks mb24">
+
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="place"
+                                                       value="place">
+                                                <label class="form-check-label" for="place">At your place [companies
+                                                    only]</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="shop" value="shop">
+                                                <label class="form-check-label" for="shop">Take order to our
+                                                    shop</label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <textarea class="form-control mb24 w-100"
+                                                  placeholder="Brief description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label for="formFileMultiple" class="fz16 fw-bold  d-block mb-2">Upload images
+                                            :</label>
+                                        <input class="form-control mb24" type="file" id="formFileMultiple" multiple>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2"> Client location : </label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-wrapper">
+                                                    Select Country
+                                                    <select class="form-select form-control mb24">
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-wrapper">
+                                                    Select City
+                                                    <select class="form-select form-control mb24">
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2"> Client address : </label>
+                                        <input type="text" class="form-control mb24 w-100"
+                                               placeholder="Type your address"></input>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="submit" value="Submit" class="btn btn-primary px-5 py-3">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-wrapper">
-                                <label  class="fz16 fw-bold  d-block mb-2"> Client address : </label>
-                                <input type="text" class="form-control mb24 w-100"  placeholder="Type your address"></input>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Submit" class="btn btn-primary px-5 py-3">
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="recovery-tab-pane" role="tabpanel" tabindex="0">
+                <div class="row ">
+                    <div class="col-lg-5 position-sticky top-0 h-100">
+                        <div class="text-center">
+                            <div class="fz21 fw-600 text-black  text-capitalize">Data recovery request</div>
+                            <div class="fz16 fw-600 text-blue mb-4 text-capitalize">We would love to hear from you</div>
+                        </div>
+                        <img src="images/Server-amico.svg" alt=""
+                             class="img-fluid d-none d-lg-block">
+
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="contact-us-form text-black mt-md-0 mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="First name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24"
+                                               placeholder="Company name [if you are company]">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="email" class="form-control mb24" placeholder="Email address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="phone number">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="Device model number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-wrapper">
+                                        <input type="text" class="form-control mb24" placeholder="Device serial number">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2">Media type :</label>
+
+                                        <select class="nice-select  form-control mb24 wide">
+                                            <option value="">Hard Drive [HDD]</option>
+                                            <option value="">Solid state drive [SSD]</option>
+                                            <option value="">Flash media [USB, Memory card]</option>
+                                            <option value="">Mobile Device [Android, IOS]</option>
+                                            <option value="">Raid Array</option>
+                                            <option value="">SAS</option>
+                                            <option value="">other</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2">Reason of Failure : </label>
+
+                                        <select class="nice-select  form-control mb24 wide">
+                                            <option value="">Hardware Failure [clicking sound]</option>
+                                            <option value="">Water or liquid damage </option>
+                                            <option value="">Power failure [electronic short]</option>
+                                            <option value="">Deleted data</option>
+                                            <option value="">Formatted or reinstall OS</option>
+                                            <option value="">Ransome ware or virus</option>
+                                            <option value="">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <textarea class="form-control mb24 w-100"
+                                                  placeholder="Brief description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label for="formFileMultiple2" class="fz16 fw-bold  d-block mb-2">Upload images
+                                            :</label>
+                                        <input class="form-control mb24" type="file" id="formFileMultiple2" multiple>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2"> Client location : </label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-wrapper">
+                                                    Select Country
+                                                    <select class="form-select form-control mb24">
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-wrapper">
+                                                    Select City
+                                                    <select class="form-select form-control mb24">
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                        <option value="">Kuwait</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-wrapper">
+                                        <label class="fz16 fw-bold  d-block mb-2"> Client address : </label>
+                                        <input type="text" class="form-control mb24 w-100"
+                                               placeholder="Type your address"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="submit" value="Submit" class="btn btn-primary px-5 py-3">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </section>
 

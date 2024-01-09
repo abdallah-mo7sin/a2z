@@ -1784,7 +1784,7 @@ footer .cp a {
   border-radius: 0 20px 20px 0;
 }
 
-.product-details-and-reviews .nav-link {
+.product-details-and-reviews .nav-link, .form-tabs .nav-link {
   border: 0;
   margin: 0;
   font-size: 16px;
@@ -1793,11 +1793,11 @@ footer .cp a {
   padding: 10px 1.5em;
   background: #efefef;
 }
-.product-details-and-reviews .nav-link.active {
+.product-details-and-reviews .nav-link.active, .form-tabs .nav-link.active {
   color: white;
   background: #264AEC;
 }
-.product-details-and-reviews .tab-content {
+.product-details-and-reviews .tab-content, .form-tabs .tab-content {
   background: white;
   padding: 1.5rem;
   border-radius: 0 20px 20px;
@@ -2907,6 +2907,16 @@ html[dir=rtl] .breadcrumbs li a:after {
   align-items: center;
 }
 
+.form-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 20px;
+}
+.form-tabs .nav-link {
+  font-size: 16px;
+}
+
 @media (min-width: 1440px) {
   .container,
 .container-lg,
@@ -3314,6 +3324,14 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 }
 @media all and (max-width: 600px) {
+  .form-tabs {
+    gap: 6px;
+  }
+  .form-tabs .nav-link {
+    font-size: 13px;
+    padding-inline: 10px;
+  }
+
   .header-search-form form .search-input .form-control {
     background: #e1e1e1;
   }
