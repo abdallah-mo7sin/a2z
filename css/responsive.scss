@@ -12,10 +12,22 @@
     padding-inline: 0;
   }
 }
-
-@media all and (max-width: 1440px) {
-
+@media screen and (min-width: 1600px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px;
+  }
+  .container-inner {
+    max-width: 1440px;
+    padding-inline: 0;
+  }
 }
+
+
 
 @media all and (max-width: 1200px) {
 

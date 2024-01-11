@@ -1129,7 +1129,7 @@ h6 {
 
       img {
         width: 100%;
-        height: 180px;
+        //height: 180px;
       }
     }
 
@@ -1146,7 +1146,7 @@ h6 {
     &:nth-child(3), &:last-child {
       img {
         width: 100%;
-        height: 180px;
+        //height: 180px;
       }
     }
   }
@@ -1444,14 +1444,15 @@ h6 {
     grid-template-columns: repeat(auto-fit, minmax(264px, 2fr));
   }
 
-  .banner {
+
 
     img {
       border-radius: 10px;
+
       //width: 264px;
-      height: 271px;
+      //height: 271px;
       width: 100%;
-    }
+
   }
 }
 
