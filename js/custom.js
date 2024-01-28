@@ -161,8 +161,22 @@ if (editPhoneInput) {
                 slidesPerView: 6,
             },
             1400: {
-                slidesPerView: 7,
+                slidesPerView: 8,
             },
+            1600: {
+                slidesPerView: 9,
+            },
+            1920: {
+                slidesPerView: 10,
+            },
+            2560: {
+                slidesPerView: 12,
+            },
+            3200: {
+                slidesPerView: 14,
+            }
+
+
         }
     });
 
@@ -202,8 +216,21 @@ if (editPhoneInput) {
                 slidesPerView: 6,
             },
             1400: {
-                slidesPerView: 6,
+                slidesPerView: 7,
             },
+            1600: {
+                slidesPerView: 8,
+            },
+            1920: {
+                slidesPerView: 9,
+            },
+            2560: {
+                slidesPerView: 10,
+            },
+            3200: {
+                slidesPerView: 12,
+            }
+
         }
     });
 
@@ -241,7 +268,23 @@ if (editPhoneInput) {
                 },
                 1024: {
                     slidesPerView: 4,
-                }
+                },
+                1400: {
+                    slidesPerView: 5,
+                },
+                1600: {
+                    slidesPerView: 6,
+                },
+                1920: {
+                    slidesPerView: 7,
+                },
+                2560: {
+                    slidesPerView: 8,
+                },
+                3200: {
+                    slidesPerView: 10,
+                },
+
             }
         });
 
