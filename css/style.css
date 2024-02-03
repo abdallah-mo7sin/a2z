@@ -1592,6 +1592,9 @@ footer .cp a {
   flex-wrap: wrap;
   gap: 16px;
 }
+.single-product-info-wrapper .shopping-features li {
+  width: 100%;
+}
 .single-product-info-wrapper .shopping-features span {
   color: #000;
 }
@@ -1823,10 +1826,12 @@ footer .cp a {
 .specification-table tr td:first-child {
   font-weight: bold;
   color: #161616;
-  border-radius: 20px 0 0 20px;
+  border-start-start-radius: 20px;
+  border-end-start-radius: 20px;
 }
 .specification-table tr td:last-child {
-  border-radius: 0 20px 20px 0;
+  border-end-end-radius: 20px;
+  border-start-end-radius: 20px;
 }
 
 .product-details-and-reviews .nav-link, .form-tabs .nav-link {
