@@ -331,16 +331,16 @@ if (editPhoneInput) {
     $('#search_input').focus(() => {
         $('.recent-search-keywords').addClass('show')
         $('.overlay').addClass('show')
-        if ($(window).width() >= 768) {
-            $('.header-mini-nav').hide()
-        }
+        // if ($(window).width() >= 768) {
+        //     $('.header-mini-nav').hide()
+        // }
     })
     $('#search_input').blur(() => {
         $('.recent-search-keywords').removeClass('show')
         $('.overlay').removeClass('show')
-        if ($(window).width() >= 768) {
-            $('.header-mini-nav').show()
-        }
+        // if ($(window).width() >= 768) {
+        //     $('.header-mini-nav').show()
+        // }
 
     })
 

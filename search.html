@@ -22,24 +22,15 @@
 
 <header>
     <div class="top-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 offset-xl-4 col-lg-5 offset-lg-4 col-md-8">
-                    <div class="shop-welcome-message text-lg-center">
-                        Hurry up! Free shipping on your first order🔥
-                    </div>
-                </div>
 
-                <div class="col-xl-4 col-lg-3 col-md-4 d-none d-md-block">
-                    <div class="languages">
-                        <ul class="list-unstyled d-flex justify-content-end gap-3">
-                            <li class="active"><a href="">English</a></li>
-                            <li><a href="">Arabic</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        <div class="shop-welcome-message  marquee d-flex gap-4 ">
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
         </div>
     </div>
     <!-- end top nav -->
@@ -63,8 +54,12 @@
                         <li><a href="">About</a></li>
                         <li><a href="">Contact us</a></li>
                     </ul>
-
-                    <div class="header-search-form flex-grow-1">
+                    <div class="mobile-logo d-md-none">
+                        <a class="d-block" href="#">
+                            <img src="images/logo.png" class="img-fluid" alt="Site logo">
+                        </a>
+                    </div>
+                    <div class="header-search-form ">
 
                         <form>
                             <div class="search-input">
@@ -166,6 +161,7 @@
                         </div>
 
                     </div>
+
                     <ul class="user-nav list-inline mb-0 flex-shrink-0 d-none d-md-flex">
 
                         <li class="list-inline-item ">
@@ -189,6 +185,10 @@
                         <li class="list-inline-item"><a href="">
                             <i class="iconsax hover" icon-name="shopping-cart"></i>
                             <span>1</span></a></li>
+                        <li><a href="" class="fz16">
+                            <img src="images/ar.png" class="flag-icon img-fluid " alt="">
+                            العربية
+                        </a></li>
 
                     </ul>
 
@@ -199,13 +199,13 @@
     </div>
     <!-- End main-header-content -->
 
-    <div class="main-menu">
+    <div class="container">
+        <div class="main-menu">
 
-        <div class="container">
 
             <nav class="navbar navbar-expand-lg navbar-light">
 
-                <div class="container-fluid">
+                <div class="container-fluid px-md-0">
                     <a class="navbar-brand d-block d-lg-none" href="#">
                         <img src="images/logo.png" class="img-fluid" alt="">
                     </a>
@@ -527,7 +527,7 @@
 </header>
 
 
-<section class="search-page-wrapper mb100 mt--2rem ">
+<section class="search-page-wrapper mb100   ">
     <div class="container container-inner">
         <div class="row">
             <div class="col-lg-3">
@@ -617,23 +617,28 @@
 
                                <label class="form-check-label custom-check ">
                                    <input class="form-check-input" type="checkbox">
-                                   Samasung
+                                   Samsung
+                                   <img class="brand-img" src="https://cdn.a2zmegastore.com/storage/brands/2023/10/400/1698081513_pngimg.com---samsung_logo_PNG12.png" alt="">
                                </label>
                                <label class="form-check-label custom-check ">
                                    <input class="form-check-input" type="checkbox">
                                    Apple
+                                      <img class="brand-img" src="https://cdn.a2zmegastore.com/storage/brands/2023/11/400/1701214121_Apple.png" alt="">
                                </label>
                                <label class="form-check-label custom-check ">
                                    <input class="form-check-input" type="checkbox">
-                                   Xiamoi
+                                   Gigabyte
+                                      <img class="brand-img" src="https://cdn.a2zmegastore.com/storage/brands/2023/11/400/1701211616_Gigabyte.png" alt="">
                                </label>
                                <label class="form-check-label custom-check ">
                                    <input class="form-check-input" type="checkbox">
-                                   HUAWEI
+                                   ASUS
+                                      <img class="brand-img" src="https://cdn.a2zmegastore.com/storage/brands/2023/10/400/1698191925_Asus.png" alt="">
                                </label>
                                <label class="form-check-label custom-check ">
                                    <input class="form-check-input" type="checkbox">
-                                   Lenovo
+                                   Toshipa
+                                      <img class="brand-img" src="https://cdn.a2zmegastore.com/storage/brands/2023/11/400/1701214966_toshibaF.png" alt="">
                                </label>
                                <a href="" class="fz14 fw-500 mt-4 d-block">See all</a>
                            </div>
@@ -786,8 +791,36 @@
                     </div>
 
                     <div class="products-results  mt-4">
-                        <div class="row">
-                            <div class="col-md-4 mb24">
+                        <div class="items-grid">
+                            <div class="single-grid-item ">
+                                <div class="single-product-wrapper">
+                                    <div class="top-icons d-flex justify-content-end">
+                                        <a class="add-to-fav" href="">
+                                            <i class="iconsax hover" icon-name="heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item-img">
+                                        <a href=""><img alt="" class="img-fluid"
+                                                        loading="lazy"
+                                                        src="images/products/product-large-img-demo-test.png"></a>
+                                    </div>
+                                    <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch,
+                                        Apple M1
+                                        Chip,</a></div>
+
+                                    <div class="product-rate">
+                                        <span class="rate-ratio">4.5★</span>(45)
+                                    </div>
+
+                                    <div class="item-price">38,095 EGP
+                                        <div class="old-price">45.000 EGP</div>
+                                    </div>
+
+                                    <a class="btn add-to-cart" href="">Add to cart</a>
+
+                                </div>
+                            </div>
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -813,7 +846,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -839,7 +872,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -865,7 +898,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -891,7 +924,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -917,7 +950,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -943,7 +976,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -969,7 +1002,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -995,7 +1028,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1021,7 +1054,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1047,7 +1080,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1073,7 +1106,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1099,7 +1132,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1125,7 +1158,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1151,7 +1184,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1177,7 +1210,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1203,7 +1236,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1229,7 +1262,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1255,7 +1288,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1281,7 +1314,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1307,7 +1340,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1333,7 +1366,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1359,33 +1392,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-4 mb24">
-                                <div class="single-product-wrapper">
-                                    <div class="top-icons d-flex justify-content-end">
-                                        <a class="add-to-fav" href="">
-                                            <i class="iconsax hover" icon-name="heart"></i>
-                                        </a>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href=""><img alt="" class="img-fluid"
-                                                        loading="lazy"
-                                                        src="images/products/product-large-img-demo-test.png"></a>
-                                    </div>
-                                    <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch,
-                                        Apple M1
-                                        Chip,</a></div>
-
-                                    <div class="product-rate">
-                                        <span class="rate-ratio">4.5★</span>(45)
-                                    </div>
-
-                                    <div class="item-price">38,095EGP</div>
-
-                                    <a class="btn add-to-cart" href="">Add to cart</a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb24">
+                            <div class="single-grid-item ">
                                 <div class="single-product-wrapper">
                                     <div class="top-icons d-flex justify-content-end">
                                         <a class="add-to-fav" href="">
@@ -1526,6 +1533,7 @@
                     <li><a href="">Terms of service</a></li>
                     <li><a href="">Privacy policy</a></li>
                     <li><a href="">Returns & shipping</a></li>
+                    <li class="special-item"><a href="#">Maintenance Request</a></li>
                 </ul>
                 <ul class="list-unstyled d-flex flex-wrap gap-1rem social-list">
                     <li><a href="">

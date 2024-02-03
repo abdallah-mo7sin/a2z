@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet">
+    <link href="css/intlTelInput.min.css" rel="stylesheet">
+    <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>A2Z MegaStore</title>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<header>
+    <div class="top-nav">
+
+        <div class="shop-welcome-message  marquee d-flex gap-4 ">
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+        </div>
+    </div>
+    <!-- end top nav -->
+
+    <div class="main-header-content">
+        <div class="container">
+            <div class="d-flex align-items-center">
+
+                <div class="logo">
+                    <a class="d-block" href="#">
+                        <img src="images/logo.png" class="img-fluid" alt="Site logo">
+                    </a>
+                </div>
+
+                <div class="header-main-content d-flex justify-content-between gap-5 flex-grow-1 align-items-center">
+
+                    <ul class="header-mini-nav list-unstyled mb-0">
+                        <li><a href="">Deals</a></li>
+                        <li><a href="">What's new</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                    <div class="mobile-logo d-md-none">
+                        <a class="d-block" href="#">
+                            <img src="images/logo.png" class="img-fluid" alt="Site logo">
+                        </a>
+                    </div>
+                    <div class="header-search-form ">
+
+                        <form>
+                            <div class="search-input">
+                                <input id="search_input" class="form-control" placeholder="Search.." type="search">
+                                <button class="btn btn-submit p-0" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path d="M2.5 17.5L6.83058 13.1694M6.83058 13.1694C5.69956 12.0384 5 10.4759 5 8.75C5 5.29822 7.79822 2.5 11.25 2.5C14.7018 2.5 17.5 5.29822 17.5 8.75C17.5 12.2018 14.7018 15 11.25 15C9.52411 15 7.96161 14.3004 6.83058 13.1694Z"
+                                              stroke="#8D8D8D" stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="recent-search-keywords">
+                            <div class="keywords-section">
+                                <div class="fw-600 mb-3">Recent search</div>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex justify-content-between gap-3">
+                                        <span>Mobile</span>
+                                        <button class="delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.0006 6.9227L6.92368 17.9996C6.67137 18.2519 6.25291 18.2519 6.0006 17.9996C5.74829 17.7473 5.74829 17.3289 6.0006 17.0765L17.0775 5.99962C17.3298 5.74732 17.7483 5.74732 18.0006 5.99962C18.2529 6.25193 18.2529 6.67039 18.0006 6.9227Z"
+                                                      fill="#181823"/>
+                                                <path d="M6.92368 6.00037L18.0006 17.0773C18.2529 17.3296 18.2529 17.7481 18.0006 18.0004C17.7483 18.2527 17.3298 18.2527 17.0775 18.0004L6.0006 6.92345C5.74829 6.67114 5.74829 6.25268 6.0006 6.00038C6.25291 5.74807 6.67137 5.74807 6.92368 6.00037Z"
+                                                      fill="#181823"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="d-flex justify-content-between gap-3">
+                                        <span>TV</span>
+                                        <button class="delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.0006 6.9227L6.92368 17.9996C6.67137 18.2519 6.25291 18.2519 6.0006 17.9996C5.74829 17.7473 5.74829 17.3289 6.0006 17.0765L17.0775 5.99962C17.3298 5.74732 17.7483 5.74732 18.0006 5.99962C18.2529 6.25193 18.2529 6.67039 18.0006 6.9227Z"
+                                                      fill="#181823"/>
+                                                <path d="M6.92368 6.00037L18.0006 17.0773C18.2529 17.3296 18.2529 17.7481 18.0006 18.0004C17.7483 18.2527 17.3298 18.2527 17.0775 18.0004L6.0006 6.92345C5.74829 6.67114 5.74829 6.25268 6.0006 6.00038C6.25291 5.74807 6.67137 5.74807 6.92368 6.00037Z"
+                                                      fill="#181823"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="d-flex justify-content-between gap-3">
+                                        <span>Laptop</span>
+                                        <button class="delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.0006 6.9227L6.92368 17.9996C6.67137 18.2519 6.25291 18.2519 6.0006 17.9996C5.74829 17.7473 5.74829 17.3289 6.0006 17.0765L17.0775 5.99962C17.3298 5.74732 17.7483 5.74732 18.0006 5.99962C18.2529 6.25193 18.2529 6.67039 18.0006 6.9227Z"
+                                                      fill="#181823"/>
+                                                <path d="M6.92368 6.00037L18.0006 17.0773C18.2529 17.3296 18.2529 17.7481 18.0006 18.0004C17.7483 18.2527 17.3298 18.2527 17.0775 18.0004L6.0006 6.92345C5.74829 6.67114 5.74829 6.25268 6.0006 6.00038C6.25291 5.74807 6.67137 5.74807 6.92368 6.00037Z"
+                                                      fill="#181823"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="keywords-section">
+                                <div class="fw-600 mb-3">Top search</div>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex justify-content-between gap-3">
+                                        <span>Air fryer</span>
+                                        <button class="delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.0006 6.9227L6.92368 17.9996C6.67137 18.2519 6.25291 18.2519 6.0006 17.9996C5.74829 17.7473 5.74829 17.3289 6.0006 17.0765L17.0775 5.99962C17.3298 5.74732 17.7483 5.74732 18.0006 5.99962C18.2529 6.25193 18.2529 6.67039 18.0006 6.9227Z"
+                                                      fill="#181823"/>
+                                                <path d="M6.92368 6.00037L18.0006 17.0773C18.2529 17.3296 18.2529 17.7481 18.0006 18.0004C17.7483 18.2527 17.3298 18.2527 17.0775 18.0004L6.0006 6.92345C5.74829 6.67114 5.74829 6.25268 6.0006 6.00038C6.25291 5.74807 6.67137 5.74807 6.92368 6.00037Z"
+                                                      fill="#181823"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="d-flex justify-content-between gap-3">
+                                        <span>airpods</span>
+                                        <button class="delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.0006 6.9227L6.92368 17.9996C6.67137 18.2519 6.25291 18.2519 6.0006 17.9996C5.74829 17.7473 5.74829 17.3289 6.0006 17.0765L17.0775 5.99962C17.3298 5.74732 17.7483 5.74732 18.0006 5.99962C18.2529 6.25193 18.2529 6.67039 18.0006 6.9227Z"
+                                                      fill="#181823"/>
+                                                <path d="M6.92368 6.00037L18.0006 17.0773C18.2529 17.3296 18.2529 17.7481 18.0006 18.0004C17.7483 18.2527 17.3298 18.2527 17.0775 18.0004L6.0006 6.92345C5.74829 6.67114 5.74829 6.25268 6.0006 6.00038C6.25291 5.74807 6.67137 5.74807 6.92368 6.00037Z"
+                                                      fill="#181823"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="d-flex justify-content-between gap-3">
+                                        <span>iPhone</span>
+                                        <button class="delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M18.0006 6.9227L6.92368 17.9996C6.67137 18.2519 6.25291 18.2519 6.0006 17.9996C5.74829 17.7473 5.74829 17.3289 6.0006 17.0765L17.0775 5.99962C17.3298 5.74732 17.7483 5.74732 18.0006 5.99962C18.2529 6.25193 18.2529 6.67039 18.0006 6.9227Z"
+                                                      fill="#181823"/>
+                                                <path d="M6.92368 6.00037L18.0006 17.0773C18.2529 17.3296 18.2529 17.7481 18.0006 18.0004C17.7483 18.2527 17.3298 18.2527 17.0775 18.0004L6.0006 6.92345C5.74829 6.67114 5.74829 6.25268 6.0006 6.00038C6.25291 5.74807 6.67137 5.74807 6.92368 6.00037Z"
+                                                      fill="#181823"/>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="user-nav list-inline mb-0 flex-shrink-0 d-none d-md-flex">
+
+                        <li class="list-inline-item ">
+                            <div class="dropdown">
+                                <a href="#" data-bs-display="static" role="button" data-bs-toggle="dropdown">
+                                    <i class="iconsax hover" icon-name="user-2"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="iconsax" icon-name="login-2"> </i>
+                                        Login
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <i class="iconsax" icon-name="user-1-add"></i>
+                                        Sigun up
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="list-inline-item"><a href="">
+                            <i class="iconsax hover" icon-name="shopping-cart"></i>
+                            <span>1</span></a></li>
+                        <li><a href="" class="fz16">
+                            <img src="images/ar.png" class="flag-icon img-fluid " alt="">
+                            العربية
+                        </a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End main-header-content -->
+
+    <div class="container">
+        <div class="main-menu">
+
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container-fluid px-md-0">
+                    <a class="navbar-brand d-block d-lg-none" href="#">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                    </a>
+                    <button class="navbar-toggler collapsed d-none d-md-block d-lg-none" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                             fill="none">
+                            <path d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
+                                  fill="#161616"/>
+                            <path d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"
+                                  fill="#161616"/>
+                            <path d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"
+                                  fill="#161616"/>
+                        </svg>
+                    </button>
+                    <div class="mobile-user-nav d-md-none d-flex align-items-center">
+                        <ul class="user-nav  list-inline mb-0  ">
+                            <li class="list-inline-item">
+                                <a href="" class="fz14 d-flex align-items-center gap-1">
+                                    EN
+                                    <i class="iconsax hover" icon-name="globe"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <div class="dropdown">
+                                    <a href="#" data-bs-display="static" role="button" data-bs-toggle="dropdown">
+                                        <i class="iconsax hover" icon-name="user-2"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">
+                                            <i class="iconsax" icon-name="login-2"> </i>
+                                            Login
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                            <i class="iconsax" icon-name="user-1-add"></i>
+                                            Sigun up
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="list-inline-item"><a href="">
+                                <i class="iconsax hover" icon-name="shopping-cart"></i>
+                                <span>1</span></a></li>
+
+                        </ul>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
+                                      fill="#161616"/>
+                                <path d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"
+                                      fill="#161616"/>
+                                <path d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"
+                                      fill="#161616"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="nav-item dropdown all-categories-li">
+                                <a class="nav-link has-sub " href="#" data-bs-toggle="dropdown">
+                                    <i class="iconsax" icon-name="menu-hamburger"></i> All categories </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> <img
+                                            src="images/icons/menu/floor-polisher.png" alt=""> Housewares </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> Grocery </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/mobile-phone.png"
+                                                                                alt=""> Phones </a></li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/bbq.png" alt="">
+                                        Food </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Shoes </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Large Electronic Machines </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> Small Electronics </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item  "><a class="nav-link" href="#">Electronics</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    Women </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Beauty & health</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Baby & Toys</a></li>
+                            <li class="nav-item special-item"><a class="nav-link" href="#">Maintenance Request</a></li>
+
+
+                        </ul>
+
+                        <!--  Categories Menu for Mobile Devices-->
+                        <ul class="navbar-nav d-lg-none mobile-nav all-categories-li">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="images/icons/menu/bbq.png" alt="">
+                                    Women </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="images/icons/menu/floor-polisher.png" alt=""> Housewares </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="images/icons/menu/mobile-phone.png" alt=""> Phones </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> <!-- navbar-collapse.// -->
+                </div> <!-- container-fluid.// -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- end  main-header-content -->
+
+</header>
+
+
+<div class="breadcrumbs">
+    <div class="container container-inner">
+        <ul class="list-unstyled d-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Quick Purchase</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="cart-page-container">
+    <div class="container container-inner">
+        <div class="row w-100">
+            <div class="col-lg-8">
+                <div class="bg-white p-4 rounded10 shadow-sm mb-4">
+                    <div class="text-secondary fz14 mb-3 fw-600">Your Cart</div>
+                    <div class="cart-items-wrapper">
+                        <div class="single-cart-item">
+                            <div class="item-img">
+                                <img src="images/products/product.png" alt="">
+                            </div>
+                            <div class="title-and-price d-flex flex-column justify-content-between">
+                                <h3 class="title fz14 fw-normal lh-base">Reno 8T Dual SIM Sunset Orange 8GB
+                                    RAM 256GB 4G LTE- Middle East Version</h3>
+                                <div class="price fz14">9000EGP</div>
+                            </div>
+                            <div class="quantity-and-remove d-flex flex-column justify-content-between align-items-center">
+                                <div class="quantity-wrapper m-0">
+                                    <div class="quantity-select">
+                                        <select class="nice-select">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="remove-item btn text-error fz14 d-flex align-items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24"
+                                         fill="none">
+                                        <path d="M18.937 2.88102L18.2213 21.8467C18.2008 22.3904 17.7361 22.8384 17.1946 22.8384H4.80754C4.26488 22.8384 3.80141 22.3912 3.78087 21.8467L3.06518 2.88102C3.05309 2.56057 2.78351 2.31059 2.46305 2.32269C2.1426 2.33478 1.89263 2.60436 1.90472 2.92481L2.6204 21.8905C2.66447 23.0583 3.64003 23.9997 4.80754 23.9997H17.1946C18.3607 23.9997 19.3377 23.0578 19.3818 21.8905L20.0974 2.92481C20.1095 2.60436 19.8596 2.33478 19.5391 2.32269C19.2186 2.31059 18.9491 2.56057 18.937 2.88102Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M10.6133 7.16072V20.322C10.6133 20.6427 10.8732 20.9027 11.1939 20.9027C11.5146 20.9027 11.7746 20.6427 11.7746 20.322V7.16072C11.7746 6.84004 11.5146 6.58008 11.1939 6.58008C10.8732 6.58008 10.6133 6.84004 10.6133 7.16072Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M6.16237 7.1778L6.54946 20.3391C6.55889 20.6596 6.82638 20.9118 7.14693 20.9024C7.46747 20.893 7.71968 20.6255 7.71025 20.3049L7.32315 7.14366C7.31373 6.82312 7.04623 6.57091 6.72569 6.58033C6.40515 6.58976 6.15294 6.85726 6.16237 7.1778Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M14.6784 7.14366L14.2913 20.3049C14.2818 20.6255 14.5341 20.893 14.8546 20.9024C15.1751 20.9118 15.4426 20.6596 15.4521 20.3391L15.8392 7.1778C15.8486 6.85726 15.5964 6.58976 15.2758 6.58033C14.9553 6.57091 14.6878 6.82312 14.6784 7.14366Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M1.32283 3.2902H20.6777C20.9983 3.2902 21.2583 3.03023 21.2583 2.70955C21.2583 2.38887 20.9983 2.12891 20.6777 2.12891H1.32283C1.00215 2.12891 0.742188 2.38887 0.742188 2.70955C0.742188 3.03023 1.00215 3.2902 1.32283 3.2902Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M7.66807 2.73177L8.08237 1.69604C8.19266 1.42031 8.5753 1.16129 8.87089 1.16129H13.129C13.4267 1.16129 13.8064 1.41839 13.9175 1.69604L14.3318 2.73177L15.41 2.30048L14.9957 1.26475C14.7083 0.546205 13.9015 0 13.129 0H8.87089C8.10049 0 7.2908 0.548085 7.00414 1.26475L6.58984 2.30048L7.66807 2.73177Z"
+                                              fill="#DA1E28"/>
+                                    </svg>
+                                    Remove
+                                </button>
+                            </div>
+                        </div>
+                        <div class="single-cart-item">
+                            <div class="item-img">
+                                <img src="images/products/product.png" alt="">
+                            </div>
+                            <div class="title-and-price d-flex flex-column justify-content-between">
+                                <h3 class="title fz14 fw-normal lh-base">Reno 8T Dual SIM Sunset Orange 8GB
+                                    RAM 256GB 4G LTE- Middle East Version</h3>
+                                <div class="price fz14">9000EGP</div>
+                            </div>
+                            <div class="quantity-and-remove d-flex flex-column justify-content-between align-items-center">
+                                <div class="quantity-wrapper m-0">
+                                    <div class="quantity-select">
+                                        <select class="nice-select">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="remove-item btn text-error fz14 d-flex align-items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24"
+                                         fill="none">
+                                        <path d="M18.937 2.88102L18.2213 21.8467C18.2008 22.3904 17.7361 22.8384 17.1946 22.8384H4.80754C4.26488 22.8384 3.80141 22.3912 3.78087 21.8467L3.06518 2.88102C3.05309 2.56057 2.78351 2.31059 2.46305 2.32269C2.1426 2.33478 1.89263 2.60436 1.90472 2.92481L2.6204 21.8905C2.66447 23.0583 3.64003 23.9997 4.80754 23.9997H17.1946C18.3607 23.9997 19.3377 23.0578 19.3818 21.8905L20.0974 2.92481C20.1095 2.60436 19.8596 2.33478 19.5391 2.32269C19.2186 2.31059 18.9491 2.56057 18.937 2.88102Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M10.6133 7.16072V20.322C10.6133 20.6427 10.8732 20.9027 11.1939 20.9027C11.5146 20.9027 11.7746 20.6427 11.7746 20.322V7.16072C11.7746 6.84004 11.5146 6.58008 11.1939 6.58008C10.8732 6.58008 10.6133 6.84004 10.6133 7.16072Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M6.16237 7.1778L6.54946 20.3391C6.55889 20.6596 6.82638 20.9118 7.14693 20.9024C7.46747 20.893 7.71968 20.6255 7.71025 20.3049L7.32315 7.14366C7.31373 6.82312 7.04623 6.57091 6.72569 6.58033C6.40515 6.58976 6.15294 6.85726 6.16237 7.1778Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M14.6784 7.14366L14.2913 20.3049C14.2818 20.6255 14.5341 20.893 14.8546 20.9024C15.1751 20.9118 15.4426 20.6596 15.4521 20.3391L15.8392 7.1778C15.8486 6.85726 15.5964 6.58976 15.2758 6.58033C14.9553 6.57091 14.6878 6.82312 14.6784 7.14366Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M1.32283 3.2902H20.6777C20.9983 3.2902 21.2583 3.03023 21.2583 2.70955C21.2583 2.38887 20.9983 2.12891 20.6777 2.12891H1.32283C1.00215 2.12891 0.742188 2.38887 0.742188 2.70955C0.742188 3.03023 1.00215 3.2902 1.32283 3.2902Z"
+                                              fill="#DA1E28"/>
+                                        <path d="M7.66807 2.73177L8.08237 1.69604C8.19266 1.42031 8.5753 1.16129 8.87089 1.16129H13.129C13.4267 1.16129 13.8064 1.41839 13.9175 1.69604L14.3318 2.73177L15.41 2.30048L14.9957 1.26475C14.7083 0.546205 13.9015 0 13.129 0H8.87089C8.10049 0 7.2908 0.548085 7.00414 1.26475L6.58984 2.30048L7.66807 2.73177Z"
+                                              fill="#DA1E28"/>
+                                    </svg>
+                                    Remove
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded10 shadow-sm mb-4">
+                    <div class="text-secondary fz14 mb-3 fw-600">Add your shipping address</div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Full name</label>
+                                <input type="text" class="form-control mb24" placeholder="Ex : Mohammed Mohsen">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Country</label>
+                                <select class="nice-select custom-nice-select form-control mb24">
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option value="">Egypt</option>
+                                    <option value="">Qatar</option>
+                                    <option value="">Oman</option>
+                                    <option value="">USA</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-wrapper ">
+                                <label class="fz16 fw-500  d-block mb-2">City</label>
+                                <input type="text" class="form-control mb24"
+                                       placeholder="Enter your city">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Street name and house number</label>
+                                <input type="text" class="form-control mb24"
+                                       placeholder="Enter your house or street number">
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Postal code</label>
+                                <input type="text" class="form-control mb24"
+                                       placeholder="Enter your postal code">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-wrapper">
+                                <label class="fz16 fw-500  d-block mb-2">Phone number</label>
+
+                                <input id="phone" type="tel" class="form-control mb24 w-100">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded10 shadow-sm mb-4">
+                    <div class="text-secondary fz14 mb-3 fw-600">Select payment methods</div>
+                    <div class="text-helper mb24">All transactions are secure and encrypted.</div>
+
+                    <div class="payment-methods">
+
+                        <div class="method-wrapper">
+                            <div class="custom-radio border-0 p-0  mb24">
+                                <div class="form-check align-items-center w-100 border rounded10 p-3">
+                                    <input class="form-check-input mt-0 ms-1" type="radio" name="payment_methods"
+                                           id="method_1" checked>
+                                    <label class="form-check-label d-flex justify-content-between w-100 align-items-center"
+                                           for="method_1">
+                                        <span class="fz14 fw-600 text-primary">Credit card</span>
+                                        <img src="images/visa.png" class="img-fluid" alt="">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="method_content_1">
+                                <form action="" class="text-black">
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control mb24" placeholder="Card number">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control mb24" placeholder="Name on card">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-7">
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control mb24" placeholder="Expiration date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-5">
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control mb24" placeholder="CCV">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="method-wrapper">
+                            <div class="custom-radio border-0 p-0  mb24">
+                                <div class="form-check align-items-center w-100 border rounded10 p-3">
+                                    <input class="form-check-input mt-0 ms-1" type="radio" name="payment_methods"
+                                           id="method_2">
+                                    <label class="form-check-label d-flex justify-content-between w-100 align-items-center"
+                                           for="method_2">
+                                        <span class="fz14 fw-600 text-primary">PayPal</span>
+                                        <img src="images/PayPal.png" class="img-fluid" alt="">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="method_content_2">
+                                <form action="" class="text-black">
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="input-wrapper">
+                                                <input type="text" class="form-control mb24"
+                                                       placeholder="Paypal account email">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="order-summary sticky-md-top bg-white border-0 shadow-sm">
+                    <div class="section-title fw-600">Order Summary</div>
+                    <div class="info-line">
+                        <strong>Price</strong>
+                        <span>$319.98</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Discount</strong>
+                        <span>$31.9</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Shipping</strong>
+                        <span class="text-blue">$122</span>
+                    </div>
+                    <div class="info-line">
+                        <strong>Coupon Applied</strong>
+                        <span>$0.00</span>
+                    </div>
+                    <hr class="hr">
+                    <div class="info-line">
+                        <strong class="fw-normal fz14">TOTAL</strong>
+                        <span class="fw-500 fz16">$288.08</span>
+                    </div>
+
+                    <div class="info-line">
+                        <strong class="fw-normal fz14">Estimated Delivery</strong>
+                        <span class="fw-500 fz16">01 Feb, 2023</span>
+                    </div>
+
+                    <div class="coupon-field">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.59 13.41L13.42 20.58C13.2343 20.766 13.0137 20.9135 12.7709 21.0141C12.5281 21.1148 12.2678 21.1666 12.005 21.1666C11.7422 21.1666 11.4819 21.1148 11.2391 21.0141C10.9963 20.9135 10.7757 20.766 10.59 20.58L2 12V2H12L20.59 10.59C20.9625 10.9647 21.1716 11.4716 21.1716 12C21.1716 12.5284 20.9625 13.0353 20.59 13.41V13.41Z"
+                                  stroke="#17183B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 7H7.01" stroke="#17183B" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" class="form-control" placeholder="Coupon Code">
+                        <input type="submit" value="Apply" class="submit-coupon">
+                    </div>
+                    <a href="" class="btn btn-primary fz16 fw-500 w-100 ">Checkout now </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper  ">
+            <div class="d-flex justify-content-between">
+                <div class="subscribe">
+                    <h6 class="section-title fw-normal">Exclusive benefits</h6>
+                    <form action="" class="subscribe-form">
+                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <button type="submit" class="btn p-0 border-0 shadow-none  btn-submit"><i class="iconsax hover"
+                                                                                                  icon-name="arrow-right"></i>
+                        </button>
+                    </form>
+                    <p>Subscribe for our free membership to receive
+                        exclusive deals, news, and events.</p>
+                    <img src="images/footer-logo.png" alt="footer logo" class="img-fluid footer-logo">
+                </div>
+                <div class="footer-lists d-flex">
+                    <div class="footer-list-wrapper">
+                        <h6>Shop</h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="">New arrivals</a></li>
+                            <li><a href="">Best sellers</a></li>
+                            <li><a href="">Brands</a></li>
+                            <li><a href="">TVs</a></li>
+                            <li><a href="">Mobile</a></li>
+                            <li><a href="">Electronics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-wrapper">
+                        <h6>We care</h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="">Help</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Maintenance request</a></li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Customer service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-wrapper">
+                        <h6>Explore </h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-wrapper d-flex flex-column">
+                        <h6>Get the app </h6>
+                        <div class="d-flex gap-1rem flex-column">
+                            <a href="" class="d-block"><img src="images/app-store.jpg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/google-play.jpg" class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="payments d-flex gap-2 mt-auto">
+                            <a href="" class="d-block"><img src="images/payments/knet.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/visa.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/master.png" class="img-fluid"
+                                                            alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/cod.png" class="img-fluid" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyrights">
+
+            <div class="d-md-flex justify-content-between">
+                <ul class="list-unstyled d-flex flex-wrap gap-2rem">
+                    <li>©A2Z Mega Store 2023</li>
+                    <li><a href="">Terms of service</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Returns & shipping</a></li>
+                </ul>
+                <ul class="list-unstyled d-flex flex-wrap gap-1rem social-list">
+                    <li><a href="">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.1367 8.09375C19.8398 7.56641 20.4727 6.93359 20.9648 6.19531C20.332 6.47656 19.5938 6.6875 18.8555 6.75781C19.6289 6.30078 20.1914 5.59766 20.4727 4.71875C19.7695 5.14062 18.9609 5.45703 18.1523 5.63281C17.4492 4.89453 16.5 4.47266 15.4453 4.47266C13.4062 4.47266 11.7539 6.125 11.7539 8.16406C11.7539 8.44531 11.7891 8.72656 11.8594 9.00781C8.80078 8.83203 6.05859 7.35547 4.23047 5.14062C3.91406 5.66797 3.73828 6.30078 3.73828 7.00391C3.73828 8.26953 4.37109 9.39453 5.39062 10.0625C4.79297 10.0273 4.19531 9.88672 3.70312 9.60547V9.64062C3.70312 11.4336 4.96875 12.9102 6.65625 13.2617C6.375 13.332 6.02344 13.4023 5.70703 13.4023C5.46094 13.4023 5.25 13.3672 5.00391 13.332C5.46094 14.8086 6.83203 15.8633 8.44922 15.8984C7.18359 16.8828 5.60156 17.4805 3.87891 17.4805C3.5625 17.4805 3.28125 17.4453 3 17.4102C4.61719 18.4648 6.55078 19.0625 8.66016 19.0625C15.4453 19.0625 19.1367 13.4727 19.1367 8.58594C19.1367 8.41016 19.1367 8.26953 19.1367 8.09375Z"
+                                  fill="#161616"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.875 7.70703C9.625 7.70703 7.83203 9.53516 7.83203 11.75C7.83203 14 9.625 15.793 11.875 15.793C14.0898 15.793 15.918 14 15.918 11.75C15.918 9.53516 14.0898 7.70703 11.875 7.70703ZM11.875 14.3867C10.4336 14.3867 9.23828 13.2266 9.23828 11.75C9.23828 10.3086 10.3984 9.14844 11.875 9.14844C13.3164 9.14844 14.4766 10.3086 14.4766 11.75C14.4766 13.2266 13.3164 14.3867 11.875 14.3867ZM17.0078 7.56641C17.0078 7.03906 16.5859 6.61719 16.0586 6.61719C15.5312 6.61719 15.1094 7.03906 15.1094 7.56641C15.1094 8.09375 15.5312 8.51562 16.0586 8.51562C16.5859 8.51562 17.0078 8.09375 17.0078 7.56641ZM19.6797 8.51562C19.6094 7.25 19.3281 6.125 18.4141 5.21094C17.5 4.29688 16.375 4.01562 15.1094 3.94531C13.8086 3.875 9.90625 3.875 8.60547 3.94531C7.33984 4.01562 6.25 4.29688 5.30078 5.21094C4.38672 6.125 4.10547 7.25 4.03516 8.51562C3.96484 9.81641 3.96484 13.7188 4.03516 15.0195C4.10547 16.2852 4.38672 17.375 5.30078 18.3242C6.25 19.2383 7.33984 19.5195 8.60547 19.5898C9.90625 19.6602 13.8086 19.6602 15.1094 19.5898C16.375 19.5195 17.5 19.2383 18.4141 18.3242C19.3281 17.375 19.6094 16.2852 19.6797 15.0195C19.75 13.7188 19.75 9.81641 19.6797 8.51562ZM17.9922 16.3906C17.7461 17.0938 17.1836 17.6211 16.5156 17.9023C15.4609 18.3242 13 18.2188 11.875 18.2188C10.7148 18.2188 8.25391 18.3242 7.23438 17.9023C6.53125 17.6211 6.00391 17.0938 5.72266 16.3906C5.30078 15.3711 5.40625 12.9102 5.40625 11.75C5.40625 10.625 5.30078 8.16406 5.72266 7.10938C6.00391 6.44141 6.53125 5.91406 7.23438 5.63281C8.25391 5.21094 10.7148 5.31641 11.875 5.31641C13 5.31641 15.4609 5.21094 16.5156 5.63281C17.1836 5.87891 17.7109 6.44141 17.9922 7.10938C18.4141 8.16406 18.3086 10.625 18.3086 11.75C18.3086 12.9102 18.4141 15.3711 17.9922 16.3906Z"
+                                  fill="#161616"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.8086 12.875L16.3008 9.64062H13.1719V7.53125C13.1719 6.61719 13.5938 5.77344 15 5.77344H16.4414V2.99609C16.4414 2.99609 15.1406 2.75 13.9102 2.75C11.3438 2.75 9.65625 4.33203 9.65625 7.14453V9.64062H6.77344V12.875H9.65625V20.75H13.1719V12.875H15.8086Z"
+                                  fill="#161616"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7.37166 6.05283C6.92165 7.12327 7.0994 9.04115 7.17141 10.3824C6.6854 10.6683 6.06138 10.1665 5.70813 10.1665C5.34062 10.1665 4.90186 10.423 4.83286 10.8053C4.78336 11.0809 4.89961 11.4823 5.73363 11.8319C6.05613 11.9673 6.8234 12.1266 7.00115 12.5711C7.25091 13.1955 5.71863 16.0779 3.31258 16.4984C3.12433 16.5311 2.99008 16.7095 3.00058 16.9118C3.04258 17.6883 4.68211 17.9926 5.40887 18.112C5.48312 18.2188 5.54312 18.6696 5.63838 19.0128C5.68113 19.1665 5.79138 19.3505 6.07488 19.3505C6.44464 19.3505 7.0589 19.0479 8.12842 19.2358C9.17694 19.4214 10.1625 21 12.0548 21C13.8135 21 14.8628 19.4142 15.8723 19.2358C16.4566 19.1331 16.9583 19.1658 17.5194 19.282C17.9056 19.3625 18.2521 19.4071 18.3624 19.0041C18.4591 18.656 18.5184 18.214 18.5911 18.1096C19.3111 17.991 20.9582 17.6875 20.9994 16.911C21.0099 16.7087 20.8757 16.5311 20.6874 16.4976C18.3219 16.0835 16.7431 13.2098 16.9988 12.5703C17.1758 12.1266 17.9379 11.9689 18.2664 11.8312C18.8769 11.5755 19.1829 11.2609 19.1761 10.8969C19.1679 10.431 18.6399 10.153 18.2514 10.153C17.8561 10.153 17.2884 10.65 16.8286 10.3808C16.9006 9.02841 17.0776 7.11929 16.6283 6.04965C15.7771 4.02425 13.8833 3 11.9902 3C10.1092 3 8.22968 4.00991 7.37166 6.05283Z"
+                                  fill="#161616"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill-rule="evenodd"
+                             clip-rule="evenodd" viewBox="0 0 449.45 515.38">
+                            <path fill-rule="nonzero"
+                                  d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"/>
+                        </svg>
+                    </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+<a href="#" class="go-top"><i class="iconsax" icon-name="chevron-up"></i></a>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap');
 //@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
-//@font-face {
-//  font-family: 'DIN NEXTTM ARABIC';
-//  src: url('../fonts/DINNextLTW23-Regular.eot');
-//  src: url('../fonts/DINNextLTW23-Regular.eot?#iefix') format('embedded-opentype'),
-//  url('../fonts/DINNextLTW23-Regular.woff2') format('woff2'),
-//  url('../fonts/DINNextLTW23-Regular.woff') format('woff'),
-//  url('../fonts/DINNextLTW23-Regular.ttf') format('truetype'),
-//  url('../fonts/DINNextLTW23-Regular.svg#DINNextLTW23-Regular') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//  font-display: swap;
-//}
+@font-face {
+  font-family: 'DIN NEXTTM ARABIC';
+  src: url('../fonts/DINNextLTW23-Regular.eot');
+  src: url('../fonts/DINNextLTW23-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DINNextLTW23-Regular.woff2') format('woff2'),
+  url('../fonts/DINNextLTW23-Regular.woff') format('woff'),
+  url('../fonts/DINNextLTW23-Regular.ttf') format('truetype'),
+  url('../fonts/DINNextLTW23-Regular.svg#DINNextLTW23-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 :root {
-  --font: 'Roboto', sans-serif; /* Default font family */
+  --font: 'Roboto','Tajawal', sans-serif; /* Default font family */
 }
 
 html[dir="rtl"] {
@@ -267,12 +267,12 @@ html[dir="rtl"] {
 .btn-outline-primary {
   font-size: 14px;
   font-weight: 500;
-  line-height: 150%; /* 21px */
+  //line-height: 150%; /* 21px */
   border-radius: 32px;
   border: 1px solid $main_blue;
   color: $main_blue;
   background: none;
-  padding: 18px 32px;
+  padding: 12px 32px;
 
   &:hover {
     background: $main_blue;
@@ -510,6 +510,8 @@ h6 {
   position: relative;
   z-index: 6;
   transition: 0.3s;
+ margin-inline-end: auto;
+  width: 40%;
 
   form {
     position: relative;
@@ -693,7 +695,10 @@ h6 {
 
 
 }
+.flag-icon {
+  width: 22px;
 
+}
 .user-logged-in {
   .user-avatar {
     width: 40px;
@@ -713,8 +718,11 @@ h6 {
 
 .main-menu {
   background: $main_blue;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid rgb(224, 224, 224);
+  //margin-bottom: 2rem;
+  margin-block:1em;
+  //border-bottom: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .navbar-light {
@@ -737,7 +745,7 @@ h6 {
 .navbar-light .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   color: white;
-  padding: 8px 16px;
+  padding: 5px 16px;
   position: relative;
   line-height: 48px;
   transition: 0.3s;
@@ -763,7 +771,7 @@ h6 {
 //  transition:0.3s;
 //}
 
-li.nav-item.special-item {
+ .special-item {
   position: relative;
 
   & a {
@@ -853,7 +861,7 @@ li.nav-item.special-item {
     content: '›';
     position: absolute;
     inset-inline-end: 12px;
-    transition: 0.3s;
+    //transition: 0.3s;
   }
 
 }
@@ -978,9 +986,15 @@ li.nav-item.special-item {
     }
   }
 
-  &:hover > a {
-    color: $main_blue !important;
-    background: #fff !important;
+  &:hover {
+   i {
+     --Iconsax-Color: #264AEC;
+   }
+    > a {
+      color: $main_blue !important;
+      background: #fff !important;
+      border-start-start-radius: 9px ;
+    }
   }
 
   //&:after {
@@ -1152,7 +1166,7 @@ li.nav-item.special-item {
 
   &:hover {
     .item-img {
-      box-shadow: 0 5px 5px rgba(249, 220, 92, 0.31);
+      box-shadow: 0 0 5px rgba(249, 220, 92, 0.31);
     }
 
     transform: translateY(-5px);
@@ -1420,6 +1434,8 @@ li.nav-item.special-item {
   font-size: 16px;
   background: #f3000014;
   padding: 11px;
+  border:0;
+  box-shadow: none;
 
   &:hover, &:focus, &:active {
     background: #f3000014;
@@ -1493,10 +1509,10 @@ li.nav-item.special-item {
     }
 
     &:hover {
-      background: $bg-secondary;
+      background: $yellow;
 
       i {
-        --Iconsax-Color: #264AECFF;
+        --Iconsax-Color: #fff;
       }
     }
   }
@@ -1593,13 +1609,15 @@ li.nav-item.special-item {
 .read-more {
   color: $main_blue;
   font-size: 15px;
-
   display: block;
   font-weight: 500;
 
   &:after {
     content: '➡';
     margin-inline-start: 5px;
+  }
+  &:hover {
+    color: $yellow !important;
   }
 }
 
@@ -1770,7 +1788,7 @@ footer {
       color: white;
 
       &:hover {
-        color: $text-primary;
+        color: $yellow;
       }
     }
   }
@@ -1783,7 +1801,7 @@ footer {
 
       &:hover {
         path {
-          fill: $text-primary;
+          fill: $yellow;
         }
       }
     }
@@ -1795,6 +1813,7 @@ footer {
   position: fixed;
   bottom: 2em;
   right: 2em;
+
   width: 2rem;
   height: 2rem;
   text-decoration: none;
@@ -1805,7 +1824,8 @@ footer {
   border-radius: 55%;
   z-index: 9999;
   transition: all 0.3s;
-  padding: 4px 0 0 5.5px;
+   padding-top:4px;
+  padding-inline-start: 5.5px;
 }
 
 .go-top i {
@@ -1865,7 +1885,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-
+  margin-top: 2rem;
   li {
 
     a {
@@ -1992,7 +2012,8 @@ footer {
     width: 90px;
     flex-shrink: 0;
     position: relative;
-    min-height: 51px;
+    height: 50px;
+
 
     &:before {
       content: '';
@@ -2020,7 +2041,7 @@ footer {
   .nice-select {
     border: none;
     padding: 0;
-    line-height: 2;
+    line-height: 1;
     height: auto;
     font-size: 14px;
     font-weight: 600;
@@ -2481,6 +2502,11 @@ footer {
       object-fit: contain;
     }
   }
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .remove-item, .edit, .buy-item {
@@ -2541,6 +2567,7 @@ footer {
     box-shadow: none !important;
     border: 1px solid $main_blue;
     transition: 0.3s;
+    flex-shrink: 0;
 
     &:checked {
       background-color: $main_blue;
@@ -2801,7 +2828,12 @@ footer {
     border-bottom: 0;
   }
 }
-
+.brand-img {
+  height: 25px;
+  margin-inline-start: auto;
+  width: auto;
+  max-width: 100%;
+}
 .sort-by {
   gap: 10px;
 }
@@ -3581,8 +3613,8 @@ html[dir=rtl] {
 }
 
 .header-slider {
-  padding-block: 3em;
-  margin-top: -2rem;
+  //padding-block: 3em;
+  //margin-top: -2rem;
 }
 
 .map-location {
@@ -3655,9 +3687,9 @@ html[dir=rtl] {
   }
 }
 
-.grid-wrapper {
+.items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 

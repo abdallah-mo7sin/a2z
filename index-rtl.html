@@ -8,7 +8,7 @@
 
     <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
-        <link href="css/nice-select.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet">
     <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>A2Z MegaStore</title>
@@ -20,24 +20,15 @@
 
 <header>
     <div class="top-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 offset-xl-4 col-lg-5 offset-lg-4 col-md-8">
-                    <div class="shop-welcome-message text-lg-center">
-                        Hurry up! Free shipping on your first order🔥
-                    </div>
-                </div>
 
-                <div class="col-xl-4 col-lg-3 col-md-4 d-none d-md-block">
-                    <div class="languages">
-                        <ul class="list-unstyled d-flex justify-content-end gap-3">
-                            <li class="active"><a href="">English</a></li>
-                            <li><a href="">Arabic</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        <div class="shop-welcome-message  marquee d-flex gap-4 ">
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
+            <div class="single-msg"> Hurry up! Free shipping on your first order🔥</div>
         </div>
     </div>
     <!-- end top nav -->
@@ -55,18 +46,22 @@
                 <div class="header-main-content d-flex justify-content-between gap-5 flex-grow-1 align-items-center">
 
                     <ul class="header-mini-nav list-unstyled mb-0">
-                        <li><a href="">Deals</a></li>
-                        <li><a href="">What's new</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li><a href="">عروض</a></li>
+                        <li><a href="">جديدنا</a></li>
+                        <li><a href="">المدونة</a></li>
+                        <li><a href="">من نحن</a></li>
+                        <li><a href="">تواصل معنا</a></li>
                     </ul>
-
-                    <div class="header-search-form flex-grow-1">
+                    <div class="mobile-logo d-md-none">
+                        <a class="d-block" href="#">
+                            <img src="images/logo.png" class="img-fluid" alt="Site logo">
+                        </a>
+                    </div>
+                    <div class="header-search-form ">
 
                         <form>
                             <div class="search-input">
-                                <input id="search_input" class="form-control" placeholder="Search.." type="search">
+                                <input id="search_input" class="form-control" placeholder="ابحث .." type="search">
                                 <button class="btn btn-submit p-0" type="submit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                          fill="none">
@@ -80,10 +75,10 @@
 
                         <div class="recent-search-keywords">
                             <div class="keywords-section">
-                                <div class="fw-600 mb-3">Recent search</div>
+                                <div class="fw-600 mb-3">آخر كلمات البحث</div>
                                 <ul class="list-unstyled">
                                     <li class="d-flex justify-content-between gap-3">
-                                        <span>Mobile</span>
+                                        <span>موبايل</span>
                                         <button class="delete">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                  viewBox="0 0 24 24" fill="none">
@@ -95,7 +90,7 @@
                                         </button>
                                     </li>
                                     <li class="d-flex justify-content-between gap-3">
-                                        <span>TV</span>
+                                        <span>تليفزيونات</span>
                                         <button class="delete">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                  viewBox="0 0 24 24" fill="none">
@@ -107,7 +102,7 @@
                                         </button>
                                     </li>
                                     <li class="d-flex justify-content-between gap-3">
-                                        <span>Laptop</span>
+                                        <span>لابتوب</span>
                                         <button class="delete">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                  viewBox="0 0 24 24" fill="none">
@@ -164,6 +159,7 @@
                         </div>
 
                     </div>
+
                     <ul class="user-nav list-inline mb-0 flex-shrink-0 d-none d-md-flex">
 
                         <li class="list-inline-item ">
@@ -174,11 +170,11 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">
                                         <i class="iconsax" icon-name="login-2"> </i>
-                                        Login
+                                        دخول
                                     </a></li>
                                     <li><a class="dropdown-item" href="#">
                                         <i class="iconsax" icon-name="user-1-add"></i>
-                                        Sigun up
+                                        تسجيل
                                     </a></li>
                                 </ul>
                             </div>
@@ -187,6 +183,10 @@
                         <li class="list-inline-item"><a href="">
                             <i class="iconsax hover" icon-name="shopping-cart"></i>
                             <span>1</span></a></li>
+                        <li><a href="https://abdallah-mo7sin.github.io/a2z/index.html" class="fz16">
+                            <img src="images/en.png" class="flag-icon img-fluid " alt="">
+                            English
+                        </a></li>
 
                     </ul>
 
@@ -197,17 +197,18 @@
     </div>
     <!-- End main-header-content -->
 
-    <div class="main-menu">
+    <div class="container">
+        <div class="main-menu">
 
-        <div class="container">
 
             <nav class="navbar navbar-expand-lg navbar-light">
 
-                <div class="container-fluid">
+                <div class="container-fluid px-md-0">
                     <a class="navbar-brand d-block d-lg-none" href="#">
                         <img src="images/logo.png" class="img-fluid" alt="">
                     </a>
-                    <button class="navbar-toggler collapsed d-none d-md-block d-lg-none" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler collapsed d-none d-md-block d-lg-none" type="button"
+                            data-bs-toggle="collapse"
                             data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill="none">
@@ -223,7 +224,7 @@
                         <ul class="user-nav  list-inline mb-0  ">
                             <li class="list-inline-item">
                                 <a href="" class="fz14 d-flex align-items-center gap-1">
-                                    EN
+                                    AR
                                     <i class="iconsax hover" icon-name="globe"></i>
                                 </a>
                             </li>
@@ -235,11 +236,11 @@
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">
                                             <i class="iconsax" icon-name="login-2"> </i>
-                                            Login
+                                            دخول
                                         </a></li>
                                         <li><a class="dropdown-item" href="#">
                                             <i class="iconsax" icon-name="user-1-add"></i>
-                                            Sigun up
+                                            تسجيل
                                         </a></li>
                                     </ul>
                                 </div>
@@ -265,13 +266,15 @@
                     </div>
                     <div class="collapse navbar-collapse" id="main_nav">
 
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav d-none d-lg-flex">
                             <li class="nav-item dropdown all-categories-li">
                                 <a class="nav-link has-sub " href="#" data-bs-toggle="dropdown">
-                                    All categories <i class="iconsax" icon-name="chevron-up"></i> </a>
+                                    <i class="iconsax" icon-name="menu-hamburger"></i> كل الاقسام </a>
                                 <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                    <li><a class="dropdown-item" href="#"> <img
+                                            src="images/icons/menu/floor-polisher.png" alt=""> شاشات </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> لابتوب </a>
                                         <ul class="submenu dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
                                             <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
@@ -287,16 +290,132 @@
                                             <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
-                                    <li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> رامات </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
                                     </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> كروت شاشة </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> ماوسات </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#">
+                                        <img src="images/icons/menu/bbq.png" alt=""> كيبورد </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item has-sub" href="#">Submenu item 3 </a>
+                                                <ul class="submenu dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Multi level 1</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Multi level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/mobile-phone.png"
+                                                                                alt=""> باورسبلاي </a></li>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/bbq.png" alt="">
+                                        لابتوب مستعمل </a>
+                                    <li><a class="dropdown-item" href="#"> <img src="images/icons/menu/television.png"
+                                                                                alt=""> هاردات </a>
+                                    </li>
+
                                 </ul>
                             </li>
-                            <li class="nav-item active"><a class="nav-link" href="#">Electronics</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                            <li class="nav-item  "><a class="nav-link" href="#">الكترونيات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">موبايل</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">شاشات</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    معالجات </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">معالجات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">رامات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">كروت</a></li>
+                            <li class="nav-item special-item"><a class="nav-link" href="#">طلب صيانة</a></li>
+
+
+                        </ul>
+
+                        <!--  Categories Menu for Mobile Devices-->
+                        <ul class="navbar-nav d-lg-none mobile-nav all-categories-li">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="images/icons/menu/bbq.png" alt="">
                                     Women </a>
                                 <ul class="submenu dropdown-menu">
                                     <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
@@ -327,15 +446,71 @@
                                     <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Beauty & health</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Baby & Toys</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Super market</a></li>
-
-
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="images/icons/menu/floor-polisher.png" alt=""> Housewares </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link has-sub dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <img src="images/icons/menu/mobile-phone.png" alt=""> Phones </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 2 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 3 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item has-sub" href="#"> Dropdown item 4 </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                            <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                                    <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                                </ul>
+                            </li>
                         </ul>
-
-
                     </div> <!-- navbar-collapse.// -->
                 </div> <!-- container-fluid.// -->
             </nav>
@@ -357,17 +532,14 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="images/main-slider-img.jpg" class="img-fluid" alt="">
+                    <img src="https://cdn.seedsflow.net/storage/sliders/2024/01/1704981029_MZXT_Banner-1.jpg"
+                         class="img-fluid" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/main-slider-img.jpg" class="img-fluid" alt="">
+                    <img src="https://cdn.seedsflow.net/storage/sliders/2024/01/1704981160_Customized_Gaming_Desktops_Banners_2.png"
+                         class="img-fluid" alt="">
                 </div>
-                <div class="swiper-slide">
-                    <img src="images/main-slider-img.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/main-slider-img.jpg" class="img-fluid" alt="">
-                </div>
+
             </div>
 
             <div class="swiper-pagination"></div>
@@ -379,35 +551,11 @@
 </section>
 <!-- end header-slider -->
 
-<section class="features mb100">
-    <div class="container container-inner">
-        <div class="features-wrapper d-flex flex-wrap justify-content-center">
 
-            <div class="single-feature">
-                <i class="iconsax" icon-name="box"></i>
-                Fast delivery
-            </div>
-            <div class="single-feature">
-                <i class="iconsax" icon-name="verify"></i>
-                Verified byers
-            </div>
-            <div class="single-feature">
-                <i class="iconsax" icon-name="24hr-service"></i>
-                Customer service
-            </div>
-            <div class="single-feature">
-                <i class="iconsax" icon-name="wallet-1"></i>
-                Secure payments
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="featured-categories mb100">
+<section class="featured-categories mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Top categories</div>
+            <div class="section-title mb-0">أفضل التصنيفات</div>
             <div class="top-slider-arrows">
                 <div class="swiper-button-prev-outside">
                     <i class="iconsax" icon-name="chevron-left"></i>
@@ -430,7 +578,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-2.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Electronics </h5>
+                                <h5 class="title"> الكترونيات </h5>
                             </a>
                         </div>
                     </div>
@@ -439,7 +587,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-1.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Appliance </h5>
+                                <h5 class="title"> شاشات </h5>
                             </a>
                         </div>
                     </div>
@@ -449,7 +597,7 @@
                                 <div class="item-img"><img src="images/categories/cat-3-large-img-testing.png" alt=""
                                                            class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Beauty and health </h5>
+                                <h5 class="title">موبايل</h5>
                             </a>
                         </div>
                     </div>
@@ -458,7 +606,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-4.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Furniture </h5>
+                                <h5 class="title"> لابتوب </h5>
                             </a>
                         </div>
                     </div>
@@ -467,7 +615,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-5.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> TV </h5>
+                                <h5 class="title"> تليفزيونات </h5>
                             </a>
                         </div>
                     </div>
@@ -476,7 +624,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-6.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Headphones </h5>
+                                <h5 class="title"> سماعات </h5>
                             </a>
                         </div>
                     </div>
@@ -485,7 +633,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-7.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Super market </h5>
+                                <h5 class="title">رامات</h5>
                             </a>
                         </div>
                     </div>
@@ -494,7 +642,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-2.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Electronics </h5>
+                                <h5 class="title"> العاب </h5>
                             </a>
                         </div>
                     </div>
@@ -503,7 +651,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-1.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Appliance </h5>
+                                <h5 class="title"> هاردات </h5>
                             </a>
                         </div>
                     </div>
@@ -513,7 +661,7 @@
                                 <div class="item-img"><img src="images/categories/cat-3-large-img-testing.png" alt=""
                                                            class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Beauty and health </h5>
+                                <h5 class="title">لابتوب</h5>
                             </a>
                         </div>
                     </div>
@@ -522,7 +670,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-4.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Furniture </h5>
+                                <h5 class="title"> اجهزة مستعملة </h5>
                             </a>
                         </div>
                     </div>
@@ -531,7 +679,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-5.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> TV </h5>
+                                <h5 class="title"> رامات </h5>
                             </a>
                         </div>
                     </div>
@@ -540,7 +688,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-6.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Headphones </h5>
+                                <h5 class="title"> ماوسات </h5>
                             </a>
                         </div>
                     </div>
@@ -549,7 +697,7 @@
                             <a href="">
                                 <div class="item-img"><img src="images/categories/cat-7.png" alt="" class="img-fluid"
                                                            loading="lazy"></div>
-                                <h5 class="title"> Super market </h5>
+                                <h5 class="title">كيبورد</h5>
                             </a>
                         </div>
                     </div>
@@ -563,22 +711,22 @@
     </div>
 </section>
 
-<section class="promotions mb100">
+<section class="promotions mb-5">
     <div class="container container-inner">
         <div class="promotions-wrapper promotion-grid">
-            <a href=""><img src="images/banners/214cc0436ed7fcdae335a7f24fca1553.png" alt="" class="img-fluid"></a>
-            <a href=""><img src="images/banners/04e0ec3960c95bc59ba572a2388cfee4.png" alt="" class="img-fluid"></a>
-            <a href=""><img src="images/banners/7588704e08a381f7f41b5665e73de8a2.png" alt="" class="img-fluid"></a>
-            <a href=""><img src="images/banners/5477171de0dd3764bec12a618ac49e52.jpg" alt="" class="img-fluid"></a>
+            <a href=""><img src="images/1705362901_552X1802.jpg" alt="" class="img-fluid"></a>
+            <a href=""><img src="images/1705146290_552X384EN.png" alt="" class="img-fluid"></a>
+            <a href=""><img src="images/1705147339_264x180-EN.jpg" alt="" class="img-fluid"></a>
+            <a href=""><img src="images/1705147339_264x180-EN.jpg" alt="" class="img-fluid"></a>
         </div>
     </div>
 </section>
 
-<section class="featured-products products-slider mb100">
+<section class="featured-products products-slider mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">New arrivals</div>
-            <a href="" class="see-all">Shop all</a>
+            <div class="section-title mb-0">وصل حديثاً</div>
+            <a href="" class="see-all">تصفح الكل</a>
         </div>
         <!-- Slider main container -->
         <div class="swiper">
@@ -587,8 +735,9 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -596,23 +745,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -620,23 +769,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -644,23 +794,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -668,23 +819,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -692,20 +843,288 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
             </div>
         </div>
         <!-- If we need navigation buttons -->
@@ -719,7 +1138,7 @@
     </div>
 </section>
 
-<section class="sale-banners mb100">
+<section class="sale-banners mb-5">
 
     <div class="container container-inner">
         <div class="banners-wrapper">
@@ -736,11 +1155,11 @@
 
 </section>
 
-<section class="products-section products-slider mb100">
+<section class="products-section products-slider mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Best sellers</div>
-            <a href="" class="see-all">Shop all</a>
+            <div class="section-title mb-0">الافضل مبيعا</div>
+            <a href="" class="see-all">تصفح الكل</a>
         </div>
         <!-- Slider main container -->
         <div class="swiper">
@@ -749,8 +1168,9 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -758,23 +1178,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -782,23 +1202,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -806,23 +1227,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -830,23 +1252,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -854,20 +1276,288 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -882,7 +1572,7 @@
     </div>
 </section>
 
-<section class="promotions mb100">
+<section class="promotions mb-5">
     <div class="container container-inner">
         <div class="promotions-wrapper d-flex">
             <a href=""><img src="images/banners/3498deb44f64b79220a63922778e88a9.png" alt="" class="img-fluid"></a>
@@ -893,32 +1583,32 @@
 
 </section>
 
-<section class="products-section products-slider mb100">
+<section class="products-section products-slider mb-5">
     <div class="container container-inner">
         <div class="d-md-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Top deals in</div>
+            <div class="section-title mb-0">صفقات</div>
             <div class="filter-cats">
                 <ul class="d-flex flex-wrap list-unstyled justify-content-center justify-content-lg-end">
                     <li>
-                        <button class="active">All</button>
+                        <button class="active">الكل</button>
                     </li>
                     <li>
-                        <button>Meat</button>
+                        <button>موبايلات</button>
                     </li>
                     <li>
-                        <button>Vegetables</button>
+                        <button>لابتوب</button>
                     </li>
                     <li>
-                        <button>Fruits</button>
+                        <button>شاشات</button>
                     </li>
                     <li>
-                        <button>Fish</button>
+                        <button>رامات</button>
                     </li>
                     <li>
-                        <button>Coffee</button>
+                        <button>كروت شاشة</button>
                     </li>
                     <li>
-                        <button>Milk</button>
+                        <button>هاردات</button>
                     </li>
                 </ul>
             </div>
@@ -930,8 +1620,9 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -939,23 +1630,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -963,23 +1654,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -987,23 +1679,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1011,23 +1704,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1035,16 +1728,285 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
@@ -1062,11 +2024,11 @@
     </div>
 </section>
 
-<section class="products-section products-slider mb100">
+<section class="products-section products-slider mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Beauty picks</div>
-            <a href="" class="see-all">Shop all</a>
+            <div class="section-title mb-0">الافضل في قسم اللابتوب</div>
+            <a href="" class="see-all">تصفح الكل</a>
         </div>
         <!-- Slider main container -->
         <div class="swiper">
@@ -1075,8 +2037,9 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1084,23 +2047,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1108,23 +2071,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1132,23 +2096,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1156,23 +2121,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1180,16 +2145,285 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
@@ -1208,11 +2442,11 @@
     </div>
 </section>
 
-<section class="products-section products-slider mb100">
+<section class="products-section products-slider mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Furniture</div>
-            <a href="" class="see-all">Shop all</a>
+            <div class="section-title mb-0">شاشات</div>
+            <a href="" class="see-all">تصفح الكل</a>
         </div>
         <!-- Slider main container -->
         <div class="swiper">
@@ -1221,8 +2455,9 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1230,23 +2465,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1254,23 +2489,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1278,23 +2514,24 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1302,23 +2539,23 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="single-product-wrapper">
-                        <div class="top-icons d-flex justify-content-end">
-                            <a class="add-to-fav" href="">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
                                 <i class="iconsax hover" icon-name="heart"></i>
                             </a>
                         </div>
@@ -1326,16 +2563,285 @@
                             <a href=""><img alt="" class="img-fluid"
                                             loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
                         </div>
-                        <div class="product-title"><a href="">Apple MacBook Air MGN63AE/A Laptop, 13.3 inch, Apple M1
-                            Chip,</a></div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
 
                         <div class="product-rate">
                             <span class="rate-ratio">4.5★</span>(45)
                         </div>
 
-                        <div class="item-price">38,095EGP</div>
+                        <div class="item-price"> 38,095 جنيهاً </div>
 
-                        <a class="btn add-to-cart" href="">Add to card</a>
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: red;">الأعلي مبيعاً</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #ff8000;">خصم</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #168808;">الأعلي مبيعاً
+                            </div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+
+                        <a class="btn out-of-stock" href="">غير متوفر في المخزون</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-product-wrapper">
+                        <div class="top-icons  ">
+                            <div class="badge rounded-pill float-start" style="--badge-color: #9900ff;">الأشهر</div>
+                            <a class="add-to-fav float-end" href="">
+                                <i class="iconsax hover" icon-name="heart"></i>
+                            </a>
+                        </div>
+                        <div class="item-img">
+                            <a href=""><img alt="" class="img-fluid"
+                                            loading="lazy" src="images/products/product-large-img-demo-test.png"></a>
+                        </div>
+                        <div class="product-title"><a href="">لابتوب لينوفو الجيل 13 رامات 16 جيجا</a></div>
+
+                        <div class="product-rate">
+                            <span class="rate-ratio">4.5★</span>(45)
+                        </div>
+
+                        <div class="item-price"> 38,095 جنيهاً </div>
+
+                        <a class="btn add-to-cart" href="">اضف للسلة</a>
 
                     </div>
                 </div>
@@ -1354,7 +2860,7 @@
     </div>
 </section>
 
-<section class="sale-banners mb100">
+<section class="sale-banners mb-5">
 
     <div class="container container-inner">
 
@@ -1370,10 +2876,10 @@
 
 </section>
 
-<section class="shop-by-brands mb100">
+<section class="shop-by-brands mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Shop by brands</div>
+            <div class="section-title mb-0">تصفح بالماركات</div>
             <div class="top-slider-arrows">
                 <div class="swiper-button-prev-outside">
                     <i class="iconsax" icon-name="chevron-left"></i>
@@ -1415,47 +2921,80 @@
                     <div class="swiper-slide"><a href="" class="brand-logo"><img
                             src="images/brands/9df0a01bf64ccb64dedd0df0ca795bb1.png"
                             class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/6c15444214f0f6891f033e64e108162d.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/9df0a01bf64ccb64dedd0df0ca795bb1.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/11dd5fa019db86edcd66f23b785e09a6.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/4212a93ae6d0cd5853621908d2f1f094.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/bc3a3f9cde0098dcf9f47882296cc402.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/f8af660d8c714fd9b4b6ba82fcc32a2d.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/6c15444214f0f6891f033e64e108162d.png"
+                            class="img-fluid" alt=""></a></div>
+                    <div class="swiper-slide"><a href="" class="brand-logo"><img
+                            src="images/brands/9df0a01bf64ccb64dedd0df0ca795bb1.png"
+                            class="img-fluid" alt=""></a></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="blog-section mb100">
+<section class="blog-section mb-5">
     <div class="container container-inner">
         <div class="d-flex justify-content-between align-items-center mb-2rem">
-            <div class="section-title mb-0">Latest from our blog</div>
-            <a href="" class="see-all">Read all</a>
+            <div class="section-title mb-0">آخر المقالات</div>
+            <a href="" class="see-all">عرض الكل</a>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4">
                 <div class="single-blog-post">
                     <div class="post-thumbnail">
                         <a href=""><img src="images/blog-img-demo.png" class="img-fluid" alt=""></a>
                     </div>
-                    <h4 class="post-title"><a href="">11 Best Practices to Provide
-                        Excellent Customer Service on
-                        Social Media Read </a></h4>
+                    <h4 class="post-title"><a href="">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص </a></h4>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" class="read-more">اقرأ المزيد</a>
+                        <div class="fz13 text-black-50  fw-normal">25 مايو 2024</div>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4">
                 <div class="single-blog-post">
                     <div class="post-thumbnail">
                         <a href=""><img src="images/blog-img-demo.png" class="img-fluid" alt=""></a>
                     </div>
-                    <h4 class="post-title"><a href="">11 Best Practices to Provide
-                        Excellent Customer Service on
-                        Social Media Read </a></h4>
+                    <h4 class="post-title"><a href="">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص </a></h4>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" class="read-more">اقرأ المزيد</a>
+                        <div class="fz13 text-black-50  fw-normal">25 مايو 2024</div>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4">
                 <div class="single-blog-post">
                     <div class="post-thumbnail">
                         <a href=""><img src="images/blog-img-demo.png" class="img-fluid" alt=""></a>
                     </div>
-                    <h4 class="post-title"><a href="">11 Best Practices to Provide
-                        Excellent Customer Service on
-                        Social Media Read </a></h4>
+                    <h4 class="post-title"><a href="">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص </a></h4>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" class="read-more">اقرأ المزيد</a>
+                        <div class="fz13 text-black-50  fw-normal">25 مايو 2024</div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -1467,54 +3006,60 @@
         <div class="footer-wrapper  ">
             <div class="d-flex justify-content-between">
                 <div class="subscribe">
-                    <h6 class="section-title fw-normal">Exclusive benefits</h6>
+                    <h6 class="section-title fw-normal">مزايا حصرية</h6>
                     <form action="" class="subscribe-form">
-                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <input type="email" class="form-control" placeholder="بريدك الالكتروني">
                         <button type="submit" class="btn p-0 border-0 shadow-none  btn-submit"><i class="iconsax hover"
                                                                                                   icon-name="arrow-right"></i>
                         </button>
                     </form>
-                    <p>Subscribe for our free membership to receive
-                        exclusive deals, news, and events.</p>
+                    <p>اشترك للحصول على عضويتنا المجانية لتلقي
+                        الصفقات الحصرية والأخبار والأحداث.</p>
                     <img src="images/footer-logo.png" alt="footer logo" class="img-fluid footer-logo">
                 </div>
                 <div class="footer-lists d-flex">
                     <div class="footer-list-wrapper">
-                        <h6>Shop</h6>
+                        <h6>تسوق</h6>
                         <ul class="list-unstyled footer-nav">
-                            <li><a href="">New arrivals</a></li>
-                            <li><a href="">Best sellers</a></li>
-                            <li><a href="">Brands</a></li>
-                            <li><a href="">TVs</a></li>
-                            <li><a href="">Mobile</a></li>
-                            <li><a href="">Electronics</a></li>
+                            <li><a href="">وصل حديثا</a></li>
+                            <li><a href="">الأعلي مبيعا</a></li>
+                            <li><a href="">الماركات</a></li>
+                            <li><a href="">تليفزيونات</a></li>
+                            <li><a href="">موبايلات</a></li>
+                            <li><a href="">شاشات</a></li>
                         </ul>
                     </div>
                     <div class="footer-list-wrapper">
-                        <h6>We care</h6>
+                        <h6>تحتاج مساعدة ؟</h6>
                         <ul class="list-unstyled footer-nav">
-                            <li><a href="">Help</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Maintenance request</a></li>
-                            <li><a href="">My account</a></li>
-                            <li><a href="">Customer service</a></li>
+                            <li><a href="">المساعدة</a></li>
+                            <li><a href="">الاسئلة الشائعة</a></li>
+                            <li><a href="">طلب صيانه</a></li>
+                            <li><a href="">حسابي</a></li>
+                            <li><a href="">الدعم الفني</a></li>
                         </ul>
                     </div>
                     <div class="footer-list-wrapper">
-                        <h6>Explore </h6>
+                        <h6>تصفح </h6>
                         <ul class="list-unstyled footer-nav">
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Partners</a></li>
-                            <li><a href="">Contact us</a></li>
+                            <li><a href="">من نحن</a></li>
+                            <li><a href="">المدونة</a></li>
+                            <li><a href="">شركاء النجاح</a></li>
+                            <li><a href="">تواصل معنا</a></li>
                         </ul>
                     </div>
-                    <div class="footer-list-wrapper">
-                        <h6>Get the app </h6>
+                    <div class="footer-list-wrapper d-flex flex-column">
+                        <h6>احصل على التطبيق</h6>
                         <div class="d-flex gap-1rem flex-column">
-
-                            <a href="" class="d-block"><img src="images/app-store.svg" class="img-fluid" alt=""></a>
-                            <a href="" class="d-block"><img src="images/google-play.svg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/app-store.jpg" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/google-play.jpg" class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="payments d-flex gap-2 mt-auto">
+                            <a href="" class="d-block"><img src="images/payments/knet.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/visa.png" class="img-fluid" alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/master.png" class="img-fluid"
+                                                            alt=""></a>
+                            <a href="" class="d-block"><img src="images/payments/cod.png" class="img-fluid" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -1525,15 +3070,17 @@
         </div>
     </div>
 
-    <div class="copyrights">
-        <div class="container">
+    <div class="container">
+        <div class="copyrights">
 
             <div class="d-md-flex justify-content-between">
                 <ul class="list-unstyled d-flex flex-wrap gap-2rem">
                     <li>©A2Z Mega Store 2023</li>
-                    <li><a href="">Terms of service</a></li>
-                    <li><a href="">Privacy policy</a></li>
-                    <li><a href="">Returns & shipping</a></li>
+                    <li><a href="">الشروط والاحكام</a></li>
+                    <li><a href="">سياسة الخصوصية</a></li>
+                    <li><a href="">سياسة الاسترجاع</a></li>
+                    <li class="special-item"><a href="#">طلب صيانة</a></li>
+
                 </ul>
                 <ul class="list-unstyled d-flex flex-wrap gap-1rem social-list">
                     <li><a href="">
@@ -1561,6 +3108,13 @@
                                   fill="#161616"/>
                         </svg>
                     </a></li>
+                    <li><a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill-rule="evenodd"
+                             clip-rule="evenodd" viewBox="0 0 449.45 515.38">
+                            <path fill-rule="nonzero"
+                                  d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"/>
+                        </svg>
+                    </a></li>
 
                 </ul>
             </div>
@@ -1570,12 +3124,13 @@
 
 </footer>
 
-
+<a href="#" class="go-top"><i class="iconsax" icon-name="chevron-up"></i></a>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 
