@@ -3438,6 +3438,10 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 }
 @media all and (max-width: 600px) {
+  .items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+
   .form-tabs {
     gap: 6px;
   }
