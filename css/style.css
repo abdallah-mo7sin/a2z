@@ -3055,7 +3055,19 @@ html[dir=rtl] .breadcrumbs li a:after {
     padding-inline-end: 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 991px) {
+  .logo, .header-mini-nav {
+    display: none !important;
+  }
+
+  .navbar-toggler svg path {
+    fill: white;
+  }
+
+  .container-fluid {
+    padding-inline: 12px !important;
+  }
+
   .header-search-form {
     margin-inline-end: 0;
     flex-grow: 1;
@@ -3076,8 +3088,6 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
   .mobile-nav ul.submenu.dropdown-menu.show.active {
     border-style: solid;
-    border-radius: 0 0 10px 10px !important;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
   .mobile-nav .submenu {
     border-radius: 0 !important;
