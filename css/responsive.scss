@@ -100,7 +100,13 @@
 }
 
 @media all and (max-width: 991px) {
-  .logo ,.header-mini-nav{
+  .navbar-toggler {
+    padding-block:10px;
+  }
+  .mobile-logo {
+    display: block !important;
+  }
+   .navbar-brand,.header-mini-nav{
     display: none !important;
   }
 
@@ -551,6 +557,9 @@
 }
 
 @media all and (max-width: 600px) {
+  .navbar-toggler {
+    padding-block:0;
+  }
   .items-grid {
      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
    }
