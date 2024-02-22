@@ -3023,11 +3023,7 @@ html[dir=rtl] .breadcrumbs li a:after {
   }
 
   .sale-banners .banners-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
-  }
-
-  .sale-banners .banner img {
-    height: 226px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
   }
 
   .gradiant-side .fz28 {
@@ -3319,12 +3315,8 @@ html[dir=rtl] .breadcrumbs li a:after {
     --Iconsax-Size: 20px;
   }
 
-  .promotions-wrapper.promotion-grid a:first-child img {
-    height: 124px;
-  }
-
-  .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
-    height: 114px;
+  .promotions-wrapper.promotion-grid {
+    gap: 12px;
   }
 
   .mb100 {
@@ -3341,14 +3333,6 @@ html[dir=rtl] .breadcrumbs li a:after {
 
   .sale-banners .banners-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(124px, 2fr));
-  }
-
-  .sale-banners .banner img {
-    height: 172px;
-  }
-
-  .promotions-wrapper.d-flex a img {
-    height: 171px;
   }
 
   .brand-logo {
@@ -3659,10 +3643,6 @@ html[dir=rtl] .breadcrumbs li a:after {
     height: auto;
   }
 
-  .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
-    height: 129px;
-  }
-
   .promotions-wrapper.d-flex {
     flex-wrap: wrap;
   }
@@ -3749,10 +3729,6 @@ html[dir=rtl] .breadcrumbs li a:after {
   .notifications {
     min-width: 350px;
     margin-inline-end: -25vw !important;
-  }
-
-  .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
-    height: 111px;
   }
 
   .sale-banners .banners-wrapper {

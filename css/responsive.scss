@@ -62,11 +62,11 @@
     inset-inline-end: -20px;
   }
   .sale-banners .banners-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
   }
-  .sale-banners .banner img {
-    height: 226px;
-  }
+  //.sale-banners .banner img {
+  //  height: 226px;
+  //}
   //.brands-wrapper {
   //  grid-template-columns: repeat(auto-fit, minmax(135px, 2fr));
   //}
@@ -419,12 +419,15 @@
       --Iconsax-Size: 20px;
     }
   }
-  .promotions-wrapper.promotion-grid a:first-child img {
-    height: 124px;
+  .promotions-wrapper.promotion-grid {
+    gap:12px;
   }
-  .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
-    height: 114px;
-  }
+  //.promotions-wrapper.promotion-grid a:first-child img {
+  //  height: 124px;
+  //}
+  //.promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
+  //  height: 114px;
+  //}
   .mb100 {
     margin-bottom: 70px !important;
   }
@@ -439,12 +442,12 @@
   .sale-banners .banners-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(124px, 2fr));
   }
-  .sale-banners .banner img {
-    height: 172px;
-  }
-  .promotions-wrapper.d-flex a img {
-    height: 171px;
-  }
+  //.sale-banners .banner img {
+  //  height: 172px;
+  //}
+  //.promotions-wrapper.d-flex a img {
+  //  height: 171px;
+  //}
   //.brands-wrapper {
   //  grid-template-columns: repeat(auto-fit, minmax(96px, 2fr));
   //}
@@ -766,9 +769,9 @@
   .promotions-wrapper.promotion-grid a:first-child img, .promotions-wrapper.promotion-grid a:nth-child(2) img {
     height: auto;
   }
-  .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
-    height: 129px;
-  }
+  //.promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
+  //  height: 129px;
+  //}
   .promotions-wrapper.d-flex {
     flex-wrap: wrap;
 
@@ -866,9 +869,9 @@
   //.header-slider .swiper-slide {
   //  height: 193px;
   //}
-  .promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
-    height: 111px;
-  }
+  //.promotions-wrapper.promotion-grid a:nth-child(3) img, .promotions-wrapper.promotion-grid a:last-child img {
+  //  height: 111px;
+  //}
   .sale-banners .banners-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(128px, 2fr));
   }
