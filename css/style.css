@@ -547,7 +547,7 @@ h6 {
   font-size: 20px;
   margin-inline-end: 2px;
 }
-.user-nav:not(.dropdown-menu) > li span {
+.user-nav:not(.dropdown-menu) > li .notification-count {
   position: absolute;
   width: 15px;
   height: 15px;
